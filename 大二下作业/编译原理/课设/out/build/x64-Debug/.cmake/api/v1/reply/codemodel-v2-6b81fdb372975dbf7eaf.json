@@ -1,0 +1,61 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-72ec0e4310d5472d0fd9.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "ArithmeticDAG",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "arithmetic_dag::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arithmetic_dag-Debug-4ab0e2e26ae8c0031c6e.json",
+					"name" : "arithmetic_dag",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/\u9093\u5091\u6e67/Desktop/\u5927\u4e8c\u4e0b\u4f5c\u4e1a/\u7f16\u8bd1\u539f\u7406/\u8bfe\u8bbe/out/build/x64-Debug",
+		"source" : "C:/Users/\u9093\u5091\u6e67/Desktop/\u5927\u4e8c\u4e0b\u4f5c\u4e1a/\u7f16\u8bd1\u539f\u7406/\u8bfe\u8bbe"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

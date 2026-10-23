@@ -1,0 +1,24 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BranchPredictor
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/CU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/ForwardingUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ForwardingUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/InsMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InsMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/PCAddress.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCAddress
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/delay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Delay
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/extend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Extend
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sim_1/new/multiCPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test

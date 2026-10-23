@@ -1,0 +1,3 @@
+﻿  Management.cpp
+D:\BaiduNetdiskDownload\StudentManagement_GUI_new\Management.cpp(24,14): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  StudentManagement_GUI.vcxproj -> D:\BaiduNetdiskDownload\StudentManagement_GUI_new\x64\Debug\StudentManagement_GUI.exe

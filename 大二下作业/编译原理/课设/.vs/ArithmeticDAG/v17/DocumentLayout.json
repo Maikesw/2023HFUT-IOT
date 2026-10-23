@@ -1,0 +1,143 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\\u9093\u5091\u6E67\\Desktop\\\u5927\u4E8C\u4E0B\u4F5C\u4E1A\\\u7F16\u8BD1\u539F\u7406\\\u8BFE\u8BBE\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A1234567-1234-1234-1234-1234567890AB}|ArithmeticDAG.vcxproj|C:\\Users\\\u9093\u5091\u6E67\\Desktop\\\u5927\u4E8C\u4E0B\u4F5C\u4E1A\\\u7F16\u8BD1\u539F\u7406\\\u8BFE\u8BBE\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A1234567-1234-1234-1234-1234567890AB}|ArithmeticDAG.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1234567-1234-1234-1234-1234567890AB}|ArithmeticDAG.vcxproj|C:\\Users\\\u9093\u5091\u6E67\\Desktop\\\u5927\u4E8C\u4E0B\u4F5C\u4E1A\\\u7F16\u8BD1\u539F\u7406\\\u8BFE\u8BBE\\dag.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A1234567-1234-1234-1234-1234567890AB}|ArithmeticDAG.vcxproj|solutionrelative:dag.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1234567-1234-1234-1234-1234567890AB}|ArithmeticDAG.vcxproj|C:\\Users\\\u9093\u5091\u6E67\\Desktop\\\u5927\u4E8C\u4E0B\u4F5C\u4E1A\\\u7F16\u8BD1\u539F\u7406\\\u8BFE\u8BBE\\lexer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A1234567-1234-1234-1234-1234567890AB}|ArithmeticDAG.vcxproj|solutionrelative:lexer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1234567-1234-1234-1234-1234567890AB}|ArithmeticDAG.vcxproj|C:\\Users\\\u9093\u5091\u6E67\\Desktop\\\u5927\u4E8C\u4E0B\u4F5C\u4E1A\\\u7F16\u8BD1\u539F\u7406\\\u8BFE\u8BBE\\parser.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A1234567-1234-1234-1234-1234567890AB}|ArithmeticDAG.vcxproj|solutionrelative:parser.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1234567-1234-1234-1234-1234567890AB}|ArithmeticDAG.vcxproj|C:\\Users\\\u9093\u5091\u6E67\\Desktop\\\u5927\u4E8C\u4E0B\u4F5C\u4E1A\\\u7F16\u8BD1\u539F\u7406\\\u8BFE\u8BBE\\parser.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A1234567-1234-1234-1234-1234567890AB}|ArithmeticDAG.vcxproj|solutionrelative:parser.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1234567-1234-1234-1234-1234567890AB}|ArithmeticDAG.vcxproj|C:\\Users\\\u9093\u5091\u6E67\\Desktop\\\u5927\u4E8C\u4E0B\u4F5C\u4E1A\\\u7F16\u8BD1\u539F\u7406\\\u8BFE\u8BBE\\lexer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A1234567-1234-1234-1234-1234567890AB}|ArithmeticDAG.vcxproj|solutionrelative:lexer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1234567-1234-1234-1234-1234567890AB}|ArithmeticDAG.vcxproj|C:\\Users\\\u9093\u5091\u6E67\\Desktop\\\u5927\u4E8C\u4E0B\u4F5C\u4E1A\\\u7F16\u8BD1\u539F\u7406\\\u8BFE\u8BBE\\dag.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A1234567-1234-1234-1234-1234567890AB}|ArithmeticDAG.vcxproj|solutionrelative:dag.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "dag.cpp",
+              "DocumentMoniker": "C:\\Users\\\u9093\u5091\u6E67\\Desktop\\\u5927\u4E8C\u4E0B\u4F5C\u4E1A\\\u7F16\u8BD1\u539F\u7406\\\u8BFE\u8BBE\\dag.cpp",
+              "RelativeDocumentMoniker": "dag.cpp",
+              "ToolTip": "C:\\Users\\\u9093\u5091\u6E67\\Desktop\\\u5927\u4E8C\u4E0B\u4F5C\u4E1A\\\u7F16\u8BD1\u539F\u7406\\\u8BFE\u8BBE\\dag.cpp",
+              "RelativeToolTip": "dag.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-13T06:54:18.68Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "dag.h",
+              "DocumentMoniker": "C:\\Users\\\u9093\u5091\u6E67\\Desktop\\\u5927\u4E8C\u4E0B\u4F5C\u4E1A\\\u7F16\u8BD1\u539F\u7406\\\u8BFE\u8BBE\\dag.h",
+              "RelativeDocumentMoniker": "dag.h",
+              "ToolTip": "C:\\Users\\\u9093\u5091\u6E67\\Desktop\\\u5927\u4E8C\u4E0B\u4F5C\u4E1A\\\u7F16\u8BD1\u539F\u7406\\\u8BFE\u8BBE\\dag.h",
+              "RelativeToolTip": "dag.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-06-13T06:54:15.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "lexer.cpp",
+              "DocumentMoniker": "C:\\Users\\\u9093\u5091\u6E67\\Desktop\\\u5927\u4E8C\u4E0B\u4F5C\u4E1A\\\u7F16\u8BD1\u539F\u7406\\\u8BFE\u8BBE\\lexer.cpp",
+              "RelativeDocumentMoniker": "lexer.cpp",
+              "ToolTip": "C:\\Users\\\u9093\u5091\u6E67\\Desktop\\\u5927\u4E8C\u4E0B\u4F5C\u4E1A\\\u7F16\u8BD1\u539F\u7406\\\u8BFE\u8BBE\\lexer.cpp",
+              "RelativeToolTip": "lexer.cpp",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAACUAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-13T06:54:14.418Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "lexer.h",
+              "DocumentMoniker": "C:\\Users\\\u9093\u5091\u6E67\\Desktop\\\u5927\u4E8C\u4E0B\u4F5C\u4E1A\\\u7F16\u8BD1\u539F\u7406\\\u8BFE\u8BBE\\lexer.h",
+              "RelativeDocumentMoniker": "lexer.h",
+              "ToolTip": "C:\\Users\\\u9093\u5091\u6E67\\Desktop\\\u5927\u4E8C\u4E0B\u4F5C\u4E1A\\\u7F16\u8BD1\u539F\u7406\\\u8BFE\u8BBE\\lexer.h",
+              "RelativeToolTip": "lexer.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-06-13T06:54:13.444Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "parser.h",
+              "DocumentMoniker": "C:\\Users\\\u9093\u5091\u6E67\\Desktop\\\u5927\u4E8C\u4E0B\u4F5C\u4E1A\\\u7F16\u8BD1\u539F\u7406\\\u8BFE\u8BBE\\parser.h",
+              "RelativeDocumentMoniker": "parser.h",
+              "ToolTip": "C:\\Users\\\u9093\u5091\u6E67\\Desktop\\\u5927\u4E8C\u4E0B\u4F5C\u4E1A\\\u7F16\u8BD1\u539F\u7406\\\u8BFE\u8BBE\\parser.h",
+              "RelativeToolTip": "parser.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-06-13T06:54:10.238Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "parser.cpp",
+              "DocumentMoniker": "C:\\Users\\\u9093\u5091\u6E67\\Desktop\\\u5927\u4E8C\u4E0B\u4F5C\u4E1A\\\u7F16\u8BD1\u539F\u7406\\\u8BFE\u8BBE\\parser.cpp",
+              "RelativeDocumentMoniker": "parser.cpp",
+              "ToolTip": "C:\\Users\\\u9093\u5091\u6E67\\Desktop\\\u5927\u4E8C\u4E0B\u4F5C\u4E1A\\\u7F16\u8BD1\u539F\u7406\\\u8BFE\u8BBE\\parser.cpp*",
+              "RelativeToolTip": "parser.cpp*",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAFEAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-13T06:54:08.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\\u9093\u5091\u6E67\\Desktop\\\u5927\u4E8C\u4E0B\u4F5C\u4E1A\\\u7F16\u8BD1\u539F\u7406\\\u8BFE\u8BBE\\main.cpp",
+              "RelativeDocumentMoniker": "main.cpp",
+              "ToolTip": "C:\\Users\\\u9093\u5091\u6E67\\Desktop\\\u5927\u4E8C\u4E0B\u4F5C\u4E1A\\\u7F16\u8BD1\u539F\u7406\\\u8BFE\u8BBE\\main.cpp",
+              "RelativeToolTip": "main.cpp",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAUAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-13T06:53:58.839Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

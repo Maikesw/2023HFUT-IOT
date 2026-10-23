@@ -1,0 +1,45 @@
+
+*** Running vivado
+    with args -log cpu.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source cpu.tcl
+
+
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Fri Jul  4 01:04:34 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source cpu.tcl -notrace
+Command: synth_design -top cpu -part xc7a35tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 24200
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 846.652 ; gain = 477.891
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'cpu' [C:/Users/邓傑湧/Desktop/大二下作业/计组/666/2022212136-王浩宇-计科22-1班-计算机组成原理实验/工程文件/cpu/project_8.srcs/sources_1/new/cpu.v:2]
+INFO: [Synth 8-6157] synthesizing module 'pc' [C:/Users/邓傑湧/Desktop/大二下作业/计组/666/2022212136-王浩宇-计科22-1班-计算机组成原理实验/工程文件/cpu/project_8.srcs/sources_1/new/pc.v:2]
+WARNING: [Synth 8-6104] Input port 'stop' has an internal driver [C:/Users/邓傑湧/Desktop/大二下作业/计组/666/2022212136-王浩宇-计科22-1班-计算机组成原理实验/工程文件/cpu/project_8.srcs/sources_1/new/pc.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'pc' (0#1) [C:/Users/邓傑湧/Desktop/大二下作业/计组/666/2022212136-王浩宇-计科22-1班-计算机组成原理实验/工程文件/cpu/project_8.srcs/sources_1/new/pc.v:2]
+INFO: [Synth 8-6157] synthesizing module 'insMem' [C:/Users/邓傑湧/Desktop/大二下作业/计组/666/2022212136-王浩宇-计科22-1班-计算机组成原理实验/工程文件/cpu/project_8.srcs/sources_1/new/insMem.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'insMem' (0#1) [C:/Users/邓傑湧/Desktop/大二下作业/计组/666/2022212136-王浩宇-计科22-1班-计算机组成原理实验/工程文件/cpu/project_8.srcs/sources_1/new/insMem.v:2]
+INFO: [Synth 8-6157] synthesizing module 'acc' [C:/Users/邓傑湧/Desktop/大二下作业/计组/666/2022212136-王浩宇-计科22-1班-计算机组成原理实验/工程文件/cpu/project_8.srcs/sources_1/new/acc.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'acc' (0#1) [C:/Users/邓傑湧/Desktop/大二下作业/计组/666/2022212136-王浩宇-计科22-1班-计算机组成原理实验/工程文件/cpu/project_8.srcs/sources_1/new/acc.v:2]
+INFO: [Synth 8-6157] synthesizing module 'dataMem' [C:/Users/邓傑湧/Desktop/大二下作业/计组/666/2022212136-王浩宇-计科22-1班-计算机组成原理实验/工程文件/cpu/project_8.srcs/sources_1/new/dataMem.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'dataMem' (0#1) [C:/Users/邓傑湧/Desktop/大二下作业/计组/666/2022212136-王浩宇-计科22-1班-计算机组成原理实验/工程文件/cpu/project_8.srcs/sources_1/new/dataMem.v:2]
+INFO: [Synth 8-6157] synthesizing module 'cu' [C:/Users/邓傑湧/Desktop/大二下作业/计组/666/2022212136-王浩宇-计科22-1班-计算机组成原理实验/工程文件/cpu/project_8.srcs/sources_1/new/cu.v:2]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/邓傑湧/Desktop/大二下作业/计组/666/2022212136-王浩宇-计科22-1班-计算机组成原理实验/工程文件/cpu/project_8.srcs/sources_1/new/cu.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'cu' (0#1) [C:/Users/邓傑湧/Desktop/大二下作业/计组/666/2022212136-王浩宇-计科22-1班-计算机组成原理实验/工程文件/cpu/project_8.srcs/sources_1/new/cu.v:2]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/邓傑湧/Desktop/大二下作业/计组/666/2022212136-王浩宇-计科22-1班-计算机组成原理实验/工程文件/cpu/project_8.srcs/sources_1/new/alu.v:2]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/邓傑湧/Desktop/大二下作业/计组/666/2022212136-王浩宇-计科22-1班-计算机组成原理实验/工程文件/cpu/project_8.srcs/sources_1/new/alu.v:16]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (0#1) [C:/Users/邓傑湧/Desktop/大二下作业/计组/666/2022212136-王浩宇-计科22-1班-计算机组成原理实验/工程文件/cpu/project_8.srcs/sources_1/new/alu.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'cpu' (0#1) [C:/Users/邓傑湧/Desktop/大二下作业/计组/666/2022212136-王浩宇-计科22-1班-计算机组成原理实验/工程文件/cpu/project_8.srcs/sources_1/new/cpu.v:2]
+WARNING: [Synth 8-3848] Net a in module/entity cpu does not have driver. [C:/Users/邓傑湧/Desktop/大二下作业/计组/666/2022212136-王浩宇-计科22-1班-计算机组成原理实验/工程文件/cpu/project_8.srcs/sources_1/new/cpu.v:4]
+WARNING: [Synth 8-7129] Port stop in module pc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a in module cpu is either unconnected or has no load

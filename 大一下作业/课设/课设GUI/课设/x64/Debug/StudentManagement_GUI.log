@@ -1,0 +1,8 @@
+﻿  BasicWidget.cpp
+  Management.cpp
+C:\Users\邓傑湧\Desktop\大一下作业\课设\课设GUI\Management.cpp(23,14): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  PushButton.cpp
+  Window.cpp
+  main.cpp
+  正在生成代码...
+  StudentManagement_GUI.vcxproj -> C:\Users\邓傑湧\Desktop\大一下作业\课设\课设GUI\x64\Debug\课设.exe

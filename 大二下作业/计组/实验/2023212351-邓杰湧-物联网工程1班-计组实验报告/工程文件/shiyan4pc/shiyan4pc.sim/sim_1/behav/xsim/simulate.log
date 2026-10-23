@@ -1,0 +1,18 @@
+Time resolution is 1 ps
+Time=                   0, rst=1, pc=  x
+Time=                5000, rst=1, pc=  0
+Time=               50000, rst=0, pc=  0
+Time=               55000, rst=0, pc=  1
+Time=               65000, rst=0, pc=  2
+Time=               75000, rst=0, pc=  3
+Time=               85000, rst=0, pc=  4
+Time=               95000, rst=0, pc=  5
+Time=              105000, rst=0, pc=  6
+Time=              110000, rst=1, pc=  6
+Time=              115000, rst=1, pc=  0
+Time=              130000, rst=0, pc=  0
+Time=              135000, rst=0, pc=  1
+Time=              145000, rst=0, pc=  2
+Time=              155000, rst=0, pc=  3
+Time=              165000, rst=0, pc=  4
+$finish called at time : 170 ns : File "D:/shiyan/xiangmu/shiyan4pc/shiyan4pc.srcs/sim_1/new/test.v" Line 55

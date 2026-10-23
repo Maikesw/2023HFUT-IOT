@@ -1,0 +1,179 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1.1 (win64) Build 6233196 Thu Sep 11 21:27:30 MDT 2025
+| Date         : Sun Jan 18 15:44:56 2026
+| Host         : LAPTOP-C1PMA0TC running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file CPU_control_sets_placed.rpt
+| Design       : CPU
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   101 |
+|    Minimum number of control sets                        |   101 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |     5 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   101 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |    64 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    37 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |            1923 |          944 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             152 |           60 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------------------+---------------+------------------------+------------------+----------------+--------------+
+|            Clock Signal            | Enable Signal |    Set/Reset Signal    | Slice Load Count | Bel Load Count | Bels / Slice |
++------------------------------------+---------------+------------------------+------------------+----------------+--------------+
+|  datamem/memory_reg[1][7]_i_2_n_9  |               |                        |                5 |              8 |         1.60 |
+|  datamem/memory_reg[20][7]_i_2_n_9 |               |                        |                5 |              8 |         1.60 |
+|  datamem/memory_reg[19][7]_i_2_n_9 |               |                        |                3 |              8 |         2.67 |
+|  datamem/memory_reg[0][7]_i_2_n_9  |               |                        |                5 |              8 |         1.60 |
+|  datamem/memory_reg[10][7]_i_2_n_9 |               |                        |                5 |              8 |         1.60 |
+|  datamem/memory_reg[11][7]_i_2_n_9 |               |                        |                3 |              8 |         2.67 |
+|  datamem/memory_reg[14][7]_i_2_n_9 |               |                        |                4 |              8 |         2.00 |
+|  datamem/memory_reg[15][7]_i_2_n_9 |               |                        |                3 |              8 |         2.67 |
+|  datamem/memory_reg[12][7]_i_2_n_9 |               |                        |                4 |              8 |         2.00 |
+|  datamem/memory_reg[13][7]_i_2_n_9 |               |                        |                4 |              8 |         2.00 |
+|  datamem/memory_reg[18][7]_i_2_n_9 |               |                        |                7 |              8 |         1.14 |
+|  datamem/memory_reg[17][7]_i_2_n_9 |               |                        |                5 |              8 |         1.60 |
+|  datamem/memory_reg[16][7]_i_2_n_9 |               |                        |                6 |              8 |         1.33 |
+|  datamem/memory_reg[26][7]_i_2_n_9 |               |                        |                2 |              8 |         4.00 |
+|  datamem/memory_reg[27][7]_i_2_n_9 |               |                        |                5 |              8 |         1.60 |
+|  datamem/memory_reg[21][7]_i_2_n_9 |               |                        |                5 |              8 |         1.60 |
+|  datamem/memory_reg[23][7]_i_2_n_9 |               |                        |                3 |              8 |         2.67 |
+|  datamem/memory_reg[24][7]_i_2_n_9 |               |                        |                5 |              8 |         1.60 |
+|  datamem/memory_reg[22][7]_i_2_n_9 |               |                        |                6 |              8 |         1.33 |
+|  datamem/memory_reg[25][7]_i_2_n_9 |               |                        |                5 |              8 |         1.60 |
+|  datamem/memory_reg[2][7]_i_2_n_9  |               |                        |                3 |              8 |         2.67 |
+|  datamem/memory_reg[31][7]_i_2_n_9 |               |                        |                4 |              8 |         2.00 |
+|  datamem/memory_reg[29][7]_i_2_n_9 |               |                        |                6 |              8 |         1.33 |
+|  datamem/memory_reg[30][7]_i_2_n_9 |               |                        |                4 |              8 |         2.00 |
+|  datamem/memory_reg[28][7]_i_2_n_9 |               |                        |                7 |              8 |         1.14 |
+|  datamem/memory_reg[34][7]_i_2_n_9 |               |                        |                6 |              8 |         1.33 |
+|  datamem/memory_reg[33][7]_i_2_n_9 |               |                        |                3 |              8 |         2.67 |
+|  datamem/memory_reg[35][7]_i_2_n_9 |               |                        |                5 |              8 |         1.60 |
+|  datamem/memory_reg[32][7]_i_2_n_9 |               |                        |                6 |              8 |         1.33 |
+|  datamem/memory_reg[3][7]_i_2_n_9  |               |                        |                5 |              8 |         1.60 |
+|  datamem/memory_reg[39][7]_i_2_n_9 |               |                        |                5 |              8 |         1.60 |
+|  datamem/memory_reg[37][7]_i_2_n_9 |               |                        |                6 |              8 |         1.33 |
+|  datamem/memory_reg[38][7]_i_2_n_9 |               |                        |                5 |              8 |         1.60 |
+|  datamem/memory_reg[36][7]_i_2_n_9 |               |                        |                4 |              8 |         2.00 |
+|  datamem/memory_reg[44][7]_i_2_n_9 |               |                        |                5 |              8 |         1.60 |
+|  datamem/memory_reg[40][7]_i_2_n_9 |               |                        |                5 |              8 |         1.60 |
+|  datamem/memory_reg[42][7]_i_2_n_9 |               |                        |                4 |              8 |         2.00 |
+|  datamem/memory_reg[43][7]_i_2_n_9 |               |                        |                4 |              8 |         2.00 |
+|  datamem/memory_reg[45][7]_i_2_n_9 |               |                        |                6 |              8 |         1.33 |
+|  datamem/memory_reg[41][7]_i_2_n_9 |               |                        |                5 |              8 |         1.60 |
+|  datamem/memory_reg[4][7]_i_2_n_9  |               |                        |                6 |              8 |         1.33 |
+|  datamem/memory_reg[50][7]_i_2_n_9 |               |                        |                5 |              8 |         1.60 |
+|  datamem/memory_reg[48][7]_i_2_n_9 |               |                        |                7 |              8 |         1.14 |
+|  datamem/memory_reg[47][7]_i_2_n_9 |               |                        |                5 |              8 |         1.60 |
+|  datamem/memory_reg[46][7]_i_2_n_9 |               |                        |                5 |              8 |         1.60 |
+|  datamem/memory_reg[49][7]_i_2_n_9 |               |                        |                6 |              8 |         1.33 |
+|  datamem/memory_reg[57][7]_i_2_n_9 |               |                        |                6 |              8 |         1.33 |
+|  datamem/memory_reg[53][7]_i_2_n_9 |               |                        |                6 |              8 |         1.33 |
+|  datamem/memory_reg[52][7]_i_2_n_9 |               |                        |                4 |              8 |         2.00 |
+|  datamem/memory_reg[55][7]_i_2_n_9 |               |                        |                4 |              8 |         2.00 |
+|  datamem/memory_reg[51][7]_i_2_n_9 |               |                        |                5 |              8 |         1.60 |
+|  datamem/memory_reg[54][7]_i_2_n_9 |               |                        |                6 |              8 |         1.33 |
+|  datamem/memory_reg[56][7]_i_2_n_9 |               |                        |                5 |              8 |         1.60 |
+|  datamem/memory_reg[59][7]_i_2_n_9 |               |                        |                3 |              8 |         2.67 |
+|  datamem/memory_reg[5][7]_i_2_n_9  |               |                        |                6 |              8 |         1.33 |
+|  datamem/memory_reg[61][7]_i_2_n_9 |               |                        |                7 |              8 |         1.14 |
+|  datamem/memory_reg[62][7]_i_2_n_9 |               |                        |                5 |              8 |         1.60 |
+|  datamem/memory_reg[58][7]_i_2_n_9 |               |                        |                5 |              8 |         1.60 |
+|  datamem/memory_reg[60][7]_i_2_n_9 |               |                        |                5 |              8 |         1.60 |
+|  datamem/memory_reg[8][7]_i_2_n_9  |               |                        |                6 |              8 |         1.33 |
+|  datamem/memory_reg[6][7]_i_2_n_9  |               |                        |                5 |              8 |         1.60 |
+|  datamem/memory_reg[7][7]_i_2_n_9  |               |                        |                5 |              8 |         1.60 |
+|  datamem/memory_reg[63][7]_i_2_n_9 |               |                        |                3 |              8 |         2.67 |
+|  datamem/memory_reg[9][7]_i_2_n_9  |               |                        |                4 |              8 |         2.00 |
+| ~clk_IBUF_BUFG                     |               | LuiSel_ID              |                6 |             16 |         2.67 |
+|  clk0_IBUF_BUFG                    |               |                        |                5 |             20 |         4.00 |
+|  MemRead_MEM_BUFG                  |               | MemWrite_MEM           |                9 |             32 |         3.56 |
+|  reg0/register_reg[24][31]_i_1_n_9 |               |                        |               13 |             32 |         2.46 |
+| ~clk_IBUF_BUFG                     |               | insmem//ins[7]_i_1_n_9 |               22 |             32 |         1.45 |
+|  reg0/register_reg[1][31]_i_1_n_9  |               |                        |               14 |             32 |         2.29 |
+|  n_0_147_BUFG                      |               |                        |               22 |             32 |         1.45 |
+|  n_1_170_BUFG                      |               |                        |               18 |             32 |         1.78 |
+|  n_5_153_BUFG                      |               |                        |               22 |             32 |         1.45 |
+|  n_7_167_BUFG                      |               |                        |               18 |             32 |         1.78 |
+|  n_4_168_BUFG                      |               |                        |               20 |             32 |         1.60 |
+|  n_6_152_BUFG                      |               |                        |               17 |             32 |         1.88 |
+|  n_3_169_BUFG                      |               |                        |               17 |             32 |         1.88 |
+|  n_8_166_BUFG                      |               |                        |               18 |             32 |         1.78 |
+|  n_2_154_BUFG                      |               |                        |               17 |             32 |         1.88 |
+|  reg0/register_reg[12][31]_i_1_n_9 |               |                        |               15 |             32 |         2.13 |
+|  reg0/register_reg[13][31]_i_1_n_9 |               |                        |               15 |             32 |         2.13 |
+|  reg0/register_reg[14][31]_i_1_n_9 |               |                        |               15 |             32 |         2.13 |
+|  reg0/register_reg[30][31]_i_1_n_9 |               |                        |               19 |             32 |         1.68 |
+|  reg0/register_reg[23][31]_i_1_n_9 |               |                        |               19 |             32 |         1.68 |
+|  reg0/register_reg[27][31]_i_1_n_9 |               |                        |               13 |             32 |         2.46 |
+|  reg0/register_reg[29][31]_i_1_n_9 |               |                        |               16 |             32 |         2.00 |
+|  reg0/register_reg[16][31]_i_1_n_9 |               |                        |               12 |             32 |         2.67 |
+|  reg0/register_reg[28][31]_i_1_n_9 |               |                        |               12 |             32 |         2.67 |
+|  reg0/register_reg[26][31]_i_1_n_9 |               |                        |               15 |             32 |         2.13 |
+|  reg0/register_reg[31][31]_i_1_n_9 |               |                        |               21 |             32 |         1.52 |
+|  reg0/register_reg[17][31]_i_1_n_9 |               |                        |               12 |             32 |         2.67 |
+|  reg0/register_reg[22][31]_i_1_n_9 |               |                        |               16 |             32 |         2.00 |
+|  reg0/register_reg[19][31]_i_1_n_9 |               |                        |               11 |             32 |         2.91 |
+|  reg0/register_reg[15][31]_i_1_n_9 |               |                        |               12 |             32 |         2.67 |
+|  reg0/register_reg[21][31]_i_1_n_9 |               |                        |               14 |             32 |         2.29 |
+|  reg0/register_reg[25][31]_i_1_n_9 |               |                        |               13 |             32 |         2.46 |
+|  reg0/register_reg[18][31]_i_1_n_9 |               |                        |               13 |             32 |         2.46 |
+|  reg0/register_reg[2][31]_i_1_n_9  |               |                        |               16 |             32 |         2.00 |
+|  reg0/register_reg[20][31]_i_1_n_9 |               |                        |               14 |             32 |         2.29 |
+| ~clk_IBUF_BUFG                     |               | instruction_ID0        |               23 |             72 |         3.13 |
+| ~clk_IBUF_BUFG                     |               |                        |              138 |            434 |         3.14 |
++------------------------------------+---------------+------------------------+------------------+----------------+--------------+
+
+

@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/shiyan/xiangmu/shiyan4pc/shiyan4pc.srcs/sources_1/new/shiyan4pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/shiyan/xiangmu/shiyan4pc/shiyan4pc.srcs/sim_1/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test

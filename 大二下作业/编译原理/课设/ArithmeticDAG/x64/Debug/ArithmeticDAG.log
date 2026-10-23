@@ -1,0 +1,63 @@
+﻿  dag.cpp
+C:\Users\邓傑湧\Desktop\大二下作业\编译原理\课设\dag.cpp(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Users\邓傑湧\Desktop\大二下作业\编译原理\课设\dag.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“dag.cpp”)
+  
+C:\Users\邓傑湧\Desktop\大二下作业\编译原理\课设\dag.cpp(116,30): error C2001: 常量中有换行符
+C:\Users\邓傑湧\Desktop\大二下作业\编译原理\课设\dag.cpp(117,1): error C2143: 语法错误: 缺少“)”(在“}”的前面)
+C:\Users\邓傑湧\Desktop\大二下作业\编译原理\课设\dag.cpp(117,1): error C2143: 语法错误: 缺少“;”(在“}”的前面)
+C:\Users\邓傑湧\Desktop\大二下作业\编译原理\课设\dag.cpp(120,18): error C2001: 常量中有换行符
+C:\Users\邓傑湧\Desktop\大二下作业\编译原理\课设\dag.cpp(121,10): error C2143: 语法错误: 缺少“;”(在“std::cout”的前面)
+C:\Users\邓傑湧\Desktop\大二下作业\编译原理\课设\dag.cpp(121,103): error C2146: 语法错误: 缺少“;”(在标识符“瀛愯妭鐐”的前面)
+C:\Users\邓傑湧\Desktop\大二下作业\编译原理\课设\dag.cpp(121,103): error C2065: “瀛愯妭鐐”: 未声明的标识符
+C:\Users\邓傑湧\Desktop\大二下作业\编译原理\课设\dag.cpp(121,125): error C2563: 在形参表中不匹配
+C:\Users\邓傑湧\Desktop\大二下作业\编译原理\课设\dag.cpp(121,125): error C2568: “<<”: 无法解析函数重载
+  C:\Users\邓傑湧\Desktop\大二下作业\编译原理\课设\dag.cpp(121,125):
+  可能是“std::basic_ostream<_Elem,_Traits> &std::endl(std::basic_ostream<_Elem,_Traits> &)”
+  
+C:\Users\邓傑湧\Desktop\大二下作业\编译原理\课设\dag.cpp(126,73): error C3688: 文本后缀“鎿嶄綔绗”无效；未找到文文本运算符或文本运算符模板“operator """"鎿嶄綔绗”
+C:\Users\邓傑湧\Desktop\大二下作业\编译原理\课设\dag.cpp(126,104): error C2059: 语法错误:“)”
+C:\Users\邓傑湧\Desktop\大二下作业\编译原理\课设\dag.cpp(142,16): error C2001: 常量中有换行符
+C:\Users\邓傑湧\Desktop\大二下作业\编译原理\课设\dag.cpp(143,5): error C2146: 语法错误: 缺少“;”(在标识符“outFile”的前面)
+C:\Users\邓傑湧\Desktop\大二下作业\编译原理\课设\dag.cpp(143,101): error C2146: 语法错误: 缺少“;”(在标识符“瀛愯妭鐐”的前面)
+C:\Users\邓傑湧\Desktop\大二下作业\编译原理\课设\dag.cpp(143,101): error C2065: “瀛愯妭鐐”: 未声明的标识符
+C:\Users\邓傑湧\Desktop\大二下作业\编译原理\课设\dag.cpp(143,123): error C2563: 在形参表中不匹配
+C:\Users\邓傑湧\Desktop\大二下作业\编译原理\课设\dag.cpp(143,123): error C2568: “<<”: 无法解析函数重载
+  C:\Users\邓傑湧\Desktop\大二下作业\编译原理\课设\dag.cpp(143,123):
+  可能是“std::basic_ostream<_Elem,_Traits> &std::endl(std::basic_ostream<_Elem,_Traits> &)”
+  
+C:\Users\邓傑湧\Desktop\大二下作业\编译原理\课设\dag.cpp(148,71): error C3688: 文本后缀“鎿嶄綔绗”无效；未找到文文本运算符或文本运算符模板“operator """"鎿嶄綔绗”
+C:\Users\邓傑湧\Desktop\大二下作业\编译原理\课设\dag.cpp(148,102): error C2059: 语法错误:“)”
+  lexer.cpp
+C:\Users\邓傑湧\Desktop\大二下作业\编译原理\课设\lexer.cpp(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  main.cpp
+C:\Users\邓傑湧\Desktop\大二下作业\编译原理\课设\main.cpp(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Users\邓傑湧\Desktop\大二下作业\编译原理\课设\parser.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“main.cpp”)
+  
+C:\Users\邓傑湧\Desktop\大二下作业\编译原理\课设\dag.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“main.cpp”)
+  
+C:\Users\邓傑湧\Desktop\大二下作业\编译原理\课设\main.cpp(13,12): error C2280: “Parser::Parser(void)”: 尝试引用已删除的函数
+  C:\Users\邓傑湧\Desktop\大二下作业\编译原理\课设\parser.h(40,1):
+  编译器已在此处生成“Parser::Parser”
+  C:\Users\邓傑湧\Desktop\大二下作业\编译原理\课设\parser.h(40,1):
+  “Parser::Parser(void)”: 由于 数据成员“Parser::currentToken”不具备相应的 默认构造函数 或重载解决不明确，因此已隐式删除函数
+  C:\Users\邓傑湧\Desktop\大二下作业\编译原理\课设\parser.h(25,11):
+  参见“Parser::currentToken”的声明
+  
+  parser.cpp
+C:\Users\邓傑湧\Desktop\大二下作业\编译原理\课设\parser.cpp(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Users\邓傑湧\Desktop\大二下作业\编译原理\课设\parser.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“parser.cpp”)
+  
+C:\Users\邓傑湧\Desktop\大二下作业\编译原理\课设\dag.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“parser.cpp”)
+  
+C:\Users\邓傑湧\Desktop\大二下作业\编译原理\课设\parser.cpp(88,19): error C2001: 常量中有换行符
+C:\Users\邓傑湧\Desktop\大二下作业\编译原理\课设\parser.cpp(89,9): error C2143: 语法错误: 缺少“)”(在“}”的前面)
+C:\Users\邓傑湧\Desktop\大二下作业\编译原理\课设\parser.cpp(89,9): error C2143: 语法错误: 缺少“;”(在“}”的前面)
+C:\Users\邓傑湧\Desktop\大二下作业\编译原理\课设\parser.cpp(98,15): error C2001: 常量中有换行符
+C:\Users\邓傑湧\Desktop\大二下作业\编译原理\课设\parser.cpp(99,9): error C2143: 语法错误: 缺少“)”(在“return”的前面)
+C:\Users\邓傑湧\Desktop\大二下作业\编译原理\课设\parser.cpp(99,9): error C2143: 语法错误: 缺少“;”(在“return”的前面)
+  正在生成代码...

@@ -1,0 +1,892 @@
+#-----------------------------------------------------------
+# Vivado v2025.1.1 (64-bit)
+# SW Build 6233196 on Thu Sep 11 21:27:30 MDT 2025
+# IP Build 6232796 on Fri Sep 12 01:46:16 MDT 2025
+# SharedData Build 6233195 on Thu Sep 11 17:56:43 MDT 2025
+# Start of session at: Sun Jan 18 15:43:33 2026
+# Process ID         : 24996
+# Current directory  : D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.runs/synth_1
+# Command line       : vivado.exe -log CPU.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source CPU.tcl
+# Log file           : D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.runs/synth_1/CPU.vds
+# Journal file       : D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.runs/synth_1\vivado.jou
+# Running On         : LAPTOP-C1PMA0TC
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i7-13700HX
+# CPU Frequency      : 2304 MHz
+# CPU Physical cores : 16
+# CPU Logical cores  : 24
+# Host memory        : 14710 MB
+# Swap memory        : 23622 MB
+# Total Virtual      : 38333 MB
+# Available Virtual  : 18087 MB
+#-----------------------------------------------------------
+source CPU.tcl -notrace
+Command: synth_design -top CPU -part xc7a35tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 25076
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1170.211 ; gain = 486.504
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'CPU' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/CPU.v:22]
+INFO: [Synth 8-6157] synthesizing module 'Delay' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/delay.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Delay' (0#1) [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/delay.v:23]
+INFO: [Synth 8-6157] synthesizing module 'InsMem' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/InsMem.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'InsMem' (0#1) [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/InsMem.v:23]
+INFO: [Synth 8-6157] synthesizing module 'CU' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/CU.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'CU' (0#1) [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/CU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Reg' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:21]
+INFO: [Synth 8-226] default block is never used [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:67]
+WARNING: [Synth 8-567] referenced signal 'RegDes' should be on the sensitivity list [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:49]
+WARNING: [Synth 8-567] referenced signal 'rt' should be on the sensitivity list [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:49]
+WARNING: [Synth 8-567] referenced signal 'rd' should be on the sensitivity list [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:49]
+WARNING: [Synth 8-567] referenced signal 'register' should be on the sensitivity list [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:49]
+WARNING: [Synth 8-567] referenced signal 'rs' should be on the sensitivity list [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:49]
+WARNING: [Synth 8-567] referenced signal 'JalSel' should be on the sensitivity list [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:49]
+WARNING: [Synth 8-567] referenced signal 'JalPC' should be on the sensitivity list [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:49]
+WARNING: [Synth 8-567] referenced signal 'RegDataSel' should be on the sensitivity list [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:49]
+WARNING: [Synth 8-567] referenced signal 'DataALU' should be on the sensitivity list [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:49]
+WARNING: [Synth 8-567] referenced signal 'DataMem' should be on the sensitivity list [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:49]
+WARNING: [Synth 8-567] referenced signal 'DataHI' should be on the sensitivity list [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:49]
+WARNING: [Synth 8-567] referenced signal 'DataLO' should be on the sensitivity list [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:49]
+INFO: [Synth 8-6155] done synthesizing module 'Reg' (0#1) [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:21]
+INFO: [Synth 8-6157] synthesizing module 'Extend' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/extend.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Extend' (0#1) [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/extend.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PCAddress' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/PCAddress.v:23]
+WARNING: [Synth 8-567] referenced signal 'mid' should be on the sensitivity list [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/PCAddress.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'PCAddress' (0#1) [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/PCAddress.v:23]
+INFO: [Synth 8-6157] synthesizing module 'BranchPredictor' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'BranchPredictor' (0#1) [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ForwardingUnit' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/ForwardingUnit.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'ForwardingUnit' (0#1) [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/ForwardingUnit.v:24]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/ALU.v:105]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (0#1) [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DataMEM' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:23]
+WARNING: [Synth 8-6090] variable 'DataOut' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:69]
+WARNING: [Synth 8-567] referenced signal 'memory' should be on the sensitivity list [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:54]
+WARNING: [Synth 8-567] referenced signal 'Addr' should be on the sensitivity list [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:54]
+WARNING: [Synth 8-567] referenced signal 'DataIn' should be on the sensitivity list [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'DataMEM' (0#1) [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:23]
+INFO: [Synth 8-226] default block is never used [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/CPU.v:526]
+INFO: [Synth 8-226] default block is never used [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/CPU.v:541]
+INFO: [Synth 8-226] default block is never used [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/CPU.v:565]
+INFO: [Synth 8-6155] done synthesizing module 'CPU' (0#1) [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/CPU.v:22]
+WARNING: [Synth 8-6014] Unused sequential element isJump_EXE_reg_reg was removed.  [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/CPU.v:357]
+WARNING: [Synth 8-6014] Unused sequential element isJumpReg_EXE_reg_reg was removed.  [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/CPU.v:358]
+WARNING: [Synth 8-7129] Port PC_ID[31] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_ID[30] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_ID[29] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_ID[28] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_ID[27] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_ID[26] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_ID[25] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_ID[24] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_ID[23] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_ID[22] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_ID[21] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_ID[20] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_ID[19] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_ID[18] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_ID[17] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_ID[16] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_ID[15] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_ID[14] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_ID[13] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_ID[12] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_ID[11] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_ID[10] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_ID[1] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_ID[0] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_EXE[31] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_EXE[30] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_EXE[29] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_EXE[28] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_EXE[27] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_EXE[26] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_EXE[25] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_EXE[24] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_EXE[23] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_EXE[22] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_EXE[21] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_EXE[20] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_EXE[19] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_EXE[18] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_EXE[17] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_EXE[16] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_EXE[15] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_EXE[14] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_EXE[13] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_EXE[12] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_EXE[11] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_EXE[10] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_EXE[1] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_EXE[0] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC0[27] in module PCAddress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC0[26] in module PCAddress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC0[25] in module PCAddress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC0[24] in module PCAddress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC0[23] in module PCAddress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC0[22] in module PCAddress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC0[21] in module PCAddress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC0[20] in module PCAddress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC0[19] in module PCAddress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC0[18] in module PCAddress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC0[17] in module PCAddress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC0[16] in module PCAddress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC0[15] in module PCAddress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC0[14] in module PCAddress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC0[13] in module PCAddress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC0[12] in module PCAddress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC0[11] in module PCAddress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC0[10] in module PCAddress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC0[9] in module PCAddress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC0[8] in module PCAddress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC0[7] in module PCAddress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC0[6] in module PCAddress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC0[5] in module PCAddress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC0[4] in module PCAddress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC0[3] in module PCAddress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC0[2] in module PCAddress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC0[1] in module PCAddress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC0[0] in module PCAddress is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module CU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst in module CU is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1402.328 ; gain = 718.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1402.328 ; gain = 718.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1402.328 ; gain = 718.621
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.057 . Memory (MB): peak = 1402.328 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc]
+Finished Parsing XDC File [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/CPU_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/CPU_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1464.852 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1464.852 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1464.852 ; gain = 781.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1464.852 ; gain = 781.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1464.852 ; gain = 781.145
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'Read1_reg' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'Read2_reg' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[0]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[1]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[2]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[3]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[4]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[5]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[6]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[7]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[8]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[9]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[10]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[11]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[12]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[13]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[14]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[15]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[16]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[17]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[18]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[19]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[20]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[21]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[22]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[23]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[24]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[25]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[26]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[27]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[28]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[29]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[30]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[31]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'temp_reg' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:52]
+WARNING: [Synth 8-327] inferring latch for variable 'DataOut_reg' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[0]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[1]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[2]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[3]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[4]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[5]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[6]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[7]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[8]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[9]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[10]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[11]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[12]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[13]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[14]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[15]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[16]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[17]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[18]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[19]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[20]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[21]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[22]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[23]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[24]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[25]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[26]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[27]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[28]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[29]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[30]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[31]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[32]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[33]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[34]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[35]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[36]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[37]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[38]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[39]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[40]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[41]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[42]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[43]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[44]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[45]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[46]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[47]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[48]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[49]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[50]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[51]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[52]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[53]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[54]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[55]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[56]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[57]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[58]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[59]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[60]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[61]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[62]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[63]' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:57]
+INFO: [Common 17-14] Message 'Synth 8-327' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1464.852 ; gain = 781.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   64 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 9     
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 3     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 19    
+	                8 Bit    Registers := 4     
+	                5 Bit    Registers := 6     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 15    
++---Muxes : 
+	   4 Input   32 Bit        Muxes := 4     
+	   2 Input   32 Bit        Muxes := 22    
+	 129 Input    8 Bit        Muxes := 4     
+	   4 Input    8 Bit        Muxes := 32    
+	   2 Input    8 Bit        Muxes := 62    
+	   8 Input    8 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 3     
+	   5 Input    2 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 102   
+	   4 Input    1 Bit        Muxes := 272   
+	   5 Input    1 Bit        Muxes := 45    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP HI0, operation Mode is: A*B.
+DSP Report: operator HI0 is absorbed into DSP HI0.
+DSP Report: operator HI0 is absorbed into DSP HI0.
+DSP Report: Generating DSP HI0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator HI0 is absorbed into DSP HI0.
+DSP Report: operator HI0 is absorbed into DSP HI0.
+DSP Report: Generating DSP HI0, operation Mode is: A*B.
+DSP Report: operator HI0 is absorbed into DSP HI0.
+DSP Report: operator HI0 is absorbed into DSP HI0.
+DSP Report: Generating DSP HI0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator HI0 is absorbed into DSP HI0.
+DSP Report: operator HI0 is absorbed into DSP HI0.
+WARNING: [Synth 8-7129] Port PC_ID[31] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_ID[30] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_ID[29] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_ID[28] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_ID[27] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_ID[26] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_ID[25] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_ID[24] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_ID[23] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_ID[22] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_ID[21] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_ID[20] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_ID[19] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_ID[18] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_ID[17] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_ID[16] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_ID[15] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_ID[14] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_ID[13] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_ID[12] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_ID[11] in module BranchPredictor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_ID[10] in module BranchPredictor is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3332] Sequential element (Read1_reg[31]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (Read1_reg[30]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (Read1_reg[29]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (Read1_reg[28]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (Read1_reg[27]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (Read1_reg[26]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (Read1_reg[25]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (Read1_reg[24]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (Read1_reg[23]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (Read1_reg[22]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (Read1_reg[21]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (Read1_reg[20]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (Read1_reg[19]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (Read1_reg[18]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (Read1_reg[17]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (Read1_reg[16]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (Read1_reg[15]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (Read1_reg[14]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (Read1_reg[13]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (Read1_reg[12]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (Read1_reg[11]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (Read1_reg[10]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (Read1_reg[9]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (Read1_reg[8]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (Read1_reg[7]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (Read1_reg[6]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (Read1_reg[5]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (Read1_reg[4]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (Read1_reg[3]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (Read1_reg[2]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (Read1_reg[1]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (Read1_reg[0]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (Read2_reg[31]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (Read2_reg[30]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (Read2_reg[29]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (Read2_reg[28]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (Read2_reg[27]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (Read2_reg[26]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (Read2_reg[25]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (Read2_reg[24]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (Read2_reg[23]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (Read2_reg[22]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (Read2_reg[21]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (Read2_reg[20]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (Read2_reg[19]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (Read2_reg[18]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (Read2_reg[17]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (Read2_reg[16]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (Read2_reg[15]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (Read2_reg[14]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (Read2_reg[13]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (Read2_reg[12]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (Read2_reg[11]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (Read2_reg[10]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (Read2_reg[9]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (Read2_reg[8]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (Read2_reg[7]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (Read2_reg[6]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (Read2_reg[5]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (Read2_reg[4]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (Read2_reg[3]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (Read2_reg[2]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (Read2_reg[1]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (Read2_reg[0]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (temp_reg[4]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (temp_reg[3]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (temp_reg[2]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (temp_reg[1]) is unused and will be removed from module Reg.
+WARNING: [Synth 8-3332] Sequential element (temp_reg[0]) is unused and will be removed from module Reg.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'branch_predictor/bht_reg[0][1]__0/Q' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'branch_predictor/bht_reg[1][1]__0/Q' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'branch_predictor/bht_reg[2][1]__0/Q' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'branch_predictor/bht_reg[3][1]__0/Q' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'branch_predictor/bht_reg[4][1]__0/Q' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'branch_predictor/bht_reg[5][1]__0/Q' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'branch_predictor/bht_reg[6][1]__0/Q' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'branch_predictor/bht_reg[7][1]__0/Q' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'branch_predictor/bht_reg[8][1]__0/Q' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'branch_predictor/bht_reg[9][1]__0/Q' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'branch_predictor/bht_reg[10][1]__0/Q' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'branch_predictor/bht_reg[11][1]__0/Q' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'branch_predictor/bht_reg[12][1]__0/Q' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'branch_predictor/bht_reg[13][1]__0/Q' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'branch_predictor/bht_reg[14][1]__0/Q' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'branch_predictor/bht_reg[15][1]__0/Q' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'branch_predictor/bht_reg[16][1]__0/Q' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'branch_predictor/bht_reg[17][1]__0/Q' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'branch_predictor/bht_reg[18][1]__0/Q' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'branch_predictor/bht_reg[19][1]__0/Q' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'branch_predictor/bht_reg[20][1]__0/Q' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'branch_predictor/bht_reg[21][1]__0/Q' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'branch_predictor/bht_reg[22][1]__0/Q' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'branch_predictor/bht_reg[23][1]__0/Q' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'branch_predictor/bht_reg[24][1]__0/Q' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'branch_predictor/bht_reg[25][1]__0/Q' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'branch_predictor/bht_reg[26][1]__0/Q' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'branch_predictor/bht_reg[27][1]__0/Q' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'branch_predictor/bht_reg[28][1]__0/Q' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'branch_predictor/bht_reg[29][1]__0/Q' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'branch_predictor/bht_reg[30][1]__0/Q' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'branch_predictor/bht_reg[31][1]__0/Q' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'branch_predictor/bht_reg[32][1]__0/Q' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'branch_predictor/bht_reg[33][1]__0/Q' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'branch_predictor/bht_reg[34][1]__0/Q' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'branch_predictor/bht_reg[35][1]__0/Q' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'branch_predictor/bht_reg[36][1]__0/Q' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'branch_predictor/bht_reg[37][1]__0/Q' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'branch_predictor/bht_reg[38][1]__0/Q' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'branch_predictor/bht_reg[39][1]__0/Q' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'branch_predictor/bht_reg[40][1]__0/Q' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'branch_predictor/bht_reg[41][1]__0/Q' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'branch_predictor/bht_reg[42][1]__0/Q' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'branch_predictor/bht_reg[43][1]__0/Q' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'branch_predictor/bht_reg[44][1]__0/Q' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'branch_predictor/bht_reg[45][1]__0/Q' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'branch_predictor/bht_reg[46][1]__0/Q' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'branch_predictor/bht_reg[47][1]__0/Q' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'branch_predictor/bht_reg[48][1]__0/Q' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'branch_predictor/bht_reg[49][1]__0/Q' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+INFO: [Common 17-14] Message 'Synth 8-6859' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.srcs/sources_1/new/BranchPredictor.v:71]
+INFO: [Common 17-14] Message 'Synth 8-6858' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 1479.414 ; gain = 795.707
+---------------------------------------------------------------------------------
+ Sort Area is  HI0_0 : 0 0 : 2701 4861 : Used 1 time 0
+ Sort Area is  HI0_0 : 0 1 : 2160 4861 : Used 1 time 0
+ Sort Area is  HI0_3 : 0 0 : 2158 3958 : Used 1 time 0
+ Sort Area is  HI0_3 : 0 1 : 1800 3958 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|ALU         | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 1530.125 ; gain = 846.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 1537.828 ; gain = 854.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][2]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][2]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][3]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][3]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][4]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][4]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][5]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][5]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][6]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][6]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][7]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][7]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][8]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][8]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][9]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][9]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][10]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][10]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][11]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][11]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][12]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][12]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][13]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][13]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][14]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][14]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][16]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][16]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][17]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][17]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][18]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][18]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][19]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][19]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][20]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][20]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][21]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][21]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][22]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][22]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][23]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][23]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][24]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][24]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][25]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][25]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][26]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][26]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][27]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][27]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][28]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][28]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][29]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][29]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][30]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][30]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][31]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][31]  is always disabled
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 1627.918 ; gain = 944.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 1767.480 ; gain = 1083.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 1767.480 ; gain = 1083.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 1767.480 ; gain = 1083.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 1767.480 ; gain = 1083.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 1767.480 ; gain = 1083.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 1767.480 ; gain = 1083.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+----------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name             | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+----------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|CPU         | RegDataSel_WB_reg[1] | 3      | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|CPU         | JalSel_WB_reg        | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|CPU         | PCPlus4_WB_reg[31]   | 3      | 32    | NO           | NO                 | YES               | 32     | 0       | 
++------------+----------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |    12|
+|2     |CARRY4 |    49|
+|3     |LUT1   |    33|
+|4     |LUT2   |   152|
+|5     |LUT3   |   584|
+|6     |LUT4   |   209|
+|7     |LUT5   |   336|
+|8     |LUT6   |  1871|
+|9     |MUXF7  |   548|
+|10    |MUXF8  |   128|
+|11    |SRL16E |    35|
+|12    |FDRE   |   515|
+|13    |LD     |  1536|
+|14    |LDC    |    32|
+|15    |IBUF   |     2|
+|16    |OBUF   |    79|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 1767.480 ; gain = 1083.773
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 960 critical warnings and 284 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:38 . Memory (MB): peak = 1767.480 ; gain = 1021.250
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 1767.480 ; gain = 1083.773
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1776.660 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2293 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 35 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1780.363 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1568 instances were transformed.
+  LD => LDCE: 1536 instances
+  LDC => LDCE: 32 instances
+
+Synth Design complete | Checksum: 90e97b95
+INFO: [Common 17-83] Releasing license: Synthesis
+46 Infos, 353 Warnings, 200 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:45 . Memory (MB): peak = 1780.363 ; gain = 1285.324
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1780.363 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/pcexperiments/vivado/Sfwarecpu/MultiTCPU/MultiTCPU.runs/synth_1/CPU.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file CPU_utilization_synth.rpt -pb CPU_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Jan 18 15:44:26 2026...

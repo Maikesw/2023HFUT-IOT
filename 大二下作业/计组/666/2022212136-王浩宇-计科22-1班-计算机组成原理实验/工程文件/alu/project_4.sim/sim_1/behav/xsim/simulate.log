@@ -1,0 +1,10 @@
+Time resolution is 1 ps
+in1 + in2 = 0010000100110111
+in1 - in2 = 0010000100110101
+in1 && in2 = 0000000000000001
+in1 || in2 = 0000000000000001
+in1 << in2 = 0100001001101100
+in1 >> in2 = 0001000010011011
+in1 <<< in2 = 0100001001101100
+in1 >>> in2 = 0001000010011011
+$finish called at time : 80 ns : File "D:/wanghy/vivado project/test/project_4/project_4.srcs/sim_1/new/simalu.v" Line 60

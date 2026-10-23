@@ -1,0 +1,224 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\\u9093\u5091\u6E67\\Desktop\\\u5927\u4E8C\u4E0B\u4F5C\u4E1A\\\u8F6F\u4EF6\u9879\u76EE\u5B9E\u8BAD\\NewTywz\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8A84F1E1-D5F6-4502-96AE-2E88DFE97793}|NewTywz\\NewTywz.csproj|c:\\users\\\u9093\u5091\u6E67\\desktop\\\u5927\u4E8C\u4E0B\u4F5C\u4E1A\\\u8F6F\u4EF6\u9879\u76EE\u5B9E\u8BAD\\newtywz\\newtywz\\baseclass\\databasefunc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A84F1E1-D5F6-4502-96AE-2E88DFE97793}|NewTywz\\NewTywz.csproj|solutionrelative:newtywz\\baseclass\\databasefunc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A84F1E1-D5F6-4502-96AE-2E88DFE97793}|NewTywz\\NewTywz.csproj|c:\\users\\\u9093\u5091\u6E67\\desktop\\\u5927\u4E8C\u4E0B\u4F5C\u4E1A\\\u8F6F\u4EF6\u9879\u76EE\u5B9E\u8BAD\\newtywz\\newtywz\\baseclass\\dbobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A84F1E1-D5F6-4502-96AE-2E88DFE97793}|NewTywz\\NewTywz.csproj|solutionrelative:newtywz\\baseclass\\dbobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A84F1E1-D5F6-4502-96AE-2E88DFE97793}|NewTywz\\NewTywz.csproj|c:\\users\\\u9093\u5091\u6E67\\desktop\\\u5927\u4E8C\u4E0B\u4F5C\u4E1A\\\u8F6F\u4EF6\u9879\u76EE\u5B9E\u8BAD\\newtywz\\newtywz\\baseclass\\clstreemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A84F1E1-D5F6-4502-96AE-2E88DFE97793}|NewTywz\\NewTywz.csproj|solutionrelative:newtywz\\baseclass\\clstreemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A84F1E1-D5F6-4502-96AE-2E88DFE97793}|NewTywz\\NewTywz.csproj|c:\\users\\\u9093\u5091\u6E67\\desktop\\\u5927\u4E8C\u4E0B\u4F5C\u4E1A\\\u8F6F\u4EF6\u9879\u76EE\u5B9E\u8BAD\\newtywz\\newtywz\\baseclass\\clssessionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A84F1E1-D5F6-4502-96AE-2E88DFE97793}|NewTywz\\NewTywz.csproj|solutionrelative:newtywz\\baseclass\\clssessionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A84F1E1-D5F6-4502-96AE-2E88DFE97793}|NewTywz\\NewTywz.csproj|c:\\users\\\u9093\u5091\u6E67\\desktop\\\u5927\u4E8C\u4E0B\u4F5C\u4E1A\\\u8F6F\u4EF6\u9879\u76EE\u5B9E\u8BAD\\newtywz\\newtywz\\baseclass\\clsmenumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A84F1E1-D5F6-4502-96AE-2E88DFE97793}|NewTywz\\NewTywz.csproj|solutionrelative:newtywz\\baseclass\\clsmenumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A84F1E1-D5F6-4502-96AE-2E88DFE97793}|NewTywz\\NewTywz.csproj|c:\\users\\\u9093\u5091\u6E67\\desktop\\\u5927\u4E8C\u4E0B\u4F5C\u4E1A\\\u8F6F\u4EF6\u9879\u76EE\u5B9E\u8BAD\\newtywz\\newtywz\\baseclass\\clsuploadfilemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A84F1E1-D5F6-4502-96AE-2E88DFE97793}|NewTywz\\NewTywz.csproj|solutionrelative:newtywz\\baseclass\\clsuploadfilemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A84F1E1-D5F6-4502-96AE-2E88DFE97793}|NewTywz\\NewTywz.csproj|C:\\Users\\\u9093\u5091\u6E67\\Desktop\\\u5927\u4E8C\u4E0B\u4F5C\u4E1A\\\u8F6F\u4EF6\u9879\u76EE\u5B9E\u8BAD\\NewTywz\\newtywz\\baseclass\\clsusermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A84F1E1-D5F6-4502-96AE-2E88DFE97793}|NewTywz\\NewTywz.csproj|solutionrelative:newtywz\\baseclass\\clsusermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A84F1E1-D5F6-4502-96AE-2E88DFE97793}|NewTywz\\NewTywz.csproj|C:\\Users\\\u9093\u5091\u6E67\\Desktop\\\u5927\u4E8C\u4E0B\u4F5C\u4E1A\\\u8F6F\u4EF6\u9879\u76EE\u5B9E\u8BAD\\NewTywz\\newtywz\\baseclass\\constvalue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A84F1E1-D5F6-4502-96AE-2E88DFE97793}|NewTywz\\NewTywz.csproj|solutionrelative:newtywz\\baseclass\\constvalue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A84F1E1-D5F6-4502-96AE-2E88DFE97793}|NewTywz\\NewTywz.csproj|C:\\Users\\\u9093\u5091\u6E67\\Desktop\\\u5927\u4E8C\u4E0B\u4F5C\u4E1A\\\u8F6F\u4EF6\u9879\u76EE\u5B9E\u8BAD\\NewTywz\\newtywz\\admin\\tree.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{8A84F1E1-D5F6-4502-96AE-2E88DFE97793}|NewTywz\\NewTywz.csproj|solutionrelative:newtywz\\admin\\tree.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A84F1E1-D5F6-4502-96AE-2E88DFE97793}|NewTywz\\NewTywz.csproj|C:\\Users\\\u9093\u5091\u6E67\\Desktop\\\u5927\u4E8C\u4E0B\u4F5C\u4E1A\\\u8F6F\u4EF6\u9879\u76EE\u5B9E\u8BAD\\NewTywz\\newtywz\\admin\\tree.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A84F1E1-D5F6-4502-96AE-2E88DFE97793}|NewTywz\\NewTywz.csproj|solutionrelative:newtywz\\admin\\tree.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A84F1E1-D5F6-4502-96AE-2E88DFE97793}|NewTywz\\NewTywz.csproj|C:\\Users\\\u9093\u5091\u6E67\\Desktop\\\u5927\u4E8C\u4E0B\u4F5C\u4E1A\\\u8F6F\u4EF6\u9879\u76EE\u5B9E\u8BAD\\NewTywz\\newtywz\\admin\\tree.master.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A84F1E1-D5F6-4502-96AE-2E88DFE97793}|NewTywz\\NewTywz.csproj|solutionrelative:newtywz\\admin\\tree.master.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A84F1E1-D5F6-4502-96AE-2E88DFE97793}|NewTywz\\NewTywz.csproj|C:\\Users\\\u9093\u5091\u6E67\\Desktop\\\u5927\u4E8C\u4E0B\u4F5C\u4E1A\\\u8F6F\u4EF6\u9879\u76EE\u5B9E\u8BAD\\NewTywz\\newtywz\\admin\\channelmanage\\channelcontent.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{8A84F1E1-D5F6-4502-96AE-2E88DFE97793}|NewTywz\\NewTywz.csproj|solutionrelative:newtywz\\admin\\channelmanage\\channelcontent.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DbObject.cs",
+              "DocumentMoniker": "C:\\Users\\\u9093\u5091\u6E67\\Desktop\\\u5927\u4E8C\u4E0B\u4F5C\u4E1A\\\u8F6F\u4EF6\u9879\u76EE\u5B9E\u8BAD\\NewTywz\\NewTywz\\baseclass\\DbObject.cs",
+              "RelativeDocumentMoniker": "NewTywz\\baseclass\\DbObject.cs",
+              "ToolTip": "C:\\Users\\\u9093\u5091\u6E67\\Desktop\\\u5927\u4E8C\u4E0B\u4F5C\u4E1A\\\u8F6F\u4EF6\u9879\u76EE\u5B9E\u8BAD\\NewTywz\\NewTywz\\baseclass\\DbObject.cs",
+              "RelativeToolTip": "NewTywz\\baseclass\\DbObject.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T08:28:54.388Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "clsTreeManager.cs",
+              "DocumentMoniker": "C:\\Users\\\u9093\u5091\u6E67\\Desktop\\\u5927\u4E8C\u4E0B\u4F5C\u4E1A\\\u8F6F\u4EF6\u9879\u76EE\u5B9E\u8BAD\\NewTywz\\NewTywz\\baseclass\\clsTreeManager.cs",
+              "RelativeDocumentMoniker": "NewTywz\\baseclass\\clsTreeManager.cs",
+              "ToolTip": "C:\\Users\\\u9093\u5091\u6E67\\Desktop\\\u5927\u4E8C\u4E0B\u4F5C\u4E1A\\\u8F6F\u4EF6\u9879\u76EE\u5B9E\u8BAD\\NewTywz\\NewTywz\\baseclass\\clsTreeManager.cs",
+              "RelativeToolTip": "NewTywz\\baseclass\\clsTreeManager.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAkwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T08:28:51.736Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "clsSessionManager.cs",
+              "DocumentMoniker": "C:\\Users\\\u9093\u5091\u6E67\\Desktop\\\u5927\u4E8C\u4E0B\u4F5C\u4E1A\\\u8F6F\u4EF6\u9879\u76EE\u5B9E\u8BAD\\NewTywz\\NewTywz\\baseclass\\clsSessionManager.cs",
+              "RelativeDocumentMoniker": "NewTywz\\baseclass\\clsSessionManager.cs",
+              "ToolTip": "C:\\Users\\\u9093\u5091\u6E67\\Desktop\\\u5927\u4E8C\u4E0B\u4F5C\u4E1A\\\u8F6F\u4EF6\u9879\u76EE\u5B9E\u8BAD\\NewTywz\\NewTywz\\baseclass\\clsSessionManager.cs",
+              "RelativeToolTip": "NewTywz\\baseclass\\clsSessionManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T08:28:49.312Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "clsMenuManager.cs",
+              "DocumentMoniker": "C:\\Users\\\u9093\u5091\u6E67\\Desktop\\\u5927\u4E8C\u4E0B\u4F5C\u4E1A\\\u8F6F\u4EF6\u9879\u76EE\u5B9E\u8BAD\\NewTywz\\NewTywz\\baseclass\\clsMenuManager.cs",
+              "RelativeDocumentMoniker": "NewTywz\\baseclass\\clsMenuManager.cs",
+              "ToolTip": "C:\\Users\\\u9093\u5091\u6E67\\Desktop\\\u5927\u4E8C\u4E0B\u4F5C\u4E1A\\\u8F6F\u4EF6\u9879\u76EE\u5B9E\u8BAD\\NewTywz\\NewTywz\\baseclass\\clsMenuManager.cs",
+              "RelativeToolTip": "NewTywz\\baseclass\\clsMenuManager.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAwwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T08:28:44.389Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "clsUploadFileManager.cs",
+              "DocumentMoniker": "C:\\Users\\\u9093\u5091\u6E67\\Desktop\\\u5927\u4E8C\u4E0B\u4F5C\u4E1A\\\u8F6F\u4EF6\u9879\u76EE\u5B9E\u8BAD\\NewTywz\\NewTywz\\baseclass\\clsUploadFileManager.cs",
+              "RelativeDocumentMoniker": "NewTywz\\baseclass\\clsUploadFileManager.cs",
+              "ToolTip": "C:\\Users\\\u9093\u5091\u6E67\\Desktop\\\u5927\u4E8C\u4E0B\u4F5C\u4E1A\\\u8F6F\u4EF6\u9879\u76EE\u5B9E\u8BAD\\NewTywz\\NewTywz\\baseclass\\clsUploadFileManager.cs",
+              "RelativeToolTip": "NewTywz\\baseclass\\clsUploadFileManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T08:28:25.942Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "clsUserManager.cs",
+              "DocumentMoniker": "C:\\Users\\\u9093\u5091\u6E67\\Desktop\\\u5927\u4E8C\u4E0B\u4F5C\u4E1A\\\u8F6F\u4EF6\u9879\u76EE\u5B9E\u8BAD\\NewTywz\\NewTywz\\baseclass\\clsUserManager.cs",
+              "RelativeDocumentMoniker": "NewTywz\\baseclass\\clsUserManager.cs",
+              "ToolTip": "C:\\Users\\\u9093\u5091\u6E67\\Desktop\\\u5927\u4E8C\u4E0B\u4F5C\u4E1A\\\u8F6F\u4EF6\u9879\u76EE\u5B9E\u8BAD\\NewTywz\\NewTywz\\baseclass\\clsUserManager.cs",
+              "RelativeToolTip": "NewTywz\\baseclass\\clsUserManager.cs",
+              "ViewState": "AQIAAFQAAAAAAAAAAAAAwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T03:45:50.151Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DatabaseFunc.cs",
+              "DocumentMoniker": "C:\\Users\\\u9093\u5091\u6E67\\Desktop\\\u5927\u4E8C\u4E0B\u4F5C\u4E1A\\\u8F6F\u4EF6\u9879\u76EE\u5B9E\u8BAD\\NewTywz\\NewTywz\\baseclass\\DatabaseFunc.cs",
+              "RelativeDocumentMoniker": "NewTywz\\baseclass\\DatabaseFunc.cs",
+              "ToolTip": "C:\\Users\\\u9093\u5091\u6E67\\Desktop\\\u5927\u4E8C\u4E0B\u4F5C\u4E1A\\\u8F6F\u4EF6\u9879\u76EE\u5B9E\u8BAD\\NewTywz\\NewTywz\\baseclass\\DatabaseFunc.cs",
+              "RelativeToolTip": "NewTywz\\baseclass\\DatabaseFunc.cs",
+              "ViewState": "AQIAAF0CAAAAAAAAAAAmwOUCAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T03:45:22.694Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ConstValue.cs",
+              "DocumentMoniker": "C:\\Users\\\u9093\u5091\u6E67\\Desktop\\\u5927\u4E8C\u4E0B\u4F5C\u4E1A\\\u8F6F\u4EF6\u9879\u76EE\u5B9E\u8BAD\\NewTywz\\NewTywz\\baseclass\\ConstValue.cs",
+              "RelativeDocumentMoniker": "NewTywz\\baseclass\\ConstValue.cs",
+              "ToolTip": "C:\\Users\\\u9093\u5091\u6E67\\Desktop\\\u5927\u4E8C\u4E0B\u4F5C\u4E1A\\\u8F6F\u4EF6\u9879\u76EE\u5B9E\u8BAD\\NewTywz\\NewTywz\\baseclass\\ConstValue.cs",
+              "RelativeToolTip": "NewTywz\\baseclass\\ConstValue.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAkwBQAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T03:45:26.793Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Tree.Master",
+              "DocumentMoniker": "C:\\Users\\\u9093\u5091\u6E67\\Desktop\\\u5927\u4E8C\u4E0B\u4F5C\u4E1A\\\u8F6F\u4EF6\u9879\u76EE\u5B9E\u8BAD\\NewTywz\\NewTywz\\admin\\Tree.Master",
+              "RelativeDocumentMoniker": "NewTywz\\admin\\Tree.Master",
+              "ToolTip": "C:\\Users\\\u9093\u5091\u6E67\\Desktop\\\u5927\u4E8C\u4E0B\u4F5C\u4E1A\\\u8F6F\u4EF6\u9879\u76EE\u5B9E\u8BAD\\NewTywz\\NewTywz\\admin\\Tree.Master",
+              "RelativeToolTip": "NewTywz\\admin\\Tree.Master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-03-12T03:32:24.533Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Tree.Master.designer.cs",
+              "DocumentMoniker": "C:\\Users\\\u9093\u5091\u6E67\\Desktop\\\u5927\u4E8C\u4E0B\u4F5C\u4E1A\\\u8F6F\u4EF6\u9879\u76EE\u5B9E\u8BAD\\NewTywz\\NewTywz\\admin\\Tree.Master.designer.cs",
+              "RelativeDocumentMoniker": "NewTywz\\admin\\Tree.Master.designer.cs",
+              "ToolTip": "C:\\Users\\\u9093\u5091\u6E67\\Desktop\\\u5927\u4E8C\u4E0B\u4F5C\u4E1A\\\u8F6F\u4EF6\u9879\u76EE\u5B9E\u8BAD\\NewTywz\\NewTywz\\admin\\Tree.Master.designer.cs",
+              "RelativeToolTip": "NewTywz\\admin\\Tree.Master.designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T03:29:56.288Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Tree.Master.cs",
+              "DocumentMoniker": "C:\\Users\\\u9093\u5091\u6E67\\Desktop\\\u5927\u4E8C\u4E0B\u4F5C\u4E1A\\\u8F6F\u4EF6\u9879\u76EE\u5B9E\u8BAD\\NewTywz\\NewTywz\\admin\\Tree.Master.cs",
+              "RelativeDocumentMoniker": "NewTywz\\admin\\Tree.Master.cs",
+              "ToolTip": "C:\\Users\\\u9093\u5091\u6E67\\Desktop\\\u5927\u4E8C\u4E0B\u4F5C\u4E1A\\\u8F6F\u4EF6\u9879\u76EE\u5B9E\u8BAD\\NewTywz\\NewTywz\\admin\\Tree.Master.cs",
+              "RelativeToolTip": "NewTywz\\admin\\Tree.Master.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABAAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T03:29:51.226Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ChannelContent.aspx",
+              "DocumentMoniker": "C:\\Users\\\u9093\u5091\u6E67\\Desktop\\\u5927\u4E8C\u4E0B\u4F5C\u4E1A\\\u8F6F\u4EF6\u9879\u76EE\u5B9E\u8BAD\\NewTywz\\NewTywz\\admin\\ChannelManage\\ChannelContent.aspx",
+              "RelativeDocumentMoniker": "NewTywz\\admin\\ChannelManage\\ChannelContent.aspx",
+              "ToolTip": "C:\\Users\\\u9093\u5091\u6E67\\Desktop\\\u5927\u4E8C\u4E0B\u4F5C\u4E1A\\\u8F6F\u4EF6\u9879\u76EE\u5B9E\u8BAD\\NewTywz\\NewTywz\\admin\\ChannelManage\\ChannelContent.aspx",
+              "RelativeToolTip": "NewTywz\\admin\\ChannelManage\\ChannelContent.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-03-12T03:29:26.633Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

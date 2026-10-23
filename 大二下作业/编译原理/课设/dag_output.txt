@@ -1,0 +1,10 @@
+DAG Node List:
+   ID      Type     Value  Children
+----------------------------------------
+    0   Operand         2  
+    1   Operand         3  
+    2  Operator         +  0 1 
+    3   Operand         6  
+    4  Operator         +  2 3 
+
+Root node: 4

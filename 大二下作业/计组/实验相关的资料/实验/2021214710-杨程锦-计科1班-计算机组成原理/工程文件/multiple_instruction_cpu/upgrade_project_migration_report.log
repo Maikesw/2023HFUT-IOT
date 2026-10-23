@@ -1,0 +1,24 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Sat Jun 21 17:27:15 2025
+| Host         : HD running 64-bit major release  (build 9200)
+| Command      : upgrade_project -migrate_output_products
+| Project_Path : D:/学长的资料/HFUT-CS-master/HFUT-CS-master/计算机组成原理/实验/2021214710-杨程锦-计科1班-计算机组成原理/工程文件/multiple_instruction_cpu/multiple_instruction_cpu.xpr
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Project Status Summary
+
+1. Project IP Status
+--------------------
+This project contains 0 IP and 0 Block Designs.
+
+
+1.1 Project IP Instances
++--+-------------------------+-------------------------------------+-------------------------------------+
+| Instance | Status                  | Reason                              | Recommendation                      |
+| Name |                         |                                     |                                     |
++--+-------------------------+-------------------------------------+-------------------------------------+
+
+
+

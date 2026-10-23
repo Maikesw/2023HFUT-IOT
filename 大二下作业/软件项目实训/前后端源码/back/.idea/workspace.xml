@@ -1,0 +1,1751 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0e635f3c-b7c0-4ef0-86ff-ea094838d541" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/base$RunApplication.ic" NAME="RunApplication Coverage Results" MODIFIED="1663849837545" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ahaxt/competition/repository/db/SysOssFileDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="720">
+              <caret line="47" column="120" selection-start-line="47" selection-start-column="120" selection-end-line="47" selection-end-column="120" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ahaxt/competition/controller/common/ctrl/CommonController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="134" column="51" lean-forward="true" selection-start-line="134" selection-start-column="51" selection-end-line="134" selection-end-column="51" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ahaxt/competition/controller/user/ctrl/SignController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-32">
+              <caret line="79" column="14" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ahaxt/competition/service/impl/UserServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="351">
+              <caret line="191" column="11" lean-forward="true" selection-start-line="191" selection-start-column="11" selection-end-line="191" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ahaxt/competition/service/impl/CommonServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="317">
+              <caret line="213" selection-start-line="213" selection-end-line="213" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ahaxt/competition/repository/db/BaseUserDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="20" column="62" selection-start-line="20" selection-start-column="62" selection-end-line="20" selection-end-column="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ahaxt/competition/service/IUserService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="34" column="37" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>getke</find>
+      <find>offline</find>
+      <find>url</find>
+      <find>saveUserContest</find>
+      <find>sms</find>
+      <find>SignController</find>
+      <find>hzm</find>
+      <find>EntityManagerFactory</find>
+      <find>sms.yunpian.key</find>
+      <find>YunpianConfig</find>
+      <find>com.ahaxt.device.controller</find>
+      <find>SysOssFileDao</find>
+      <find>ConfigurationProperties(&quot;minio&quot;)</find>
+      <find>ParallelMinioClient</find>
+      <find>public class ObjectItem</find>
+      <find>public class MinIOUtils extends Base</find>
+      <find>minioClient</find>
+      <find>private MinioClient minioClient;</find>
+      <find>com.amazonaws.services.s3.AmazonS3Client</find>
+      <find>AmazonS3</find>
+      <find>new List</find>
+      <find>List&lt;String&gt;</find>
+      <find>MainChannelContentDoc</find>
+      <find>ObjectItem</find>
+      <find>homepage</find>
+      <find>columnContent</find>
+      <find>getFirstImg</find>
+      <find>oss.bucketName</find>
+      <find>getsomere</find>
+      <find>getOneRecordById</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>SPLITOPERATOR_COMMA</replace>
+      <replace>ROLE_TABLE.UNIVERSITY_ADMIN</replace>
+      <replace>SPLIT_OPERATOR.COMMA</replace>
+      <replace>com.ahaxt.competition</replace>
+      <replace>com.ahaxt.competition.controller</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="feature-yzq" />
+      </map>
+    </option>
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="projectSyncType">
+      <map>
+        <entry key="D:/axt" value="PREVIEW" />
+        <entry key="D:/axt/dev" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../懿课堂/代码/new/SpringBootDemo" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../懿课堂/代码/new/SpringBootDemo-master" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../懿课堂/代码/new/axt - 3.26" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../懿课堂/代码/new/axt-dev" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../懿课堂/代码/new/axt-dev-jdbctemplate" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../懿课堂/代码/new/axt-dev-springdata" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../懿课堂/代码/new/vueproj" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/com/ahaxt/competition/utils/WorldUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ahaxt/competition/entity/db/MainRegisterGroup.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ahaxt/competition/service/IContestInfoService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ahaxt/competition/service/impl/ChannelServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ahaxt/competition/service/impl/ContestInfoServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ahaxt/competition/utils/PdfUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ahaxt/competition/service/impl/ImportAndExportImpl.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/ahaxt/competition/Demo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ahaxt/competition/config/ThreadConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ahaxt/competition/config/YunpianConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ahaxt/competition/config/PrimaryConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ahaxt/competition/utils/YunpianUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ahaxt/competition/service/IImportAndExportService.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/banner.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ahaxt/competition/controller/minio/constant/MinioConstant.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ahaxt/competition/controller/minio/enums/ResultEnum.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ahaxt/competition/controller/minio/model/dto/ObjectInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ahaxt/competition/controller/minio/model/dto/Result.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ahaxt/competition/config/MinIOConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ahaxt/competition/utils/ReflectUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ahaxt/competition/config/OssConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ahaxt/competition/config/ParallelMinioClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ahaxt/competition/entity/minio/PartInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ahaxt/competition/entity/minio/Task.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ahaxt/competition/base/Base.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ahaxt/competition/config/MinioProperties.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ahaxt/competition/controller/minio/configuration/AmazonS3Config.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ahaxt/competition/controller/minio/MinioUploadTaskController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ahaxt/competition/controller/minio/SysUploadTaskService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ahaxt/competition/controller/minio/model/dto/TaskInfoDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ahaxt/competition/controller/minio/model/dto/TaskRecordDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ahaxt/competition/utils/OssUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ahaxt/competition/utils/MinIOUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ahaxt/competition/entity/db/SysOssFile.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ahaxt/competition/controller/minio/SysUploadTaskServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ahaxt/competition/controller/common/ctrl/CommonController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ahaxt/competition/entity/minio/ObjectItem.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ahaxt/competition/entity/db/MainChannelContent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ahaxt/competition/repository/db/MainChannelContentDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ahaxt/competition/utils/Base64Util.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ahaxt/competition/repository/db/SysOssFileDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ahaxt/competition/service/impl/WebsiteServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application-prod.yaml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ahaxt/competition/base/Constant.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application-dev.yaml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ahaxt/competition/service/IUserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ahaxt/competition/controller/user/ctrl/SignController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ahaxt/competition/repository/db/BaseUserDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ahaxt/competition/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ahaxt/competition/service/impl/CommonServiceImpl.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="customMavenHome" value="D:\software\maven\apache-maven-3.9.9" />
+        <option name="localRepository" value="D:\software\maven\maven-repository" />
+        <option name="mavenHomeTypeForPersistence" value="CUSTOM" />
+        <option name="userSettingsFile" value="D:\software\maven\apache-maven-3.9.9\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="73" />
+    <option name="width" value="1368" />
+    <option name="height" value="1047" />
+  </component>
+  <component name="ProjectId" id="2u4TavMEwn5jvFPe2aACumJG2EK" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="back" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="back" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="back" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="back" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="back" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="competition" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="back" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="competition" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="back" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="competition" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="back" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="competition" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="ctrl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="back" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="competition" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="back" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="competition" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="back" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="competition" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="back" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="competition" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="back" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="competition" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="back" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="competition" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="back" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="competition" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="back" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="back" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/邓傑湧/Desktop/大二下作业/软件项目实训/前后端源码/back",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "应用程序.RunApplication.executor": "Run"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ahaxt.competition.utils" />
+      <recent name="com.ahaxt.competition.repository.db" />
+      <recent name="com.ahaxt.competition.entity.db" />
+      <recent name="com.ahaxt.base.repository.db" />
+      <recent name="com.ahaxt.base.entity.db" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\教学相关\教学课件\上课常用\网站设计开发\大实例\cms\back\src\test\java" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="RunApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="competition" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ahaxt.competition.RunApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0e635f3c-b7c0-4ef0-86ff-ea094838d541" name="Default Changelist" comment="" />
+      <created>1636596528066</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1636596528066</updated>
+      <workItem from="1636596541384" duration="776000" />
+      <workItem from="1636724686870" duration="314000" />
+      <workItem from="1636791535504" duration="598000" />
+      <workItem from="1638066854849" duration="692000" />
+      <workItem from="1638149604488" duration="84000" />
+      <workItem from="1638786682300" duration="2400000" />
+      <workItem from="1639038975087" duration="14000" />
+      <workItem from="1645360140751" duration="607000" />
+      <workItem from="1645408140791" duration="4657000" />
+      <workItem from="1645425684321" duration="6684000" />
+      <workItem from="1645491413340" duration="843000" />
+      <workItem from="1645534437713" duration="476000" />
+      <workItem from="1645579681839" duration="1774000" />
+      <workItem from="1645704839702" duration="5907000" />
+      <workItem from="1645715689780" duration="74000" />
+      <workItem from="1645755146347" duration="532000" />
+      <workItem from="1645773250781" duration="57000" />
+      <workItem from="1645780858251" duration="826000" />
+      <workItem from="1645966063438" duration="22000" />
+      <workItem from="1646009822968" duration="175000" />
+      <workItem from="1646011828704" duration="642000" />
+      <workItem from="1646032322044" duration="959000" />
+      <workItem from="1646052836681" duration="171000" />
+      <workItem from="1646209094492" duration="213000" />
+      <workItem from="1646209473084" duration="1656000" />
+      <workItem from="1646287131232" duration="123000" />
+      <workItem from="1646306888106" duration="2920000" />
+      <workItem from="1646744725228" duration="2726000" />
+      <workItem from="1646960002761" duration="296000" />
+      <workItem from="1649210304261" duration="391000" />
+      <workItem from="1649231373482" duration="709000" />
+      <workItem from="1649765802007" duration="29000" />
+      <workItem from="1649767899853" duration="70000" />
+      <workItem from="1655859534197" duration="290000" />
+      <workItem from="1655952979848" duration="135000" />
+      <workItem from="1655985315615" duration="171000" />
+      <workItem from="1656828420473" duration="5360000" />
+      <workItem from="1656899833925" duration="1322000" />
+      <workItem from="1656986323071" duration="687000" />
+      <workItem from="1657003748719" duration="670000" />
+      <workItem from="1657006485457" duration="223000" />
+      <workItem from="1657026998529" duration="380000" />
+      <workItem from="1657027792381" duration="2427000" />
+      <workItem from="1657067009202" duration="265000" />
+      <workItem from="1657068523011" duration="680000" />
+      <workItem from="1657073098539" duration="1746000" />
+      <workItem from="1657110724193" duration="641000" />
+      <workItem from="1657154367636" duration="912000" />
+      <workItem from="1657160009677" duration="1492000" />
+      <workItem from="1657182111209" duration="3638000" />
+      <workItem from="1657239685526" duration="518000" />
+      <workItem from="1657241089800" duration="608000" />
+      <workItem from="1657260345723" duration="4806000" />
+      <workItem from="1657416451079" duration="11197000" />
+      <workItem from="1657504639796" duration="641000" />
+      <workItem from="1657539378004" duration="43000" />
+      <workItem from="1657546009927" duration="1272000" />
+      <workItem from="1657587130409" duration="3366000" />
+      <workItem from="1657604920406" duration="28000" />
+      <workItem from="1657605215260" duration="20649000" />
+      <workItem from="1657671464253" duration="6155000" />
+      <workItem from="1657679577509" duration="621000" />
+      <workItem from="1657715846407" duration="4943000" />
+      <workItem from="1657759457351" duration="541000" />
+      <workItem from="1657777700573" duration="6707000" />
+      <workItem from="1657846716114" duration="8308000" />
+      <workItem from="1657892712536" duration="1558000" />
+      <workItem from="1657973133552" duration="840000" />
+      <workItem from="1658014861893" duration="26277000" />
+      <workItem from="1658132784412" duration="2871000" />
+      <workItem from="1658192792559" duration="521000" />
+      <workItem from="1658196286049" duration="591000" />
+      <workItem from="1658231116313" duration="2892000" />
+      <workItem from="1658282391996" duration="592000" />
+      <workItem from="1658298315542" duration="5137000" />
+      <workItem from="1658365539331" duration="2984000" />
+      <workItem from="1658384473553" duration="6238000" />
+      <workItem from="1658448334301" duration="2563000" />
+      <workItem from="1658472587853" duration="98000" />
+      <workItem from="1658479270995" duration="1502000" />
+      <workItem from="1658536070322" duration="4460000" />
+      <workItem from="1658560443317" duration="3474000" />
+      <workItem from="1658619929369" duration="4783000" />
+      <workItem from="1658645196899" duration="4647000" />
+      <workItem from="1658659745003" duration="3369000" />
+      <workItem from="1658698747379" duration="9824000" />
+      <workItem from="1658737842082" duration="6082000" />
+      <workItem from="1658795325302" duration="2833000" />
+      <workItem from="1658818432400" duration="223000" />
+      <workItem from="1658823163433" duration="577000" />
+      <workItem from="1658841719730" duration="2154000" />
+      <workItem from="1658881800844" duration="548000" />
+      <workItem from="1658902521721" duration="7474000" />
+      <workItem from="1658968101843" duration="4839000" />
+      <workItem from="1658991065701" duration="8276000" />
+      <workItem from="1659058209910" duration="4357000" />
+      <workItem from="1659096108304" duration="573000" />
+      <workItem from="1659143338780" duration="631000" />
+      <workItem from="1659309101178" duration="16543000" />
+      <workItem from="1659400169987" duration="4968000" />
+      <workItem from="1659420957757" duration="10906000" />
+      <workItem from="1659486882034" duration="4438000" />
+      <workItem from="1659507184103" duration="12241000" />
+      <workItem from="1659586302167" duration="9201000" />
+      <workItem from="1659655967692" duration="4716000" />
+      <workItem from="1659667156076" duration="8126000" />
+      <workItem from="1659696374805" duration="3890000" />
+      <workItem from="1659703871687" duration="861000" />
+      <workItem from="1659704827305" duration="470000" />
+      <workItem from="1659755561050" duration="1904000" />
+      <workItem from="1659831661164" duration="12287000" />
+      <workItem from="1659918705855" duration="2282000" />
+      <workItem from="1659944630112" duration="1528000" />
+      <workItem from="1660007106435" duration="3602000" />
+      <workItem from="1660030018333" duration="653000" />
+      <workItem from="1660038284312" duration="1343000" />
+      <workItem from="1660121944451" duration="4101000" />
+      <workItem from="1660176650117" duration="8049000" />
+      <workItem from="1660200179521" duration="6371000" />
+      <workItem from="1660218094341" duration="11846000" />
+      <workItem from="1660233839008" duration="2133000" />
+      <workItem from="1660266617719" duration="6707000" />
+      <workItem from="1660284736071" duration="5474000" />
+      <workItem from="1660349399337" duration="1055000" />
+      <workItem from="1660358648243" duration="4846000" />
+      <workItem from="1660432620900" duration="13123000" />
+      <workItem from="1660524976559" duration="6625000" />
+      <workItem from="1660612293819" duration="2494000" />
+      <workItem from="1660629505966" duration="8153000" />
+      <workItem from="1660709382497" duration="4541000" />
+      <workItem from="1660781099909" duration="3712000" />
+      <workItem from="1660803407067" duration="1644000" />
+      <workItem from="1660812088227" duration="4555000" />
+      <workItem from="1660869624500" duration="1159000" />
+      <workItem from="1660894959738" duration="5998000" />
+      <workItem from="1660946264313" duration="2379000" />
+      <workItem from="1660977057461" duration="6526000" />
+      <workItem from="1661064368175" duration="2642000" />
+      <workItem from="1661130625918" duration="4065000" />
+      <workItem from="1661149425717" duration="16013000" />
+      <workItem from="1661215921014" duration="2031000" />
+      <workItem from="1661261509528" duration="1726000" />
+      <workItem from="1661320643704" duration="7263000" />
+      <workItem from="1661339020936" duration="2583000" />
+      <workItem from="1661343334272" duration="1259000" />
+      <workItem from="1661397102651" duration="3386000" />
+      <workItem from="1661498918130" duration="1221000" />
+      <workItem from="1661589364414" duration="10236000" />
+      <workItem from="1661646096502" duration="6017000" />
+      <workItem from="1661754367597" duration="4502000" />
+      <workItem from="1661767663831" duration="3918000" />
+      <workItem from="1661839847206" duration="2465000" />
+      <workItem from="1661853141531" duration="4866000" />
+      <workItem from="1661907277010" duration="3314000" />
+      <workItem from="1661949228622" duration="1679000" />
+      <workItem from="1661993460247" duration="1210000" />
+      <workItem from="1662014729429" duration="498000" />
+      <workItem from="1662030649433" duration="4518000" />
+      <workItem from="1662079932715" duration="865000" />
+      <workItem from="1662098012804" duration="5108000" />
+      <workItem from="1662163136795" duration="2006000" />
+      <workItem from="1662248862163" duration="2707000" />
+      <workItem from="1662336963262" duration="14312000" />
+      <workItem from="1662425865616" duration="2652000" />
+      <workItem from="1662606359037" duration="1154000" />
+      <workItem from="1662718272787" duration="1823000" />
+      <workItem from="1662766910792" duration="18305000" />
+      <workItem from="1662984805499" duration="826000" />
+      <workItem from="1662986797283" duration="4274000" />
+      <workItem from="1663032711075" duration="200000" />
+      <workItem from="1663038481222" duration="6668000" />
+      <workItem from="1663054986037" duration="348000" />
+      <workItem from="1663055470546" duration="12547000" />
+      <workItem from="1663122727945" duration="710000" />
+      <workItem from="1663138159232" duration="2670000" />
+      <workItem from="1663148087357" duration="6889000" />
+      <workItem from="1663231889256" duration="13793000" />
+      <workItem from="1663310181106" duration="9561000" />
+      <workItem from="1663341568023" duration="2389000" />
+      <workItem from="1663377036047" duration="23824000" />
+      <workItem from="1663417501540" duration="5442000" />
+      <workItem from="1663426692160" duration="2588000" />
+      <workItem from="1663469682346" duration="12109000" />
+      <workItem from="1663560785010" duration="1137000" />
+      <workItem from="1663566346998" duration="5732000" />
+      <workItem from="1663634983381" duration="1814000" />
+      <workItem from="1663672240015" duration="14060000" />
+      <workItem from="1663720941019" duration="1163000" />
+      <workItem from="1663751099454" duration="5974000" />
+      <workItem from="1663807531061" duration="1210000" />
+      <workItem from="1663817385083" duration="2149000" />
+      <workItem from="1663837097333" duration="2070000" />
+      <workItem from="1663893807417" duration="7825000" />
+      <workItem from="1663923432277" duration="3194000" />
+      <workItem from="1664069481356" duration="6853000" />
+      <workItem from="1664151327054" duration="4108000" />
+      <workItem from="1664190335841" duration="7899000" />
+      <workItem from="1664239385660" duration="5444000" />
+      <workItem from="1664279897403" duration="5460000" />
+      <workItem from="1664287190904" duration="1488000" />
+      <workItem from="1664291095679" duration="1689000" />
+      <workItem from="1664325958258" duration="6524000" />
+      <workItem from="1664344676003" duration="6552000" />
+      <workItem from="1664412366130" duration="4034000" />
+      <workItem from="1664449873656" duration="2405000" />
+      <workItem from="1664499200445" duration="1133000" />
+      <workItem from="1664522010364" duration="12631000" />
+      <workItem from="1664691733251" duration="12514000" />
+      <workItem from="1664752736172" duration="8403000" />
+      <workItem from="1665015079510" duration="1873000" />
+      <workItem from="1665105426994" duration="6001000" />
+      <workItem from="1665276776874" duration="4639000" />
+      <workItem from="1665296955277" duration="5070000" />
+      <workItem from="1665309334215" duration="705000" />
+      <workItem from="1665401458826" duration="3126000" />
+      <workItem from="1665449902650" duration="1864000" />
+      <workItem from="1665455028458" duration="544000" />
+      <workItem from="1665474337103" duration="1511000" />
+      <workItem from="1665554256318" duration="1604000" />
+      <workItem from="1665665542553" duration="819000" />
+      <workItem from="1665713187883" duration="1880000" />
+      <workItem from="1665726966136" duration="5338000" />
+      <workItem from="1665756350246" duration="541000" />
+      <workItem from="1665813946046" duration="9796000" />
+      <workItem from="1665967277438" duration="3364000" />
+      <workItem from="1665987909793" duration="4162000" />
+      <workItem from="1666058765666" duration="1722000" />
+      <workItem from="1666072156288" duration="898000" />
+      <workItem from="1666091846532" duration="1549000" />
+      <workItem from="1666168163656" duration="91000" />
+      <workItem from="1666179443969" duration="1936000" />
+      <workItem from="1666268435818" duration="3764000" />
+      <workItem from="1666399610983" duration="221000" />
+      <workItem from="1666405327431" duration="2681000" />
+      <workItem from="1666524966502" duration="947000" />
+      <workItem from="1666656598084" duration="554000" />
+      <workItem from="1666694828929" duration="1695000" />
+      <workItem from="1666871226517" duration="2923000" />
+      <workItem from="1666918312776" duration="2633000" />
+      <workItem from="1667043796400" duration="667000" />
+      <workItem from="1667282256277" duration="4547000" />
+      <workItem from="1667293738283" duration="6107000" />
+      <workItem from="1667349788858" duration="660000" />
+      <workItem from="1667370772059" duration="389000" />
+      <workItem from="1667553604019" duration="655000" />
+      <workItem from="1667908812672" duration="26000" />
+      <workItem from="1668428566883" duration="1843000" />
+      <workItem from="1669077776850" duration="2602000" />
+      <workItem from="1669292223165" duration="2947000" />
+      <workItem from="1669554322461" duration="1904000" />
+      <workItem from="1670110543936" duration="1301000" />
+      <workItem from="1670118006399" duration="1840000" />
+      <workItem from="1670144888256" duration="4108000" />
+      <workItem from="1670205057319" duration="220000" />
+      <workItem from="1670211141205" duration="5682000" />
+      <workItem from="1670547038556" duration="100000" />
+      <workItem from="1678497838687" duration="1461000" />
+      <workItem from="1679211315671" duration="811000" />
+      <workItem from="1679277774392" duration="25000" />
+      <workItem from="1679385128054" duration="2042000" />
+      <workItem from="1679920834073" duration="97000" />
+      <workItem from="1680332837736" duration="637000" />
+      <workItem from="1681778777962" duration="896000" />
+      <workItem from="1682151023957" duration="1094000" />
+      <workItem from="1682252098349" duration="750000" />
+      <workItem from="1682300062952" duration="33000" />
+      <workItem from="1682302011566" duration="437000" />
+      <workItem from="1682302503379" duration="3323000" />
+      <workItem from="1682315677483" duration="864000" />
+      <workItem from="1682382983211" duration="2681000" />
+      <workItem from="1682390837526" duration="1205000" />
+      <workItem from="1682401737375" duration="5863000" />
+      <workItem from="1682421503708" duration="1298000" />
+      <workItem from="1682470125684" duration="1337000" />
+      <workItem from="1682484517530" duration="901000" />
+      <workItem from="1682490839034" duration="687000" />
+      <workItem from="1682503922493" duration="25000" />
+      <workItem from="1682564665494" duration="664000" />
+      <workItem from="1682578417309" duration="51000" />
+      <workItem from="1682596351255" duration="8062000" />
+      <workItem from="1682642398694" duration="44000" />
+      <workItem from="1682653855280" duration="2470000" />
+      <workItem from="1683102407395" duration="790000" />
+      <workItem from="1683189329450" duration="733000" />
+      <workItem from="1683274248751" duration="1178000" />
+      <workItem from="1683279924369" duration="433000" />
+      <workItem from="1683704603348" duration="427000" />
+      <workItem from="1683945254883" duration="1444000" />
+      <workItem from="1684045676964" duration="1123000" />
+      <workItem from="1684063506885" duration="2743000" />
+      <workItem from="1684143302819" duration="46000" />
+      <workItem from="1692488811550" duration="2327000" />
+      <workItem from="1696382451668" duration="4984000" />
+      <workItem from="1696757129483" duration="2479000" />
+      <workItem from="1697091179806" duration="3233000" />
+      <workItem from="1699263071095" duration="49000" />
+      <workItem from="1700795949621" duration="276000" />
+      <workItem from="1700811618615" duration="1121000" />
+      <workItem from="1700813522360" duration="3964000" />
+      <workItem from="1700817922581" duration="3723000" />
+      <workItem from="1701069990245" duration="196000" />
+      <workItem from="1701152333007" duration="4658000" />
+      <workItem from="1701168475625" duration="4469000" />
+      <workItem from="1701177236807" duration="1210000" />
+      <workItem from="1701217055792" duration="2496000" />
+      <workItem from="1701306049548" duration="268000" />
+      <workItem from="1701332557049" duration="2982000" />
+      <workItem from="1701389720716" duration="2108000" />
+      <workItem from="1701414544247" duration="3451000" />
+      <workItem from="1701418328329" duration="3333000" />
+      <workItem from="1701425594199" duration="238000" />
+      <workItem from="1701587421426" duration="4507000" />
+      <workItem from="1701684623477" duration="2828000" />
+      <workItem from="1701743920345" duration="1224000" />
+      <workItem from="1701755399122" duration="2536000" />
+      <workItem from="1701821560910" duration="8000" />
+      <workItem from="1701821583850" duration="4059000" />
+      <workItem from="1701838254180" duration="588000" />
+      <workItem from="1701848715083" duration="2930000" />
+      <workItem from="1701867286886" duration="1202000" />
+      <workItem from="1701909477441" duration="1845000" />
+      <workItem from="1701928759187" duration="787000" />
+      <workItem from="1701995501245" duration="6789000" />
+      <workItem from="1702014751002" duration="5018000" />
+      <workItem from="1702081232668" duration="6552000" />
+      <workItem from="1702103730210" duration="485000" />
+      <workItem from="1702256164175" duration="660000" />
+      <workItem from="1702280022887" duration="675000" />
+      <workItem from="1702294539576" duration="4597000" />
+      <workItem from="1702340710980" duration="5348000" />
+    </task>
+    <task id="LOCAL-00044" summary="老系统单位和人员数据导入完成">
+      <created>1660273128838</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1660273128838</updated>
+    </task>
+    <task id="LOCAL-00045" summary="tt">
+      <created>1660545338034</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1660545338034</updated>
+    </task>
+    <task id="LOCAL-00046" summary="用户配置保存用户竞赛类型信息完成，没有测试">
+      <created>1661137453040</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1661137453041</updated>
+    </task>
+    <task id="LOCAL-00047" summary="专家分配功能实现中">
+      <created>1661177790464</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1661177790464</updated>
+    </task>
+    <task id="LOCAL-00048" summary="tt">
+      <created>1661323158233</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1661323158233</updated>
+    </task>
+    <task id="LOCAL-00049" summary="tt">
+      <created>1661329700029</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1661329700029</updated>
+    </task>
+    <task id="LOCAL-00050" summary="tt">
+      <created>1661604495907</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1661604495909</updated>
+    </task>
+    <task id="LOCAL-00051" summary="tt">
+      <created>1661755712640</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1661755712641</updated>
+    </task>
+    <task id="LOCAL-00052" summary="tt">
+      <created>1661781314536</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1661781314537</updated>
+    </task>
+    <task id="LOCAL-00053" summary="tt">
+      <created>1662381726641</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1662381726642</updated>
+    </task>
+    <task id="LOCAL-00054" summary="前面的bug基本修改完毕">
+      <created>1662818671279</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1662818671280</updated>
+    </task>
+    <task id="LOCAL-00055" summary="tt">
+      <created>1662939733276</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1662939733276</updated>
+    </task>
+    <task id="LOCAL-00056" summary="网评专家分配 网上评审 网评结果发布基本完成">
+      <created>1663079959383</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1663079959385</updated>
+    </task>
+    <task id="LOCAL-00057" summary="导出修改完毕">
+      <created>1663159733285</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1663159733285</updated>
+    </task>
+    <task id="LOCAL-00058" summary="安全修整">
+      <created>1663261453065</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1663261453066</updated>
+    </task>
+    <task id="LOCAL-00059" summary="tt">
+      <created>1663320481053</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1663320481054</updated>
+    </task>
+    <task id="LOCAL-00060" summary="tt">
+      <created>1663320570777</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1663320570778</updated>
+    </task>
+    <task id="LOCAL-00061" summary="tt">
+      <created>1663327247827</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1663327247827</updated>
+    </task>
+    <task id="LOCAL-00062" summary="tt">
+      <created>1663345369372</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1663345369373</updated>
+    </task>
+    <task id="LOCAL-00063" summary="tt">
+      <created>1663379627799</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1663379627800</updated>
+    </task>
+    <task id="LOCAL-00064" summary="tt">
+      <created>1663382481960</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1663382481960</updated>
+    </task>
+    <task id="LOCAL-00065" summary="tt">
+      <created>1663390323907</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1663390323907</updated>
+    </task>
+    <task id="LOCAL-00066" summary="tt">
+      <created>1663402975006</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1663402975006</updated>
+    </task>
+    <task id="LOCAL-00067" summary="tt">
+      <created>1663412889890</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1663412889890</updated>
+    </task>
+    <task id="LOCAL-00068" summary="tt">
+      <created>1663420504450</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1663420504455</updated>
+    </task>
+    <task id="LOCAL-00069" summary="tt">
+      <created>1663424064182</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1663424064183</updated>
+    </task>
+    <task id="LOCAL-00070" summary="tt">
+      <created>1663429309347</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1663429309348</updated>
+    </task>
+    <task id="LOCAL-00071" summary="tt">
+      <created>1663429650526</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1663429650527</updated>
+    </task>
+    <task id="LOCAL-00072" summary="tt">
+      <created>1663512678191</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1663512678193</updated>
+    </task>
+    <task id="LOCAL-00073" summary="tt">
+      <created>1663589048525</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1663589048528</updated>
+    </task>
+    <task id="LOCAL-00074" summary="导出bug修改，导入成绩功能实现">
+      <created>1663761297139</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1663761297144</updated>
+    </task>
+    <task id="LOCAL-00075" summary="tt">
+      <created>1663821123727</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1663821123729</updated>
+    </task>
+    <task id="LOCAL-00076" summary="tt">
+      <created>1663977870686</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1663977870687</updated>
+    </task>
+    <task id="LOCAL-00077" summary="tt">
+      <created>1664118902810</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1664118902812</updated>
+    </task>
+    <task id="LOCAL-00078" summary="修正专家分配，专家评审，初赛推荐等当中的部分bug。">
+      <created>1664331476648</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1664331476650</updated>
+    </task>
+    <task id="LOCAL-00079" summary="校级管理员下载/上传报名表完成">
+      <created>1664366120608</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1664366120610</updated>
+    </task>
+    <task id="LOCAL-00080" summary="现场分组实现中">
+      <created>1664632634532</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1664632634533</updated>
+    </task>
+    <task id="LOCAL-00081" summary="现场分组实现中">
+      <created>1664720503064</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1664720503066</updated>
+    </task>
+    <task id="LOCAL-00082" summary="现场分组实现完成">
+      <created>1664765153758</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1664765153759</updated>
+    </task>
+    <task id="LOCAL-00083" summary="tt">
+      <created>1665114191731</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1665114191732</updated>
+    </task>
+    <task id="LOCAL-00084" summary="下载友好">
+      <created>1665282235061</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1665282235062</updated>
+    </task>
+    <task id="LOCAL-00085" summary="tt">
+      <created>1665450068075</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1665450068079</updated>
+    </task>
+    <task id="LOCAL-00086" summary="tt">
+      <created>1665750042777</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1665750042779</updated>
+    </task>
+    <task id="LOCAL-00087" summary="tt">
+      <created>1665821692110</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1665821692111</updated>
+    </task>
+    <task id="LOCAL-00088" summary="tt">
+      <created>1666073873251</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1666073873252</updated>
+    </task>
+    <task id="LOCAL-00089" summary="tt">
+      <created>1666272917242</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1666272917243</updated>
+    </task>
+    <task id="LOCAL-00090" summary="tt">
+      <created>1668428835273</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1668428835274</updated>
+    </task>
+    <task id="LOCAL-00091" summary="tt">
+      <created>1670225416503</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1670225416504</updated>
+    </task>
+    <task id="LOCAL-00092" summary="修改了导出bug">
+      <created>1696759627493</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1696759627494</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1094471000" />
+  </component>
+  <component name="TodoView" selected-index="3">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23776595" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.22437972" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2451193" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49946696" weight="0.38069415" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4989339" weight="0.32901832" />
+      <window_info anchor="bottom" id="Spring" order="7" sideWeight="0.49946696" weight="0.32901832" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49946696" weight="0.32901832" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5010661" side_tool="true" weight="0.329718" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49946696" weight="0.30960086" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32901832" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" weight="0.16828479" />
+      <window_info active="true" anchor="bottom" id="Run Dashboard" order="14" visible="true" weight="0.22437972" />
+      <window_info anchor="bottom" id="Statistic" order="15" weight="0.32936078" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Database" order="5" weight="0.32995737" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info anchor="right" id="Bean Validation" order="8" weight="0.32995737" />
+      <window_info anchor="right" x="92" y="92" width="1736" height="856" id="DSM" order="9" type="FLOATING" />
+      <window_info anchor="right" id="Coverage" order="10" side_tool="true" weight="0.123667374" />
+      <window_info anchor="right" id="Maven Projects" order="11" visible="true" weight="0.089361705" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2739872" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4067245" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.40700808" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.27762803" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.2462039" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="竞赛创建实现中" />
+    <MESSAGE value="调整数据库流程信息中的属性字段" />
+    <MESSAGE value="校赛报名快写完了" />
+    <MESSAGE value="校赛报名基本完成" />
+    <MESSAGE value="校赛报名全部完成" />
+    <MESSAGE value="校赛报名审核完成" />
+    <MESSAGE value="校赛结果录入完成" />
+    <MESSAGE value="校赛推荐完成" />
+    <MESSAGE value="作品上传框架" />
+    <MESSAGE value="重新揉了遍校级管理员申请审核" />
+    <MESSAGE value="老系统单位和人员数据导入完成" />
+    <MESSAGE value="用户配置保存用户竞赛类型信息完成，没有测试" />
+    <MESSAGE value="专家分配功能实现中" />
+    <MESSAGE value="前面的bug基本修改完毕" />
+    <MESSAGE value="网评专家分配 网上评审 网评结果发布基本完成" />
+    <MESSAGE value="导出修改完毕" />
+    <MESSAGE value="安全修整" />
+    <MESSAGE value="导出bug修改，导入成绩功能实现" />
+    <MESSAGE value="修正专家分配，专家评审，初赛推荐等当中的部分bug。" />
+    <MESSAGE value="校级管理员下载/上传报名表完成" />
+    <MESSAGE value="现场分组实现中" />
+    <MESSAGE value="现场分组实现完成" />
+    <MESSAGE value="下载友好" />
+    <MESSAGE value="tt" />
+    <MESSAGE value="修改了导出bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改了导出bug" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ahaxt/competition/service/impl/CommonServiceImpl.java</url>
+          <line>240</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ahaxt/competition/service/impl/CommonServiceImpl.java</url>
+          <line>313</line>
+          <option name="timeStamp" value="101" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ahaxt/competition/service/impl/WebsiteServiceImpl.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="133" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="iCommonService.getOneRecordById(&quot;BaseUser&quot;,Integer.parseInt(userId))" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="breakpointCondition">
+      <expression>
+        <expression-string>i==605</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>i==600</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>i==700</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>i==500</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>i==400</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>i==300</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>i==200</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>i==100</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>i==55</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>i==54</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+    <expressions id="watch">
+      <expression>
+        <expression-string>Arrays.asList(headerColNames.toArray())</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>groups.get(i)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>groups.get(25)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>groups.get(255)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>groups.get(50)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>requestJson.getInteger(&quot;id&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>keys.removeAll()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>keys.clear(</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>nodes.getJSONObject(0).keySet()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>field.getName()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ahaxt/competition/config/MinIOConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="31" column="11" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/minio/minio/8.5.2/minio-8.5.2.jar!/io/minio/MinioClient.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="168" column="31" selection-start-line="168" selection-start-column="19" selection-end-line="168" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ahaxt/competition/controller/minio/configuration/AmazonS3Config.java" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="249" column="51" selection-start-line="249" selection-start-column="51" selection-end-line="249" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ahaxt/competition/utils/OssUtils.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ahaxt/competition/entity/db/MainChannelContentDoc.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ahaxt/competition/controller/minio/SysUploadTaskServiceImpl.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ahaxt/competition/controller/minio/SysUploadTaskService.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ahaxt/competition/controller/minio/MinioUploadTaskController.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ahaxt/competition/controller/minio/model/dto/TaskRecordDTO.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ahaxt/competition/controller/minio/model/dto/TaskInfoDTO.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ahaxt/competition/controller/minio/model/entity/SysUploadTask.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ahaxt/competition/controller/minio/model/dto/ObjectInfo.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ahaxt/competition/controller/minio/model/dto/Result.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ahaxt/competition/controller/minio/model/param/InitTaskParam.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ahaxt/competition/controller/minio/constant/MinioConstant.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ahaxt/competition/controller/minio/enums/ResultEnum.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ahaxt/competition/entity/minio/Task.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ahaxt/competition/entity/minio/PartInfo.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ahaxt/competition/entity/minio/ObjectItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ahaxt/competition/config/shiro/ShiroConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="509">
+          <caret line="165" column="40" lean-forward="true" selection-start-line="165" selection-start-column="40" selection-end-line="165" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../../../../../Program Files/Java/jdk1.8.0_111/src.zip!/java/util/function/Predicate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ahaxt/competition/config/MinioProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.3.1.RELEASE/spring-data-commons-2.3.1.RELEASE.jar!/org/springframework/data/domain/Chunk.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="61" column="5" lean-forward="true" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ahaxt/competition/utils/MinIOUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4626">
+          <caret line="287" column="9" selection-start-line="287" selection-start-column="9" selection-end-line="287" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ahaxt/competition/repository/db/MainChannelContentDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="22" column="168" lean-forward="true" selection-start-line="22" selection-start-column="168" selection-end-line="22" selection-end-column="168" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ahaxt/competition/entity/db/MainChannelContent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="39" column="27" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ahaxt/competition/base/Base.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="65" lean-forward="true" selection-start-line="63" selection-end-line="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ahaxt/competition/controller/common/ctrl/DataListController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="605">
+          <caret line="81" column="51" selection-start-line="81" selection-start-column="51" selection-end-line="81" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.2.7.RELEASE/spring-webmvc-5.2.7.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.2.7.RELEASE/spring-webmvc-5.2.7.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="553" selection-start-line="553" selection-end-line="553" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.2.7.RELEASE/spring-web-5.2.7.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="109" selection-start-line="109" selection-end-line="109" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ahaxt/competition/controller/website/ctrl/WebsiteController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="43" column="9" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ahaxt/competition/service/impl/WebsiteServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="45" column="38" selection-start-line="45" selection-start-column="38" selection-end-line="45" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ahaxt/competition/service/IWebsiteService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ahaxt/competition/utils/Base64Util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ahaxt/competition/entity/db/SysOssFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="40" column="23" lean-forward="true" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application-pre.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/banner.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application-dev.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1152">
+          <caret line="64" column="19" lean-forward="true" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ahaxt/competition/repository/db/SysOssFileDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="47" column="120" selection-start-line="47" selection-start-column="120" selection-end-line="47" selection-end-column="120" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ahaxt/competition/controller/common/ctrl/CommonController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="134" column="51" lean-forward="true" selection-start-line="134" selection-start-column="51" selection-end-line="134" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ahaxt/competition/repository/db/BaseUserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="20" column="62" selection-start-line="20" selection-start-column="62" selection-end-line="20" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ahaxt/competition/base/Constant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="47" column="7" selection-start-line="47" selection-start-column="7" selection-end-line="47" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application-prod.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="50" column="37" selection-start-line="50" selection-start-column="37" selection-end-line="50" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ahaxt/competition/service/IUserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="34" column="37" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.2.7.RELEASE/spring-core-5.2.7.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="105" selection-start-line="105" selection-end-line="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ahaxt/competition/controller/user/ctrl/SignController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-32">
+          <caret line="79" column="14" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ahaxt/competition/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="191" column="11" lean-forward="true" selection-start-line="191" selection-start-column="11" selection-end-line="191" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ahaxt/competition/service/impl/CommonServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="213" selection-start-line="213" selection-end-line="213" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>competition</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

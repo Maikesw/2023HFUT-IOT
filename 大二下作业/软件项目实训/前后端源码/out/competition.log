@@ -1,0 +1,87 @@
+22:43:34.022  INFO 20560 --- [main] com.ahaxt.competition.RunApplication     : Starting RunApplication on LAPTOP-C1PMA0TC with PID 20560 (C:\Users\邓傑湧\Desktop\大二下作业\软件项目实训\前后端源码\back\target\classes started by 邓傑湧 in C:\Users\邓傑湧\Desktop\大二下作业\软件项目实训\前后端源码)
+22:43:34.030 DEBUG 20560 --- [main] com.ahaxt.competition.RunApplication     : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+22:43:34.030  INFO 20560 --- [main] com.ahaxt.competition.RunApplication     : The following profiles are active: dev
+22:43:42.175  INFO 20560 --- [main] com.ahaxt.competition.RunApplication     : Started RunApplication in 8.546 seconds (JVM running for 8.975)
+22:43:42.178  INFO 20560 --- [main] com.ahaxt.competition.RunApplication     : <INFO> 启动成功 Swagger:http://localhost:8111/swagger-ui.html
+22:44:52.992 DEBUG 20560 --- [http-nio-8111-exec-1] org.hibernate.SQL                        : select basechanne0_.ID as id1_0_, basechanne0_.CREATE_TIME as create_t2_0_, basechanne0_.IS_DELETED as is_delet3_0_, basechanne0_.UPDATE_TIME as update_t4_0_, basechanne0_.CODE as code5_0_, basechanne0_.NAME as name6_0_, basechanne0_.REMARKS as remarks7_0_, basechanne0_.THE_ORDER as the_orde8_0_, basechanne0_.CHILD_NUM as child_nu9_0_, basechanne0_.IS_LEAF as is_leaf10_0_, basechanne0_.PARENT_ID as parent_11_0_, basechanne0_.THE_LEVEL as the_lev12_0_, basechanne0_.COMPONENT as compone13_0_, basechanne0_.HIDDEN as hidden14_0_, basechanne0_.PATH as path15_0_ from base_channel_type basechanne0_ where basechanne0_.IS_DELETED=? order by basechanne0_.THE_ORDER asc limit ?
+22:46:57.222 DEBUG 20560 --- [http-nio-8111-exec-3] org.hibernate.SQL                        : select mainchanne0_.ID as id1_6_, mainchanne0_.CREATE_TIME as create_t2_6_, mainchanne0_.IS_DELETED as is_delet3_6_, mainchanne0_.UPDATE_TIME as update_t4_6_, mainchanne0_.CHANNEL_C_NAME as channel_5_6_, mainchanne0_.CHANNEL_C_SLIDER as channel_6_6_, mainchanne0_.CHANNEL_C_TEXT as channel_7_6_, mainchanne0_.CHANNEL_C_TIME as channel_8_6_, mainchanne0_.CHANNEL_TYPE_ID as channel_9_6_, mainchanne0_.HIT_TIMES as hit_tim10_6_, mainchanne0_.OLD_ID as old_id11_6_, mainchanne0_.PUBLISH_STATUS as publish12_6_ from main_channel_content mainchanne0_ where mainchanne0_.ID=? and mainchanne0_.IS_DELETED=0
+22:46:57.320 ERROR 20560 --- [http-nio-8111-exec-3] c.a.c.config.GlobalExceptionHandler      : <REQ - 1744555617320> [127.0.0.1 GET null]	['/website/readNum']	PARAMS:id=3
+22:46:57.323 ERROR 20560 --- [http-nio-8111-exec-3] c.a.c.config.GlobalExceptionHandler      : <RES - 1744555617320> [内存(3508m)：59m/106m]	RESPONSE：[httpStatus=400] notCaptured {status=1101, message='未捕获的异常', data=Cannot invoke "com.ahaxt.competition.entity.db.MainChannelContent.getHitTimes()" because "channelContent" is null}
+22:46:57.328 ERROR 20560 --- [http-nio-8111-exec-3] c.a.c.config.GlobalExceptionHandler      : 
+java.lang.NullPointerException: Cannot invoke "com.ahaxt.competition.entity.db.MainChannelContent.getHitTimes()" because "channelContent" is null
+	com.ahaxt.competition.service.impl.WebsiteServiceImpl.readNum(WebsiteServiceImpl.java:104)
+	com.ahaxt.competition.controller.website.ctrl.WebsiteController.readNum(WebsiteController.java:58)
+	java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+	org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	java.base/java.lang.Thread.run(Thread.java:842)
+	...
+22:46:57.354 DEBUG 20560 --- [http-nio-8111-exec-4] org.hibernate.SQL                        : SELECT  * FROM main_channel_content WHERE CHANNEL_TYPE_ID =? AND IS_DELETED=0 AND PUBLISH_STATUS =1 order by ID DESC limit ?
+22:46:57.354 DEBUG 20560 --- [http-nio-8111-exec-2] org.hibernate.SQL                        : SELECT  * FROM main_channel_content WHERE CHANNEL_TYPE_ID =? AND IS_DELETED=0 AND PUBLISH_STATUS =1 order by ID DESC limit ?
+22:46:57.375 DEBUG 20560 --- [http-nio-8111-exec-4] org.hibernate.SQL                        : SELECT  count(ID) FROM main_channel_content WHERE CHANNEL_TYPE_ID =? AND IS_DELETED=0 AND PUBLISH_STATUS =1 order by ID DESC
+22:46:57.380 DEBUG 20560 --- [http-nio-8111-exec-2] org.hibernate.SQL                        : select * from SYS_OSS_FILE where IS_DELETED = 0 and TYPE = 1 and RELATION_ID = ?
+22:46:57.386 DEBUG 20560 --- [http-nio-8111-exec-4] org.hibernate.SQL                        : select * from SYS_OSS_FILE where IS_DELETED = 0 and TYPE = 1 and RELATION_ID = ?
+22:46:57.392 DEBUG 20560 --- [http-nio-8111-exec-4] org.hibernate.SQL                        : select * from SYS_OSS_FILE where IS_DELETED = 0 and TYPE = 1 and RELATION_ID = ?
+22:46:57.392 DEBUG 20560 --- [http-nio-8111-exec-2] org.hibernate.SQL                        : select * from SYS_OSS_FILE where IS_DELETED = 0 and TYPE = 1 and RELATION_ID = ?
+22:46:57.396 DEBUG 20560 --- [http-nio-8111-exec-4] org.hibernate.SQL                        : select * from SYS_OSS_FILE where IS_DELETED = 0 and TYPE = 1 and RELATION_ID = ?
+22:46:57.401 DEBUG 20560 --- [http-nio-8111-exec-4] org.hibernate.SQL                        : select * from SYS_OSS_FILE where IS_DELETED = 0 and TYPE = 1 and RELATION_ID = ?

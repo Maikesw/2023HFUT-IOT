@@ -1,0 +1,9 @@
+Time resolution is 1 ps
+地址000的数据读取正确：1234
+地址001的数据读取正确：5678
+地址00a的数据读取正确：abcd
+地址064的数据读取正确：def0
+未初始化地址100的数据：xxxx
+地址002的数据读取正确：9876
+RAM测试完成
+$finish called at time : 150 ns : File "D:/shiyan/xiangmu/shiyan4ram/shiyan4ram.srcs/sim_1/new/test.v" Line 135
