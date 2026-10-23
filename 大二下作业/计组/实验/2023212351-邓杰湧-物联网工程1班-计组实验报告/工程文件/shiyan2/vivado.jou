@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2025.1.1 (64-bit)
+# SW Build 6233196 on Thu Sep 11 21:27:30 MDT 2025
+# IP Build 6232796 on Fri Sep 12 01:46:16 MDT 2025
+# SharedData Build 6233195 on Thu Sep 11 17:56:43 MDT 2025
+# Start of session at: Wed Dec 24 21:34:45 2025
+# Process ID         : 27224
+# Current directory  : C:/Users/邓傑湧/Desktop/大二下作业/计组/实验/2023212351-邓杰湧-物联网工程1班-计组实验报告/工程文件/shiyan2
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent30452 C:\Users\邓傑湧\Desktop\大二下作业\计组\实验\2023212351-邓杰湧-物联网工程1班-计组实验报告\工程文件\shiyan2\shiyan2.xpr
+# Log file           : C:/Users/邓傑湧/Desktop/大二下作业/计组/实验/2023212351-邓杰湧-物联网工程1班-计组实验报告/工程文件/shiyan2/vivado.log
+# Journal file       : C:/Users/邓傑湧/Desktop/大二下作业/计组/实验/2023212351-邓杰湧-物联网工程1班-计组实验报告/工程文件/shiyan2\vivado.jou
+# Running On         : LAPTOP-C1PMA0TC
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i7-13700HX
+# CPU Frequency      : 2304 MHz
+# CPU Physical cores : 16
+# CPU Logical cores  : 24
+# Host memory        : 14710 MB
+# Swap memory        : 24696 MB
+# Total Virtual      : 39407 MB
+# Available Virtual  : 16631 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/邓傑湧/Desktop/大二下作业/计组/实验/2023212351-邓杰湧-物联网工程1班-计组实验报告/工程文件/shiyan2/shiyan2.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source simmux4to1.tcl
+close_sim

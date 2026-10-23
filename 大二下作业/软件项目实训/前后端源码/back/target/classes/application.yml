@@ -1,0 +1,20 @@
+spring.profiles.active: dev
+spring.application.name: competition
+spring.servlet.multipart.max-file-size: 300MB
+spring.servlet.multipart.max-request-size: 300MB
+spring.servlet.multipart.enabled: true
+########################## logger ##########################
+logging.level.root: warn
+logging.level.sql: trace
+logging.level.com.ahaxt: trace
+logging.file.name: out/competition.log
+logging.file.max-size: 5MB
+logging.pattern.dateformat: HH:mm:ss.SSS
+
+############# jackson ####################
+spring:
+  jackson:
+    #接口返回值中date格式
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+    default-property-inclusion: NON_NULL

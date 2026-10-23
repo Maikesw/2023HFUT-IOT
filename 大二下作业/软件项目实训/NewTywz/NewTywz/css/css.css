@@ -1,0 +1,132 @@
+body {
+	FONT-SIZE: 12px;
+	FONT-FAMILY: " Times New Roman";
+	color: #000000;
+	MARGIN: 0px;
+	list-style:none;
+	background-color:#FFFFFF;	
+	padding:0px;
+	padding-top:0px;
+	padding-bottom:0px;	
+}
+
+.MainText
+{
+	FONT-SIZE: 14px;
+	FONT-FAMILY: "ËÎÌå";
+	LINE-HEIGHT: 24px;
+	text-align: justify;
+	text-indent: 2em;
+	display:block;
+}
+.MainPic
+{
+	text-indent: 0em;
+	margin: 3px; 
+}
+.DashTable
+{
+	border: dashed 1px #999999;
+}
+
+.HeadMenuStyleNoLink {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #ffffff; TEXT-DECORATION: none
+}
+.HeadMenuStyle1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #ffffff; TEXT-DECORATION: none
+}
+.HeadMenuStyle1:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #ffffff; TEXT-DECORATION: underline
+}
+.HeadMenuStyle2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #745E51; TEXT-DECORATION: none
+}
+.HeadMenuStyle2:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #745E51; TEXT-DECORATION: underline
+}
+.HeadMenuStyle3 {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #7e8e59; TEXT-DECORATION: none
+}
+.HeadMenuStyle3:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #7e8e59; TEXT-DECORATION: underline
+}
+
+.NavStyle {
+	FONT-SIZE: 12px; COLOR: #395ba8;
+}
+
+
+.TextLinkStyle {
+	FONT-SIZE: 12px; COLOR: #000000; TEXT-DECORATION: none
+}
+.TextLinkStyle:hover {
+	 FONT-SIZE: 12px; COLOR: #000000; TEXT-DECORATION: underline
+}
+.TextLinkStyle2 {
+	FONT-SIZE: 12px; COLOR: #7E8E59; TEXT-DECORATION: none
+}
+.TextLinkStyle2:hover {
+	 FONT-SIZE: 12px; COLOR: #7E8E59; TEXT-DECORATION: underline
+}
+.TextLinkStyle3 {
+	FONT-SIZE: 14px; COLOR: #2daab3; TEXT-DECORATION: none
+}
+.TextLinkStyle3:hover {
+	 FONT-SIZE: 14px; COLOR: #9B3C29; TEXT-DECORATION: underline
+}
+.TextLinkStyle4 {
+	FONT-SIZE: 14px; COLOR: #FF0000; TEXT-DECORATION: none
+}
+.TextLinkStyle4:hover {
+	 FONT-SIZE: 14px; COLOR: #9B3C29; TEXT-DECORATION: underline
+}
+.WebNameOnFoot {
+	 FONT-SIZE: 12px; COLOR: #ffffff; TEXT-DECORATION: none
+}
+.FootMark {
+	FONT-SIZE: 12px; COLOR: #05320b; LINE-HEIGHT: 18px; TEXT-DECORATION: none; text-align:center;
+}
+.Keyword{
+	font-size:12px;color:#7D8E58; text-align:left; line-height:22px; TEXT-DECORATION: none;
+}
+.Keyword:hover{
+	font-size:12px;color:#7D8E58; text-align:left; line-height:22px; TEXT-DECORATION: underline;
+}
+.MainChannelFont{
+	font-size:24px;color:#7D8E58; font-weight:bold; TEXT-DECORATION: none; 
+}
+
+.MainChannelFont2{
+	font-size:24px;color:#FFFFFF;  TEXT-DECORATION: none;font-weight:bold; font-family:@ºÚÌå; letter-spacing:10px;
+}
+
+#g_div{text-align:right;overflow:hidden} 
+.b{width:24px;   height:16px;   background:#737373;   font-size:14px;   font-weight:bold;   color:#fff;   text-decoration:none;margin-left:1px} 
+.b:hover{width:24px;   height:16px;   background:#780001;   font-size:14px;   font-weight:bold;   color:#fff;   text-decoration:none;margin-left:1px} 
+.bhover{width:24px;   height:16px;   background:#780001;   font-size:14px;   font-weight:bold;   color:#fff;   text-decoration:none;margin-left:1px} 
+
+
+#menu {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; LINE-HEIGHT: 28px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+#menu LI {
+	PADDING-RIGHT: 0px; DISPLAY: block; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN: 0px;  CURSOR: hand; PADDING-TOP: 0px; LIST-STYLE-TYPE: none; HEIGHT: 20px; TEXT-ALIGN: center
+}
+
+.sec1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px;  COLOR: #FFFFFF; BACKGROUND-REPEAT: no-repeat; TEXT-DECORATION: none
+}
+.sec2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px;   COLOR: #000000; BACKGROUND-REPEAT: no-repeat; TEXT-DECORATION: underline
+}
+
+.block { display: block;}
+.unblock { display: none;}
+
+.sl-image{
+CURSOR:hand;
+}
+
+.TableChannelName {
+	FONT-SIZE: 12px; COLOR: #ff5400; TEXT-DECORATION: none
+}

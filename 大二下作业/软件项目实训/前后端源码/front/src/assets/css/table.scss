@@ -1,0 +1,70 @@
+body .el-table th.gutter {
+    display: table-cell !important;
+  }
+  
+  // 去除最后table一行fixed定位的遮挡一半的问题
+  .el-table>.el-table__fixed-right {
+    height: 100% !important; //设置高优先，以覆盖内联样式
+  }
+  
+  // 表格设置固定栏后，边框线消失的bug
+  .el-table td,
+  .el-table th.is-leaf {
+    top: -1px;
+  }
+  
+  // 表格的多选框上下对齐
+  .el-table th:first-child {
+    padding-left: 4px !important;
+  }
+  
+  .el-table th {
+    background-color: #fbfbfb !important;
+  }
+  
+  .el-table th,
+  .el-table td {
+    padding: 0 !important;
+  }
+  
+  .el-table td div {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .el-table th>.cell {
+    height: 40px;
+    color: #999999;
+    line-height: 40px;
+    font-weight: 400;
+  
+  }
+  
+  .el-table td>.cell {
+    height: 40px;
+    color: #333333;
+    line-height: 40px;
+  }
+  
+  .el-table td>.cell>.el-button--mini {
+    padding: 5px 8px;
+  }
+  
+  .el-table__expand-icon {
+    line-height: 10px !important;
+    height: 10px !important;
+  }
+  
+  .el-table__header,
+  .el-table__body,
+  .el-table__footer {
+    width: 100% !important;
+  }
+  
+  .el-table__empty-block {
+    width: 100% !important;
+  }
+  
+.el-table-column--selection {
+    width: 30px !important;
+  }

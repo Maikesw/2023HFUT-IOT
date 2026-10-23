@@ -1,0 +1,250 @@
+$date
+   Thu Jul  3 19:02:26 2025
+$end
+
+$version
+  2024.2.0
+  $dumpfile ("register_file_test.vcd") 
+$end
+
+$timescale
+  1ps
+$end
+
+$scope module register_file_tb $end
+$var reg 1 ! clk $end
+$var reg 1 " rst $end
+$var reg 3 # read_addr1 [2:0] $end
+$var reg 3 $ read_addr2 [2:0] $end
+$var reg 3 % write_addr [2:0] $end
+$var reg 16 & write_data [15:0] $end
+$var reg 1 ' write_enable $end
+$var wire 16 ( read_data1 [15:0] $end
+$var wire 16 ) read_data2 [15:0] $end
+$var reg 3 * op_code [2:0] $end
+$scope module uut $end
+$var wire 1 + clk $end
+$var wire 1 , rst $end
+$var wire 3 - read_addr1 [2:0] $end
+$var wire 3 . read_addr2 [2:0] $end
+$var wire 3 / write_addr [2:0] $end
+$var wire 16 0 write_data [15:0] $end
+$var wire 1 1 write_enable $end
+$var wire 16 ( read_data1 [15:0] $end
+$var wire 16 ) read_data2 [15:0] $end
+$var integer 32 2 i [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+
+#0
+$dumpvars
+0!
+1"
+b0 #
+b0 $
+b0 %
+b0 &
+0'
+b0 (
+b0 )
+b0 *
+0+
+1,
+b0 -
+b0 .
+b0 /
+b0 0
+01
+b1000 2
+$end
+
+#5000
+1!
+1+
+
+#10000
+0!
+0"
+b10001101010001 &
+1'
+0+
+0,
+b10001101010001 0
+11
+
+#15000
+1!
+b10001101010001 (
+b10001101010001 )
+1+
+
+#20000
+0!
+b1 %
+b1 &
+0+
+b1 /
+b1 0
+
+#25000
+1!
+1+
+
+#30000
+0!
+b1 $
+b10 %
+b100011010100010 &
+1'
+b1 )
+0+
+b1 .
+b10 /
+b100011010100010 0
+
+#35000
+1!
+1+
+
+#40000
+0!
+b11 %
+b10001101010000 &
+b1 *
+0+
+b11 /
+b10001101010000 0
+
+#45000
+1!
+1+
+
+#50000
+0!
+b100 %
+b1 &
+b10 *
+0+
+b100 /
+b1 0
+
+#55000
+1!
+1+
+
+#60000
+0!
+b101 %
+b10001101010001 &
+b11 *
+0+
+b101 /
+b10001101010001 0
+
+#65000
+1!
+1+
+
+#70000
+0!
+b110 %
+b100011010100010 &
+b100 *
+0+
+b110 /
+b100011010100010 0
+
+#75000
+1!
+1+
+
+#80000
+0!
+b111 %
+b1000110101000 &
+b101 *
+0+
+b111 /
+b1000110101000 0
+
+#85000
+1!
+1+
+
+#90000
+0!
+b10 #
+0'
+b100011010100010 (
+b0 *
+0+
+b10 -
+01
+
+#95000
+1!
+1+
+
+#100000
+0!
+b11 #
+b10001101010000 (
+b1 *
+0+
+b11 -
+
+#105000
+1!
+1+
+
+#110000
+0!
+b100 #
+b1 (
+b10 *
+0+
+b100 -
+
+#115000
+1!
+1+
+
+#120000
+0!
+b101 #
+b10001101010001 (
+b11 *
+0+
+b101 -
+
+#125000
+1!
+1+
+
+#130000
+0!
+b110 #
+b100011010100010 (
+b100 *
+0+
+b110 -
+
+#135000
+1!
+1+
+
+#140000
+0!
+b111 #
+b1000110101000 (
+b101 *
+0+
+b111 -
+
+#145000
+1!
+1+
+
+#150000
+b110 *

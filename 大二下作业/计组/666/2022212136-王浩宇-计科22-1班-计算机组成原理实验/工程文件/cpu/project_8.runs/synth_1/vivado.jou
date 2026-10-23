@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Fri Jul  4 01:04:34 2025
+# Process ID         : 13940
+# Current directory  : C:/Users/邓傑湧/Desktop/大二下作业/计组/666/2022212136-王浩宇-计科22-1班-计算机组成原理实验/工程文件/cpu/project_8.runs/synth_1
+# Command line       : vivado.exe -log cpu.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source cpu.tcl
+# Log file           : C:/Users/邓傑湧/Desktop/大二下作业/计组/666/2022212136-王浩宇-计科22-1班-计算机组成原理实验/工程文件/cpu/project_8.runs/synth_1/cpu.vds
+# Journal file       : C:/Users/邓傑湧/Desktop/大二下作业/计组/666/2022212136-王浩宇-计科22-1班-计算机组成原理实验/工程文件/cpu/project_8.runs/synth_1\vivado.jou
+# Running On         : LAPTOP-C1PMA0TC
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i7-13700HX
+# CPU Frequency      : 2304 MHz
+# CPU Physical cores : 16
+# CPU Logical cores  : 24
+# Host memory        : 14710 MB
+# Swap memory        : 24696 MB
+# Total Virtual      : 39407 MB
+# Available Virtual  : 15869 MB
+#-----------------------------------------------------------
+source cpu.tcl -notrace

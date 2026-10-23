@@ -1,0 +1,98 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Sat Jun 21 16:44:07 2025
+# Process ID         : 5248
+# Current directory  : D:/学长的资料/HFUT-CS-master/HFUT-CS-master/计算机组成原理/实验/2021214710-杨程锦-计科1班-计算机组成原理/工程文件/multiple_instruction_cpu
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent26976 D:\学长的资料\HFUT-CS-master\HFUT-CS-master\计算机组成原理\实验\2021214710-杨程锦-计科1班-计算机组成原理\工程文件\multiple_instruction_cpu\multiple_instruction_cpu.xpr
+# Log file           : D:/学长的资料/HFUT-CS-master/HFUT-CS-master/计算机组成原理/实验/2021214710-杨程锦-计科1班-计算机组成原理/工程文件/multiple_instruction_cpu/vivado.log
+# Journal file       : D:/学长的资料/HFUT-CS-master/HFUT-CS-master/计算机组成原理/实验/2021214710-杨程锦-计科1班-计算机组成原理/工程文件/multiple_instruction_cpu\vivado.jou
+# Running On         : HD
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i7-13620H
+# CPU Frequency      : 2918 MHz
+# CPU Physical cores : 10
+# CPU Logical cores  : 16
+# Host memory        : 16961 MB
+# Swap memory        : 5637 MB
+# Total Virtual      : 22598 MB
+# Available Virtual  : 5110 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/学长的资料/HFUT-CS-master/HFUT-CS-master/计算机组成原理/实验/2021214710-杨程锦-计科1班-计算机组成原理/工程文件/multiple_instruction_cpu/multiple_instruction_cpu.xpr
+upgrade_project -migrate_output_products
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+launch_simulation
+source sim_cpu.tcl
+close_sim
+launch_simulation
+source sim_cpu.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16 -scripts_only
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+reset_run synth_1
+launch_runs impl_1 -jobs 16
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1

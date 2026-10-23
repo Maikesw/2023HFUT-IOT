@@ -1,0 +1,24 @@
+# ---- IDE / 构建缓存 ----
+.vs/
+**/.vs/
+*.ipch
+*.obj
+*.pdb
+*.ilk
+*.tlog
+.vscode/
+.idea/
+
+# ---- 依赖与临时文件 ----
+node_modules/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+*.log
+Thumbs.db
+desktop.ini
+
+# ---- 大文件（见 README「大文件清单」）----
+# 超过 10MB 的文件通过 LFS 上传，其路径由下方 include 引入

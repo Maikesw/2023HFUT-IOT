@@ -1,0 +1,138 @@
+﻿<%@ Master Language="C#" AutoEventWireup="True" CodeBehind="Tree.master.cs" Inherits="NewTywz.TreeMaster" %>
+<%@ Register Assembly="Ext.Net" Namespace="Ext.Net" TagPrefix="ext" %>
+<%@ Register TagPrefix="UserControl" TagName="DataTree" Src="/admin/UserControl/DataTree.ascx" %> 
+<%@ Register TagPrefix="UserControl" TagName="DataList" Src="/admin/UserControl/DataList.ascx" %> 
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    <script type="text/javascript">
+     
+     //确定新增   
+     function TreeMaster_ConfirmAddNew(btn)
+     {
+        if (btn=="yes")//继续新增
+            Ext.net.DirectMethods.TreeMaster.ClearAllText();
+        else
+            Ext.net.DirectMethods.TreeMaster.EndAddNew();            
+     }
+     
+    </script>
+    
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title></title>
+    <link href="/css/css.css" rel="stylesheet" type="text/css" />    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+    <form id="form1" runat="server">
+    <ext:ResourceManager ID="TreeMaster_ResourceManager" runat="server" />
+    
+    <ext:Viewport ID="TreeMaster_Viewport" runat="server">
+       <Content>
+            <ext:BorderLayout ID="TreeMaster_BorderLayout" runat="server">
+            <West split="true" Collapsible="true" >            
+                <ext:Panel ID="TreeMaster_TreePanel" runat="server" Border="true" Width="160" Header="true" AutoScroll="True" >
+                <TopBar>
+                    <ext:Toolbar runat="server">
+                     <Items>
+                        <ext:Button ID="TreeMaster_ExpandAll" runat="server" Text="展开" Icon="ArrowOut">
+                          <DirectEvents>
+                              <Click OnEvent="TreeMaster_ExpandAllClick" />
+                          </DirectEvents>
+                        </ext:Button>
+                        <ext:Button ID="TreeMaster_CollapseAll" runat="server" Text="折叠" Icon="ArrowIn">
+                          <DirectEvents>
+                              <Click OnEvent="TreeMaster_CollapseAllClick" />
+                          </DirectEvents>
+                        </ext:Button>
+                    </Items>
+                    </ext:Toolbar>
+                </TopBar>
+                <Content> 
+                    <UserControl:DataTree id="TreeMaster_DataTree" runat="server" onTreeClick="TreeMaster_NodeClick" />
+                </Content>
+                </ext:Panel>
+      	    </West>
+      	    <Center>
+                <ext:Panel ID="TreeMaster_pContent" runat="server" Title="Title" BodyBorder="true" Layout="Absolute" BodyStyle="background-color: #DFE8F6;" >
+                <TopBar>
+                    <ext:Toolbar runat="server">
+                        <Items>
+			                  <ext:Button ID="TreeMaster_btnSave" runat="server" Text="保存" Icon="Disk" >
+			                      <DirectEvents>
+                                      <Click OnEvent="TreeMaster_SaveClick">
+                                        <EventMask Msg="正在操作,请稍候..." ShowMask="true" />
+                                      </Click>
+                                  </DirectEvents>
+			                  </ext:Button>
+			                  <ext:Button ID="TreeMaster_btnDelete" runat="server" Text="删除" Icon="Delete">
+			                      <DirectEvents>
+                                      <Click OnEvent="TreeMaster_DeleteClick" />
+                                  </DirectEvents>
+			                  </ext:Button>
+		    	              <ext:Button ID="TreeMaster_btnReset" runat="server" Text="重置" Icon="Database">
+			                      <DirectEvents>			                      
+                                      <Click OnEvent="TreeMaster_ResetClick" >
+                                        <EventMask Msg="正在操作,请稍候..." ShowMask="true" />
+                                      </Click>
+                                  </DirectEvents>
+		                      </ext:Button>
+			                  <ext:Button ID="TreeMaster_btnNew" runat="server" Text="创建下级" Icon="Add">
+			                      <DirectEvents>
+                                      <Click OnEvent="TreeMaster_AddNextLevelClick" >
+                                        <EventMask Msg="正在操作,请稍候..." ShowMask="true" />
+                                      </Click>
+                                  </DirectEvents>
+			                  </ext:Button>
+                              <ext:Button ID="TreeMaster_btnOrderUp" runat="server" Icon="ArrowUp" Text="上移">
+			                      <DirectEvents>
+                                      <Click OnEvent="TreeMaster_OrderUpClick" >
+                                        <EventMask Msg="正在操作,请稍候..." ShowMask="true" />
+                                      </Click>
+                                  </DirectEvents>
+                              </ext:Button>
+                              <ext:Button ID="TreeMaster_btnOrderDown" runat="server" Icon="ArrowDown" Text="下移">
+			                      <DirectEvents>
+                                      <Click OnEvent="TreeMaster_OrderDownClick" >
+                                        <EventMask Msg="正在操作,请稍候..." ShowMask="true" />
+                                      </Click>
+                                  </DirectEvents>
+                              </ext:Button>
+                              <ext:Button ID="TreeMaster_btnMoreInfo" runat="server" Icon="NoteEdit" Text="更多内容"  Hidden="true">
+			                      <DirectEvents>
+                                      <Click OnEvent="TreeMaster_MoreInfoClick" >
+                                        <EventMask Msg="正在操作,请稍候..." ShowMask="true" />
+                                      </Click>
+                                  </DirectEvents>
+                              </ext:Button>
+                        </Items>
+                    </ext:Toolbar>
+                </TopBar>                
+                <Items>
+                    <ext:Label ID="TreeMaster_labName" runat="server" X="5" Y="10" Text="名　　称:" />
+                    <ext:TextField ID="TreeMaster_txtName" X="58" Y="8" runat="server" AnchorHorizontal="99%" />
+                    <ext:Label ID="TreeMaster_labCode" runat="server" X="5" Y="35" Text="编　　码:" />
+                    <ext:TextField ID="TreeMaster_txtTemplete" X="58" Y="33" runat="server" AnchorHorizontal="99%" />
+                    <ext:Label ID="TreeMaster_labRemark" runat="server" X="5" Y="60" Text="说　　明:" />
+                    <ext:TextArea ID="TreeMaster_txtRemark" X="58" Y="58" runat="server" AnchorHorizontal="99%"  Height="80" />
+                    <ext:Panel ID="TreeMaster_DataListPanel" runat="server"  BodyBorder="false" X="5" Y="140" Layout="Absolute"  AnchorHorizontal="99%"  AnchorVertical="99%" >
+                        <Content>
+                            <UserControl:DataList id="TreeMaster_DataList" runat="server" />    
+                        </Content>
+                    </ext:Panel>
+                </Items>
+                <Content>                    
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+                </Content>
+                </ext:Panel>
+      	   </Center>
+      	   </ext:BorderLayout>
+      </Content>
+    </ext:Viewport>
+    </form>   
+  
+</body>
+</html>

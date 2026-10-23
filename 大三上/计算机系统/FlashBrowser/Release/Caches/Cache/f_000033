@@ -1,0 +1,363 @@
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>合肥工业大学_操作系统精品课程</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+
+
+
+<meta http-equiv="pragma" content="no-cache"/>
+<meta http-equiv="cache-control" content="no-cache"/>
+<meta http-equiv="expires" content="0"/>
+<meta http-equiv="keywords" content="精品课程"/>
+<meta http-equiv="description" content=精品课程/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="http://114.213.210.2:8080/JPKC-OS/resources/js/jquery-1.4.3.js"></script>
+<script type="text/javascript" src="http://114.213.210.2:8080/JPKC-OS/resources/js/jcarousellite_1.0.1.js"></script>
+<script type="text/javascript" src="http://114.213.210.2:8080/JPKC-OS/resources/js/validate/jquery.validate.js"></script>
+<script type="text/javascript" src="http://114.213.210.2:8080/JPKC-OS/resources/js/validate/jquery.metadata.js"></script>
+<script type="text/javascript" src="http://114.213.210.2:8080/JPKC-OS/resources/js/validate/jquery.validate.methods.js"></script>
+<script type="text/javascript" src="http://114.213.210.2:8080/JPKC-OS/resources/js/validate/jquery.validate.cn.js"></script>
+
+<script type="text/javascript" src="http://114.213.210.2:8080/JPKC-OS/resources/js/kindeditor/kindeditor.js"></script>
+<script type="text/javascript" src="http://114.213.210.2:8080/JPKC-OS/resources/js/kindeditor/lang/zh_CN.js"></script>
+
+<script type="text/javascript" src="http://114.213.210.2:8080/JPKC-OS/resources/js/jquery.form.js"></script>
+<script type="text/javascript" src="http://114.213.210.2:8080/JPKC-OS/resources/js/component/ckeditor/ckeditor.js"></script>
+<script type="text/javascript" src="http://114.213.210.2:8080/JPKC-OS/resources/js/component/ckeditor/adapters/jquery.js"></script>
+<script type="text/javascript" src="http://114.213.210.2:8080/JPKC-OS/resources/js/component/My97DatePicker/WdatePicker.js"></script>
+<base href="http://114.213.210.2:8080/JPKC-OS/"/>
+<script type="text/javascript" src="http://114.213.210.2:8080/JPKC-OS/resources/js/common.js"></script>
+<link href="http://114.213.210.2:8080/JPKC-OS/resources/css/formStyle.css" rel="stylesheet" type="text/css" />
+<link href="http://114.213.210.2:8080/JPKC-OS/resources/css/css.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#checkCodeImage').click(function () {//生成验证码
+            $(this).hide().attr('src', 'http://114.213.210.2:8080/JPKC-OS/manage/checkCode.shtml?' + Math.floor(Math.random()*100) ).fadeIn();
+        });
+    });
+    function onLogin(){
+    	//登录
+        var userName = $("#userNameLogin").val();
+        var userPass = $("#userPassLogin").val();
+        var checkCode = $("#checkCode").val();
+        
+        if(userName == ""){
+            alert("帐号不能为空！");
+            $("#userNameLogin").focus();
+        }else if(userPass == ""){
+            alert("密码不能为空！");
+            $("#userPassLogin").focus();
+        }else if(checkCode == ""){
+        	alert("验证码不能为空！");
+        	$("#checkCode").focus();
+        }else{
+            $.ajax({
+                url:"login.shtml",
+                data:{userName:userName,userPass:userPass,checkCode:checkCode},
+                type:"POST",
+                contentType:"application/x-www-form-urlencoded;charset=utf-8",
+                dataType:"json",
+                async:false,
+                error:function(x,e){
+                    window.location.reload();
+                },
+                success:function(data){
+                    if(data.checkCode){
+                    	$.cookie('userNameLogin', userName , { path: '/', expires: 30});
+                    	$.cookie('userPassLogin', '' , { path: '/', expires: 30});
+                    	if(!data.userName || !data.userPass){
+                    		alert("帐号或密码不正确！");
+                    	}else{
+                    		if(!data.isEnable){
+                    			alert("用户已过期！");
+                    			$.cookie('userNameLogin', '' , { path: '/', expires: 30});
+                    			$.cookie('userPassLogin', '' , { path: '/', expires: 30});
+                    		}else{
+                    			$.cookie('userNameLogin', userName , { path: '/', expires: 30});
+                    			$.cookie('userPassLogin', userPass , { path: '/', expires: 30});
+                    		}
+                    	}
+                    }else{
+                    	alert("验证码不正确！");
+                    	if(data.userName){
+                    		$.cookie('userNameLogin', userName , { path: '/', expires: 30});
+                    		if(data.userPass){
+                        		$.cookie('userPassLogin', userPass , { path: '/', expires: 30});
+                        	}else{
+                        		$.cookie('userPassLogin', '' , { path: '/', expires: 30});
+                        	}
+                    	}else{
+                   			$.cookie('userNameLogin', '' , { path: '/', expires: 30});
+                       		$.cookie('userPassLogin', '' , { path: '/', expires: 30});
+                    	}
+                    }
+                    window.location.reload();
+                }
+            });
+        }
+    }
+    function use(){
+       	document.getElementById("win").style.display="";
+    }
+    function closeLogin(){
+ 	 	document.getElementById("win").style.display="none";
+   	}
+    function saveUser(){
+    	if($("#userTrueName").val()==""){
+    		alert("真实姓名不能为空！");
+    	}else if($("#userPass").val()==""){
+    		alert("密码不能为空！");
+    	}else{
+    		document.saveForm.submit();
+    	}
+    }
+    function EnterKeyUp(e) {
+        var code = e.keyCode;
+        if (code == "13") {
+            var obj = null;
+            if (window.event) {
+                obj = document.activeElement;
+            } else {
+                obj = e.explicitOriginalTarget;
+            }
+            if (obj == null)
+                return;
+            onLogin();   // 提交方法
+        } 
+    } 
+</script>
+</head>
+<body id="nav_btn01" onkeyup="EnterKeyUp(event)">
+
+
+
+<div class="header">
+	<div class="logo png_img"><a href="index.shtml"><img src="http://114.213.210.2:8080/JPKC-OS/resources/images/logo.png" alt="合肥工业大学_操作系统精品课程"></a></div>
+<!--end标志-->
+</div>
+<!--end头文件-->
+<div class="nav th">
+	<ul class="nav last_list">
+		<li id="nav_hover01"><a href="http://114.213.210.2:8080/JPKC-OS/index.shtml">首页</a></li>
+		<li id="nav_hover02"><a href="http://114.213.210.2:8080/JPKC-OS/courseOverview.shtml">课程概况</a></li>
+		<li id="nav_hover03"><a href="http://114.213.210.2:8080/JPKC-OS/teachersUser.shtml">师资队伍</a></li>
+		<li id="nav_hover04"><a href="http://114.213.210.2:8080/JPKC-OS/courseContent.shtml">课程内容</a></li>
+		<li id="nav_hover05"><a href="http://114.213.210.2:8080/JPKC-OS/teachingCaseList.shtml">教学案例</a></li>
+		<li id="nav_hover06">
+			
+			<a href="http://210.45.249.121:8080/DKTK/" target="_blank">作业上传</a>
+			
+		</li>
+		<li id="nav_hover07"><a href="http://114.213.210.2:8080/JPKC-OS/teachingContentList.shtml">学习指南</a></li>
+		<li id="nav_hover08"><a href="http://114.213.210.2:8080/JPKC-OS/teachingresourcesDetail.shtml">教学研究</a></li>
+		<li id="nav_hover09"><a href="http://114.213.210.2:8080/JPKC-OS/Mooc.shtml">MOOCs建设</a></li>
+		<li id="nav_hover10"><a href="http://114.213.210.2:8080/JPKC-OS/teachingResourcesList.shtml">教学资源</a></li>
+		<li id="nav_hover11"><a href="http://114.213.210.2:8080/JPKC-OS/interactionList.shtml">你问我答</a></li>
+	</ul>
+</div>
+
+<div id="win" style="display:none; POSITION:absolute; left:50%; top:50%; width:600px; height:400px; margin-left:-300px; margin-top:-200px; border:1px solid #888; background-color:#fff;">
+	<form id="saveForm" name="saveForm" action="http://114.213.210.2:8080/JPKC-OS/userInfoSave.shtml" method="post" enctype="multipart/form-data">
+	<input type="hidden" id="objId" name="objId" value="0" />
+	<table class="fill_table th">
+		<tr>
+			<td class="r_text"><label for="r_1">头像：</label></td>
+			<td>
+				 <iframe src="http://114.213.210.2:8080/JPKC-OS/views/memberInfo/uploadImage.jsp?filePath=&width=95&height=97&inputname=imgUrl" 
+				 frameborder="0" marginwidth="0" marginheight="0" width="100%" height="130" scrolling="no"></iframe>
+			 	<input value="" name="imgUrl" id="imgUrl" type="hidden"/>
+			</td>
+		</tr>
+		<tr>
+			<td class="r_text">会员帐号：</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="r_text">密码：</td>
+			<td><input type="password" class="fill_text" id="userPass" name="userPass" value=""><span class="note_gray"></span></td>
+		</tr>
+		<tr>
+			<td class="r_text"><label for="r_1">真实姓名：</label></td>
+			<td><input type="text" class="fill_text" id="userTrueName" name="userTrueName" value=""><span class="note_gray"></span></td>
+		</tr>
+		<tr>
+			<td class="r_text">性别：</td>
+			<td>
+			<ul class="input_list">
+			<li><label for="r_2"><input type="radio" class="checlass" id="r_2" name="userSex" value="1" checked>男</label></li>
+			<li><label for="r_3"><input type="radio" class="checlass" id="r_3" name="userSex" value="2" >女</label></li></ul></td>
+		</tr>
+		<tfoot>
+		<tr>
+			<td colspan="2"><input type="button" class="subimt_btn th" value="提交" onclick="saveUser()">&nbsp;&nbsp;<input type="button" class="subimt_btn th" onclick="closeLogin()" value="关闭"></td>
+		</tr>
+		</tfoot>
+	</table>
+	</form>
+</div>
+<!--end导航-->
+<div class="clear_div2 h_one">
+<div class="h_about white_box">
+<dl class="h_th"><dd>课程简介</dd><dt><a href="http://114.213.210.2:8080/JPKC-OS/curriculumEvaluationDetail.shtml?id=1">更多</a></dt></dl>
+<dl class="clear_div h_about blue_link">
+<dt><a href="javascript:void(0)"><img src="http://114.213.210.2:8080/JPKC-OS/upload/images/1432443273767.png" onerror="this.src='http://114.213.210.2:8080/JPKC-OS/resources/images/noimage.png'" alt="" width="150" height="140"></a></dt>
+<dd><p>       操作系统（Operating System，简称OS）是管理和控制计算机硬件与软件资源的计算机程序，是直接运行在“裸机”上的最基本的系统软件，任何其他软件都必须在操作...</p></dd>
+</dl>
+</div>
+<!--end课程简介-->
+
+<div class="h_ann white_box">
+<dl class="h_th"><dd>课程公告</dd><dt><a href="http://114.213.210.2:8080/JPKC-OS/courseAnnouncementsManage.shtml">更多</a></dt></dl>
+<ul class="clear_div h_ann">
+
+<li><span class="date">[2018-11-15]</span><a href="http://114.213.210.2:8080/JPKC-OS/courseAnnouncementsDetail.shtml?id=43" target="_blank">操作系统课件已经全部上传</a></li>
+
+<li><span class="date">[2018-05-07]</span><a href="http://114.213.210.2:8080/JPKC-OS/courseAnnouncementsDetail.shtml?id=42" target="_blank">操作系统课程设计报告模板下载</a></li>
+
+<li><span class="date">[2017-11-02]</span><a href="http://114.213.210.2:8080/JPKC-OS/courseAnnouncementsDetail.shtml?id=40" target="_blank">操作系统课件下载</a></li>
+
+<li><span class="date">[2017-11-02]</span><a href="http://114.213.210.2:8080/JPKC-OS/courseAnnouncementsDetail.shtml?id=39" target="_blank">实验报告提交</a></li>
+
+<li><span class="date">[2017-10-20]</span><a href="http://114.213.210.2:8080/JPKC-OS/courseAnnouncementsDetail.shtml?id=38" target="_blank">操作系统课程第三章作业提交通知</a></li>
+
+<li><span class="date">[2017-10-19]</span><a href="http://114.213.210.2:8080/JPKC-OS/courseAnnouncementsDetail.shtml?id=37" target="_blank">操作系统课程第四章作业提交通知</a></li>
+
+</ul>
+</div>
+<!--end课程公告-->
+<script type="text/javascript" src="http://114.213.210.2:8080/JPKC-OS/resources/js/jquery.cookie.js"> </script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        var userName = $.cookie('userNameLogin');
+        if(userName!=null){
+        	$("#userNameLogin").val(userName);
+        }
+        var userPass = $.cookie('userPassLogin');
+        if(userPass!=null){
+        	$("#userPassLogin").val(userPass);
+        }
+    });
+</script>
+
+
+	<div class="h_login white_box">
+	<dl class="h_th"><dd>用户登录</dd><dt></dt></dl>
+	<form id="login_from" name="login_from" action="" method="post">
+	<table class="login_table">
+	<tr>
+	<td class="r_text"><label for="l_1">用户名：</label></td>
+	<td><input type="text" class="h_login_text" id="userNameLogin" name="userNameLogin"></td>
+	</tr>
+	<tr>
+	<td class="r_text"><label for="l_2">密码：</label></td>
+	<td><input type="password" class="h_login_text" id="userPassLogin" name="userPassLogin"></td>
+	</tr>
+	<tr>
+	<td class="r_text"><label for="l_3">验证码：</label></td>
+	<td><input type="text" class="h_login_text" id="checkCode" name="checkCode" style="width:50px;"><a style="margin:0 5px;" href="javascript:void(0)"><img src="http://114.213.210.2:8080/JPKC-OS/manage/checkCode.shtml" alt="" id="checkCodeImage" width="48" height="19"></a></td>
+	</tr>
+	<tfoot>
+	<tr>
+	<td colspan="2"><input type="button" class="login_btn" value="" onclick="onLogin()" /><input type="reset" class="reg_btn" value=""></td>
+	</tr>
+	</tfoot>
+	</table>
+	</form>
+	</div>
+
+<!--end用户登录-->
+</div>
+<!--end一行-->
+
+
+<div class="clear_div2 h_one">
+<div class="h_about white_box" style="height:313px;">
+<dl class="h_th"><dd>教学案例</dd><dt><a href="http://114.213.210.2:8080/JPKC-OS/teachingCaseList.shtml">更多</a></dt></dl>
+
+<dl class="clear_div h_stu img_border">
+<dt><a href="http://114.213.210.2:8080/JPKC-OS/teachingCaseDetailed.shtml?id=6" target="_blank"><img src="http://114.213.210.2:8080/JPKC-OS/upload/images/1436588930838.jpg" onerror="this.src='http://114.213.210.2:8080/JPKC-OS/resources/images/noimage.png'" alt="" width="65" height="60"></a></dt>
+<dd><a href="http://114.213.210.2:8080/JPKC-OS/teachingCaseDetailed.shtml?id=6" title="操作系统课程引论" target="_blank">操作系统课程引论</a><br>介绍操作系统的目标和作用、发展过程、基本特性、主要功能、结构设计。</dd>
+</dl>
+
+<dl class="clear_div h_stu img_border">
+<dt><a href="http://114.213.210.2:8080/JPKC-OS/teachingCaseDetailed.shtml?id=5" target="_blank"><img src="http://114.213.210.2:8080/JPKC-OS/upload/images/1436589009388.jpg" onerror="this.src='http://114.213.210.2:8080/JPKC-OS/resources/images/noimage.png'" alt="" width="65" height="60"></a></dt>
+<dd><a href="http://114.213.210.2:8080/JPKC-OS/teachingCaseDetailed.shtml?id=5" title="操作系统-设备管理讲解" target="_blank">操作系统-设备管理讲解</a><br>详解I/O系统及I/O控制方式、缓冲技术、驱动调度技术、设备分配、磁盘存储器管理、虚拟设备。</dd>
+</dl>
+
+<dl class="clear_div h_stu img_border">
+<dt><a href="http://114.213.210.2:8080/JPKC-OS/teachingCaseDetailed.shtml?id=4" target="_blank"><img src="http://114.213.210.2:8080/JPKC-OS/upload/images/1436589020148.jpg" onerror="this.src='http://114.213.210.2:8080/JPKC-OS/resources/images/noimage.png'" alt="" width="65" height="60"></a></dt>
+<dd><a href="http://114.213.210.2:8080/JPKC-OS/teachingCaseDetailed.shtml?id=4" title="操作系统-文件系统讲解" target="_blank">操作系统-文件系统讲解</a><br>详解文件和文件系统、文件的物理结构和逻辑结构、外存分配方式、文件目录管理、文件存储空间管理。 </dd>
+</dl>
+
+</div>
+<!--end教学内容-->
+
+<div class="h_ann white_box" style="height:313px;">
+<dl class="h_th"><dd>例题精解</dd><dt><a href="http://114.213.210.2:8080/JPKC-OS/exampleSolutionsList.shtml">更多</a></dt></dl>
+
+<dl class="clear_div h_stu img_border">
+<dt><a href="http://114.213.210.2:8080/JPKC-OS/exampleSolutionsDetailed.shtml?id=3" target="_blank"><img src="http://114.213.210.2:8080/JPKC-OS/upload/images/1436605159303.jpg" onerror="this.src='http://114.213.210.2:8080/JPKC-OS/resources/images/noimage.png'" alt="" width="65" height="60"></a></dt>
+<dd><a href="http://114.213.210.2:8080/JPKC-OS/exampleSolutionsDetailed.shtml?id=3" title="操作系统课后习题讲解" target="_blank">操作系统课后习题讲解</a><br>主要包括第二章，第三章的课后习题进行重点解析，使同学们在学习时可以更好的掌握知识点。</dd>
+</dl>
+
+<dl class="clear_div h_stu img_border">
+<dt><a href="http://114.213.210.2:8080/JPKC-OS/exampleSolutionsDetailed.shtml?id=2" target="_blank"><img src="http://114.213.210.2:8080/JPKC-OS/upload/images/1436591590453.jpg" onerror="this.src='http://114.213.210.2:8080/JPKC-OS/resources/images/noimage.png'" alt="" width="65" height="60"></a></dt>
+<dd><a href="http://114.213.210.2:8080/JPKC-OS/exampleSolutionsDetailed.shtml?id=2" title="银行家算法典型例题" target="_blank">银行家算法典型例题</a><br>银行家算法是一种最有代表性的避免死锁的算法，本题则展示了银行家算法基本的计算流程。</dd>
+</dl>
+
+<dl class="clear_div h_stu img_border">
+<dt><a href="http://114.213.210.2:8080/JPKC-OS/exampleSolutionsDetailed.shtml?id=1" target="_blank"><img src="http://114.213.210.2:8080/JPKC-OS/upload/images/1436591426578.jpg" onerror="this.src='http://114.213.210.2:8080/JPKC-OS/resources/images/noimage.png'" alt="" width="65" height="60"></a></dt>
+<dd><a href="http://114.213.210.2:8080/JPKC-OS/exampleSolutionsDetailed.shtml?id=1" title="操作系统经典题目讲解" target="_blank">操作系统经典题目讲解</a><br>主要包含“生产者-消费者” ，“哲学家就餐”，各种调度算法等常见题型的讲解。</dd>
+</dl>
+
+</div>
+<!--end例题精解-->
+
+<div class="h_login white_box" style="height:313px;">
+<dl class="h_th"><dd>快速导航</dd><dt></dt></dl>
+<ul class="h_fase blue_link">
+<li><a href="http://114.213.210.2:8080/JPKC-OS/courseOverview.shtml">教学概况</a><a href="http://114.213.210.2:8080/JPKC-OS/courseContent.shtml">课程内容</a></li>
+<li><a href="http://114.213.210.2:8080/JPKC-OS/teachingResourcesList.shtml">教学资源</a><a href="http://114.213.210.2:8080/JPKC-OS/teachingresourcesDetail.shtml">教学研究</a></li>
+<li><a href="http://114.213.210.2:8080/JPKC-OS/teachingCaseList.shtml">教学案例</a><a href="http://114.213.210.2:8080/JPKC-OS/teachingContentList.shtml">学习指南</a></li>
+</ul>
+<dl class="h_th"><dd>友情链接</dd></dl>
+<ul class="clear_div h_link">
+
+<li><a href="http://my.hfut.edu.cn/" target="_blank">合工大信息门户</a></li>
+
+<li><a href="http://lib.hfut.edu.cn/" target="_blank">合工大校图书馆</a></li>
+
+<li><a href="http://ci.hfut.edu.cn/" target="_blank">计算机与信息学院</a></li>
+
+<li><a href="http://www.hfut.edu.cn" target="_blank">合肥工业大学</a></li>
+
+</ul>
+</div>
+<!--end快速导航-->
+</div>
+
+
+<div class="clear_div footer">Copyright &copy; 2014 合肥工业大学计算机与信息学院 All Rights Reserved</div>
+<!--end文件底-->
+<script type="text/javascript" src="http://114.213.210.2:8080/JPKC-OS/resources/js/global.js"></script>
+<!--[if lt IE 10]>
+<script type="text/javascript" src="http://114.213.210.2:8080/JPKC-OS/resources/js/pie.js"></script>
+<![endif]-->
+<script language="javascript">
+$(function() {
+    if (window.PIE) {
+        $('.rounded').each(function() {
+            PIE.attach(this);
+        });
+    }
+});
+</script>
+
+</body>
+</html>

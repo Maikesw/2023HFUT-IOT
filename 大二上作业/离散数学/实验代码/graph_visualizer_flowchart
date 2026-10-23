@@ -1,0 +1,30 @@
+// Graph Visualizer
+digraph {
+	node [fontname=SimSun]
+	edge [fontname=SimSun]
+	A [label="Start: Initialize GUI"]
+	B [label="Define GraphVisualizer Class"]
+	C [label="Initialize Canvas & Buttons"]
+	D [label="Set Interaction Modes"]
+	E [label="Handle Canvas Click & Drag"]
+	F [label="Add Vertex/Edge"]
+	G [label="Move/Delete Vertex"]
+	H [label="Run Algorithms (Dijkstra/Floyd)"]
+	I [label="Output Results"]
+	J [label="End: Tkinter Main Loop"]
+	A -> B
+	B -> C
+	C -> D
+	D -> E
+	E -> F
+	F -> G
+	G -> H
+	H -> I
+	I -> J
+	K [label="Dijkstra Algorithm"]
+	L [label="Floyd Algorithm"]
+	H -> K [label="If Dijkstra"]
+	H -> L [label="If Floyd"]
+	K -> I
+	L -> I
+}

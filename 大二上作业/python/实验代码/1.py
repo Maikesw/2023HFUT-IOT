@@ -1,0 +1,1 @@
+n = int(input("请输入一个正整数n: ")); print(f"从1到n的和为: {sum(range(1, n+1))}")

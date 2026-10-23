@@ -1,0 +1,62 @@
+﻿<%@ Master Language="C#" AutoEventWireup="True" CodeBehind="MainPage.master.cs" Inherits="NewTywz.MainPage" %>
+<%@ Register TagPrefix="UserControl" TagName="WebHeader" Src="/UserControl/WebHeader.ascx" %> 
+<%@ Register TagPrefix="UserControl" TagName="WebFoot" Src="/UserControl/WebFoot.ascx" %> 
+<%@ Register TagPrefix="UserControl" TagName="WebHeadNavigator" Src="/UserControl/WebHeadNavigator.ascx" %> 
+<%@ Register TagPrefix="UserControl" TagName="WebListNavigator" Src="/UserControl/WebListNavigator.ascx" %> 
+<%@ Register Assembly="Ext.Net" Namespace="Ext.Net" TagPrefix="ext" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server"  id="Header">
+    <title>无标题页</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="css/css.css" rel="stylesheet" type="text/css" />    
+</head>
+<body  background="img/indexbg.jpg" >
+    <form id="form1" runat="server">
+    <ext:ResourceManager ID="MainPage_ResourceManager" runat="server" />
+    <UserControl:WebHeader id="webPageHeader" runat="server"  />
+    
+        <table width="1007" border="0"  align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+          <tr>
+            <td width="4></td>
+            <td width="998">
+                <table width="998"  border="0" align="center" cellpadding="0" cellspacing="0">
+                <tr><td height="5"></td></tr>
+                <tr>
+                    <td>
+                        <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td width="224" valign="top" bgcolor="#DDDDDD">
+                            <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+                            <tr height="33">
+                                <td width="9" align="right"><img src="/img/nav1.jpg" /></td>
+                                <td width="250" background="/img/nav2.jpg"><ext:Label ID="labNav" runat="server" /></td>
+                                <td width="44"><img src="/img/nav3.jpg" /></td>
+                            </tr>
+                            <tr>
+                            <td colspan="3"><asp:Table ID="tabMoreNav" runat="server" Width="100%" /></td>
+                            </tr>
+                            </table>
+                            </td>
+                            <td width="15"></td>
+                            <td width="759">
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </td>
+                        </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr><td height="5"></td></tr>
+                </table>
+            </td>
+             <td width="5"></td>
+          </tr>
+      </table>
+    <UserControl:WebFoot id="webPageFoot" runat="server"  />
+    </form>
+</body>
+</html>

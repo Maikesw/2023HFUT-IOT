@@ -1,0 +1,40 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: luojiyuns - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSPAF9.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/luojiyuns.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"G:\离散数学\离散数学实验汇总2019\实验课上给学生\实验1-1：Logic Console\luojiyuns.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSPAF9.tmp" 
+<h3>Output Window</h3>
+Compiling...
+luojiyuns.cpp
+g:\离散数学\离散数学实验汇总2019\实验课上给学生\实验1-1：logic console\luojiyuns.cpp(67) : warning C4101: 'res' : unreferenced local variable
+g:\离散数学\离散数学实验汇总2019\实验课上给学生\实验1-1：logic console\luojiyuns.cpp(90) : warning C4101: 'jud' : unreferenced local variable
+g:\离散数学\离散数学实验汇总2019\实验课上给学生\实验1-1：logic console\luojiyuns.cpp(112) : warning C4101: 'jud' : unreferenced local variable
+g:\离散数学\离散数学实验汇总2019\实验课上给学生\实验1-1：logic console\luojiyuns.cpp(133) : warning C4101: 'jud' : unreferenced local variable
+g:\离散数学\离散数学实验汇总2019\实验课上给学生\实验1-1：logic console\luojiyuns.cpp(154) : warning C4101: 'jud' : unreferenced local variable
+g:\离散数学\离散数学实验汇总2019\实验课上给学生\实验1-1：logic console\luojiyuns.cpp(174) : warning C4101: 'jud' : unreferenced local variable
+g:\离散数学\离散数学实验汇总2019\实验课上给学生\实验1-1：logic console\luojiyuns.cpp(83) : error C4716: 'luoji::And' : must return a value
+g:\离散数学\离散数学实验汇总2019\实验课上给学生\实验1-1：logic console\luojiyuns.cpp(105) : error C4716: 'luoji::Or' : must return a value
+g:\离散数学\离散数学实验汇总2019\实验课上给学生\实验1-1：logic console\luojiyuns.cpp(126) : error C4716: 'luoji::Not' : must return a value
+g:\离散数学\离散数学实验汇总2019\实验课上给学生\实验1-1：logic console\luojiyuns.cpp(147) : error C4716: 'luoji::Xor' : must return a value
+g:\离散数学\离散数学实验汇总2019\实验课上给学生\实验1-1：logic console\luojiyuns.cpp(167) : error C4716: 'luoji::Single_condition' : must return a value
+g:\离散数学\离散数学实验汇总2019\实验课上给学生\实验1-1：logic console\luojiyuns.cpp(189) : error C4716: 'luoji::Double_condition' : must return a value
+fatal error C1085: Cannot write compiler generated file: 'Debug/luojiyuns.obj': No space left on device
+
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+luojiyuns.obj - 7 error(s), 6 warning(s)
+</pre>
+</body>
+</html>

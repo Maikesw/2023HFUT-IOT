@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="True" CodeBehind="TreeSel.Master.cs" Inherits="NewTywz.TreeSelMaster" %>
+<%@ Register Assembly="Ext.Net" Namespace="Ext.Net" TagPrefix="ext" %>
+<%@ Register TagPrefix="UserControl" TagName="DataTree" Src="/admin/UserControl/DataTree.ascx" %> 
+<%@ Register TagPrefix="UserControl" TagName="DataList" Src="/admin/UserControl/DataList.ascx" %> 
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title></title>
+    <link href="/css/css.css" rel="stylesheet" type="text/css" />    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+    <form id="form1" runat="server">
+    <ext:ResourceManager ID="TreeSelMaster_ResourceManager" runat="server" />
+    
+    <ext:Viewport ID="TreeSelMaster_Viewport" runat="server">
+       <Content>            
+            <ext:BorderLayout ID="TreeSelMaster_BorderLayout" runat="server">
+            <West split="true" Collapsible="true" >            
+                <ext:Panel ID="TreeSelMaster_TreePanel" runat="server" Border="true" Width="160" Header="true" AutoScroll="True" >
+                <TopBar>
+                    <ext:Toolbar runat="server">
+                     <Items>
+                        <ext:Button ID="TreeSelMaster_ExpandAll" runat="server" Text="展开" Icon="ArrowOut">
+                          <DirectEvents>
+                              <Click OnEvent="TreeSelMaster_ExpandAllClick" />
+                          </DirectEvents>
+                        </ext:Button>
+                        <ext:Button ID="TreeSelMaster_CollapseAll" runat="server" Text="折叠" Icon="ArrowIn">
+                          <DirectEvents>
+                              <Click OnEvent="TreeSelMaster_CollapseAllClick" />
+                          </DirectEvents>
+                        </ext:Button>
+                    </Items>
+                    </ext:Toolbar>
+                </TopBar>
+                <Content> 
+                    <UserControl:DataTree id="TreeSelMaster_DataTree" runat="server" onTreeClick="TreeSelMaster_NodeClick" />
+                </Content>
+                </ext:Panel>
+      	    </West>
+      	    <Center>
+                <ext:Panel ID="TreeSelMaster_pContent" runat="server" Title="Title" BodyBorder="true" Layout="Absolute" BodyStyle="background-color: #DFE8F6;" >
+                <Content>                    
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+                    <UserControl:DataList 
+                        id="TreeSelMaster_DataList" 
+                        runat="server" 
+                        onListEditClick="TreeSelMaster_ListEditClick" 
+                        onListAddClick="TreeSelMaster_ListAddClick" 
+                        onListAllClick="TreeSelMaster_ListAllClick"
+                        />    
+                </Content>
+                </ext:Panel>
+      	   </Center>
+      	   </ext:BorderLayout>
+      </Content>
+    </ext:Viewport>
+    </form>   
+  
+</body>
+</html>

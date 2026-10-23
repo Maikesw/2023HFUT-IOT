@@ -1,0 +1,30 @@
+// 图可视化器流程图
+digraph {
+	node [fontname=SimSun]
+	edge [fontname=SimSun]
+	A [label="开始: 初始化 GUI"]
+	B [label="定义 GraphVisualizer 类"]
+	C [label="初始化画布和按钮"]
+	D [label="设置交互模式"]
+	E [label="处理画布点击和拖动"]
+	F [label="添加顶点/边"]
+	G [label="移动/删除顶点"]
+	H [label="运行算法 (Dijkstra/Floyd)"]
+	I [label="输出结果"]
+	J [label="结束: 运行 Tkinter 主循环"]
+	A -> B
+	B -> C
+	C -> D
+	D -> E
+	E -> F
+	F -> G
+	G -> H
+	H -> I
+	I -> J
+	K [label="Dijkstra 算法"]
+	L [label="Floyd 算法"]
+	H -> K [label="如果选择 Dijkstra"]
+	H -> L [label="如果选择 Floyd"]
+	K -> I
+	L -> I
+}

@@ -1,0 +1,684 @@
+IEEE TRANSACTIONS ON VISUALIZATION AND COMPUTER GRAPHICS, VOL. XX, NO. XX, 2019 1
+
+
+Computational Design of Self-actuated Deformable Solids via Shape Memory Material 
+Yucheng Sun, Wenqing Ouyang, Zhongyuan Liu, Ning Ni, Yann Savoye, Peng Song, and Ligang Liu
+
+
+Abstract—The emerging 4D printing techniques open new horizons for fabricating self-actuated deformable objects by combing strength of 3D printing and stimuli-responsive shape memory materials. This work focuses on designing self-actuated deformable solids for 4D printing such that a solid can be programmed into a temporary shape and later recovers to its original shape after heating. To avoid a high material cost, we choose a dual-material strategy that mixes an expensive thermo-responsive shape memory polymer (SMP) material with a common elastic material, which however leads to undesired deformation at the shape programming stage. We model this shape programming process as two elastic models with different parameters linked by a median shape based on customizing a constitutive model of thermo-responsive SMPs. Taking this material modeling as a foundation, we formulate our design problem as a nonconvex optimization to ﬁnd the distribution of SMP materials over the whole object as well as the median shape, and develop an efﬁcient and parallelizable method to solve it. We show that our proposed approach is able to design self-actuated deformable objects that cannot be achieved by state of the art approaches, and demonstrate their usefulness with three example applications. 
+
+Index Terms—Computational design, deformable solid, shape memory material, constitutive model, 4D printing
+
+F
+
+
+ 
+1 INTRODUCTION
+A deformable object refers to an object whose shape changes when forces or other means are applied. These objects are more adaptable to the working environment and safer to use due to their soft material, and thus have been widely used in many applications such as soft robotics [1], biomedical devices [2], and customized toys [3]. Deformable objects com- monly require external forces to drive their deformation from an initial shape to a target shape [3], [4]. Recently, researchers are interested in designing self-actuated deformable objects that can change their shape without relying on any external forces. One excellent solution is to attach 3D printed rigid tiles [5] or ﬂexible rods [6] on a pre-stretched 2D planar sheet such that once released, restoring forces of the sheet can drive the deformation until achieving an equilibrium state with internal forces among the tiles/rods. 
+Following the spirit of designing self-actuated deformable objects, other researchers resort to the emerging technique of 
+4D printing [7] that combines the strength of 3D printing and stimuli-responsive shape memory materials (SMMs). These objects with SMMs can be deformed from their permanent shape to a temporary shape when heated with external forces applied (i.e., shape programming stage; see Figure 1(top)). Due to the shape memory effect, the object will keep at that temporary shape when the environmental temperature 
+
+•	Y. Sun is with University of Science and Technology of China, and Singapore University of Technology and Design. E-mail: syc1011@ustc.edu.cn. 
+•	W. Ouyang, N. Ni, Z. Liu, and L. Liu are with University of Science and Technology of China. E-mail: fwq8809, zyliu28, niningg@mail.ustc.edu.cn, lgliu@ustc.edu.cn. 
+•	Y. Savoye is with Liverpool John Moores University, United Kingdom. E-mail: ysavoye@siggraph.org. 
+•	P. Song is with Singapore University of Technology and Design. Email:
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+Fig. 1: Shape memory process of SMMs, where the perma- nent, median, and temporary shapes are colored in blue, green, and orange respectively. The external forces are colored in red. 
+
+is decreased and the external forces are removed (i.e., unloading). In the shape recovery stage, the temporary shape can turn back to the permanent one after being reheated; see Figure 1(bottom). Existing works design such objects by inserting actuators 3D printed with SMMs at speciﬁed loca- tions in the object such that when heated local deformations 
+(e.g., bending) caused by shape recovery effect at multiple actuators can drive the object deformation behavior. Due to this design strategy, the resulting designs are limited to origami-like objects [8], [9] and mesh structures [10]. 
+In this work, we focus on designing self-actuated de- formable solids for 4D printing, whose geometry does not provide explicit hints to embed SMM actuators. To avoid a high material cost, we choose a dual-material strategy that mixes an expensive 1 thermo-responsive shape memory polymer (SMP) material with a common elastic material 
+(i.e., thermoplastic elastomer (TPE) material) for fabricating our objects. This dual-material strategy does not affect the 
+
+1.	SMP material (e.g., 1000 USD/kg) could be around 30 times more expensive than TPE material (e.g., 30 USD/kg). 
+ 
+IEEE TRANSACTIONS ON VISUALIZATION AND COMPUTER GRAPHICS, VOL. XX, NO. XX, 2019 2
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+Fig. 2: Our deformable solid partially made with thermo- responsive SMPs. Taking (a) a permanent and (b) a temporary shape as inputs, our design method optimizes (c) both the dual-material distribution (SMPs colored in cyan) and external forces (in red) applied on the object such that the permanent shape can be programmed into (d) the temporary shape. (e) The fabricated temporary shape automatically turns back to (f) the permanent shape when reheated. 
+
+shape recovery stage in the shape memory process since both materials are in hyperelastic state when heated. However, the shape of mixed materials after cooling and unloading will not remain unchanged but undergo a certain amount of undesired deformation since the SMPs try to keep its temporary form due to the shape memory effect yet the elastic TPEs attempt to go back to the permanent form. Hence, the shapes before and after unloading are different, named as median and temporary shapes respectively; see the green and orange shapes in Figure 1. 
+Inspired by the recent research progress on constitutive models [11] that describe shape memory behavior of SMPs in material science, we customize one suitable constitutive model of thermo-responsive SMPs and incorporate it into our design framework to guide the distribution of SMP material as well as a sparse set of external forces over the whole object such that the object partially made with SMPs can take a user-speciﬁed permanent or temporary shape depending on the environmental temperature; see Figure 2 for an example. In particular, we present the following contributions: 
+
+•	We simplify the constitutive model in [12] to describe shape memory effect of SMPs such that it is feasible to be incorporated into our computational framework. 
+•	We formulate the design of self-actuated deformable solids with dual materials as a nonconvex optimiza- tion and take the undesired deformation due to material-mixing into consideration. 
+•	We propose a novel and effective method to solve the nonconvex optimization problem. 
+
+Our designed deformable solids are self-actuated at the shape recovery stage, i.e., transform from a temporary shape to a permanent shape purely by the environmental stimulus 
+(i.e., heating), as demonstrated in physical experiments on a number of fabricated results. Three example applications further show their advantages: 1) a grasper that relies on shape memory effect to control the grasping process; 2) a smart key-lock system that can be locked by adjusting envi- ronmental temperature; and 3) an assembly of deformable solids for efﬁcient packing and automatic deployment. 
+ 
+
+2 RELATED WORK
+
+Designing Deformable Objects. Computational design and fabrication of deformable objects have attracted signif- icant attention from the computer graphics community in recent years. Some researchers focus on investigating new metamaterials as a foundation of the design process. One typical example is to design 3D printable microstructures that can achieve controllable elastic material properties, by geometrically modeling microstructures as a connection of parametric and tileable cubic patterns [13], [14], a Voronoi cell structure [15], [16], or an aperiodic and stochastic graph structure [17]. 
+Deformable objects with desired behavior can be de- signed by optimizing the distribution of multiple base ma- terials [18]. Skouras et al. [3] designed actuated deformable characters by optimizing internal material distribution and external actuation forces while Zehnder et al. [19] fabricated composite silicone rubbers by injecting inclusions of dopant material with the optimized number, size, and locations into a silicone matrix material. Others achieve the deformable be- havior by optimizing the object geometry instead, including cross-sectional proﬁles of rods in ﬂexible meshes [20], shell thickness of hollowed objects [21], and rest shape of an object that can deform to its target shape under external forces (e.g., gravity) [4]. Material distribution and object geometry can be jointly optimized to achieve desired deformation, e.g., to design soft pneumatic objects [22]. Rather than relying on external actuation forces, some researchers are interested in designing 3D objects that can form from pre-stretched 2D planar sheets [5], [6] with internal restoring forces. 
+All the above works design deformable objects for fabrica- tion with 3D printing, optionally with modiﬁed printers [19] or post-processing such as gluing [5]. Hence, the fabricated objects can deform only under external actuation forces or internal restoring forces. In contrast, our work focuses on designing deformable objects for 4D printing with shape memory materials, enabling the object to deform from a temporary shape to the permanent shape purely based on environmental stimulus (i.e., heating). 
+Shape Memory Materials are a class of stimuli-responsive materials that have the capability of changing their shape upon application of an external stimulus [23]. Among a number of types of SMMs developed so far, shape memory alloys (SMAs) [24] and shape memory polymers (SMPs) [25] are the most important ones. Comparing with other SMMs, SMPs possess advantages of large deformation capacity, low density and cost, and have been widely used in many areas. Of all types of SMPs, thermo-responsive SMP is the ﬁrst and the most widely used one, which can be deformed and ﬁxed in a temporary shape at a certain condition and recovers the permanent shape when heated. The increasing interest in employing thermo-responsive SMPs in the design of innovative products motivates an in-depth investigation of their shape memory behavior. To this end, a number of constitutive models have been developed for thermo- responsive SMPs; please refer to [11] for a review. Among all existing constitutive models, the 3D ﬁnite-strain phenomeno- logical model in [12] has signiﬁcant advantages including a thermodynamically consistent mathematical framework and considering the peculiar thermomechanical features of SMPs, 
+ 
+IEEE TRANSACTIONS ON VISUALIZATION AND COMPUTER GRAPHICS, VOL. XX, NO. XX, 2019 3
+
+ 
+which, however, also make it computationally heavy. In this work, we simplify the constitutive model to improve its efﬁciency for incorporating it into our computational design framework; see Section 4 for the details. 
+Design for 4D Printing. 4D printing is deﬁned as 3D printing plus one more dimension of time, meaning that the shape, property, or functionality of a 3D printed structure can change as a function of time. 4D printing originates from 
+3D printing technology, but requires additional stimulus and stimulus-responsive materials. Research into 4D printing has attracted unprecedented interest since the idea was ﬁrst introduced [7]. We refer readers to an excellent survey [26] for recent advances in 4D printing. 
+4D printed objects can exhibit programmed behavior including self-assembly, self-repair, and reconﬁguration through environmental free energies. Due to these intriguing properties, a number of methods and tools have been devel- oped to design objects for 4D printing (mostly with SMP). Typical works are about designing self-actuated deformable objects, including active origami [8], self-folding objects [9], morphing mesh structures [10], and bistable reconﬁgurable structures [27], by inserting actuators 3D printed with shape memory thermoplastic at speciﬁed locations in the object. To support the design process, experiments and quantitative analyses have been conducted to characterize the relationship between material/printing parameters (e.g., actuator length, layer thickness) and the resulting deformation performances 
+(e.g., bending angle). Compared with the above works, we design self-actuated deformable objects by solving the distri- bution of SMP materials (considered as “micro-actuators”) over the whole object based on optimization, enabling us to design deformable solids that were not possible before. 
+
+
+3 OVERVIEW
+
+We take a permanent shape and a temporary shape of an object represented as a pair of compatible tetrahedral meshes as our inputs, denoted as Xperm and Xtemp respectively; see Fig. 3(a&b). Our goal is to distribute two types of material (i.e., elastic TPE and thermo-responsive SMP) over the permanent shape Xperm such that it can be deformed to the temporary shape Xtemp based on a few external forces denoted as ffextg at the shape programming stage; see Fig. 3(c-e). We address the material distribution as a binary labeling problem, where each tetrahedron in the permanent shape Xperm is assigned a label, e.g., 1 for SMP and 0 for TPE. In the followings, we overview our material modeling with TPEs and SMPs, and our approach to solving the problem. 
+Material modeling. The physical traits of a given material are usually described by its constitutive model that relates stimuli (e.g., deformations) to the material response (e.g., force, stress, energy) they trigger [28]. In this paper, consti- tutive models are all described by the formula for the strain energy density as a function of the deformation gradient. Our material consists of two base materials: elastic TPEs and thermo-responsive SMPs. We assume TPE is a hyperelastic material and describe it with the well-known Neo-Hookean constitutive model. 
+Thermo-responsive SMP material can change its state upon temperature changes; in particular, transit from its 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Fig. 3: Taking a pair of user-speciﬁed (a) permanent and (b) temporary shapes as inputs, our method optimizes both the material distribution (SMP in cyan and TPE in gray) and a sparse set of external forces (red line in (d)) such that (c) the permanent shape can be deformed into (d) a median shape based on the force(s), which after unloading will eventually transform to (e) the temporary shape (the median shape is rendered in purple to highlight the undesired deformation). 
+
+glassy state to the rubbery state when the temperature is above θT ; see Fig. 4. For the SMP used in our experiments, θT = 328K, where K is Kelvin unit of thermodynamic temperature. In practice, the transition does not occur instantaneously once the SMPs are heated above θT , but within in a temperature range [θT − ∆θ; θT + ∆θ], where ∆θ represents the half-width of the temperature range. We choose and simplify the constitutive model in [12] to describe SMP materials; see Section 4. 
+
+Overview of our approach. To ﬁnd the material distribu- 
+tion, we initially allow an arbitrary afﬁne combination of the two base materials within each tetrahedron of the object, and later drive the tetrahedrons materials toward one of the base materials, leading to a discrete material distribution in the object [3]. We formulate a nonconvex optimization problem to solve the material distribution as well as the external forces for shape programming while taking the undesired deformation into consideration; see Section 5. The key idea is to take the median shape (e.g., the green shape in Fig. 1 and the shape in Fig. 3(d)) as an intermediate variable to model the undesired deformation after unloading. By utilizing the special structure of the optimization problem, we introduce 
+
+
+
+
+
+
+
+
+
+
+
+
+Fig. 4: Elasticity of SMP materials change as a function of temperature θ, resulting in three different phases: 1) glassy phase when θ < θT − ∆θ; 2) mixture phase when θ 2 [θT −∆θ; θT +∆θ]; and 3) rubbery phase when θ > θT +∆θ. 
+ 
+IEEE TRANSACTIONS ON VISUALIZATION AND COMPUTER GRAPHICS, VOL. XX, NO. XX, 2019 4
+
+ 
+proper auxiliary variables and reformulate the optimization to a form that is suitable to be solved by the Alternating Direction Multiplier Method (ADMM), a well-established optimization solver; see Section 6. 
+
+4 SIMPLIFIED CONSTITUTIVE MODEL OF SMPS
+This section presents our simpliﬁed constitutive model of SMPs based on [12]. To facilitate understanding, we ﬁrst present our selected elastic model, and then the original constitutive model of SMPs proposed by Boatti et al. [12]. Note that the elastic model will be used not only to help construct our simpliﬁed constitutive model of SMP materials, but also to describe TPE materials. 
+
+4.1 Elastic Model
+We model elastic materials using the Neo-Hookean consti- tutive model since it can predict the nonlinear stress-strain behavior of materials undergoing large deformations [28]. In the followings, we show how this model describes the strain energy density within an elastic shape as a function of the deformation gradient F. 
+Given an input elastic shape, it is ﬁrst discretized into a set of ﬁnite elements, i.e., tetrahedrons. The deformation gradient F within each tetrahedron is constant as we assume linear elements for efﬁciency. Denote a tetrahedron with its four vertices at the rest pose as [v1; v2; v3; v4] and its corre- sponding tetrahedron at the deformed pose as [v1; v2; v3; v4], 
+T T
+
+j 2 f1; 2; 3; 4g. Given the tangential vectors (local coordi- 
+ 
+ 
+deformation gradient is expressed as F = V V −1 2 R3×3. 
+
+
+
+
+
+(F) = J (tr (C) − 3) + (J − 1) (1)
+
+where J = detF is the determinant of F, tr (C) is the trace of C, and µ and κ are material parameters denoting the shear modulus and bulk modulus respectively. The strain energy W of a given tetrahedron is calculated as W = V , where V is the volume of this tetrahedron in the undeformed conﬁguration. 
+We denote the elastic force incurred by the deformation as f. An explicit expression to calculate f is presented based on two stress tensors. The second Piola-Kirchhoff stress tensor is deﬁned as: 
+
+S = 2 	 = µJ I − J tr (C) C + κ (J − 1) JC
+(2) where I is the 3 × 3 identity matrix. And the ﬁrst Piola- Kirchhoff stress tensor is deﬁned as: 
+
+P = FS = µJ− F − J− tr (C) F−T + κ (J − 1) JF−T
+(3)
+
+Based on Equation 3, the elastic force fi of the ith vertex in the shape can be computed as fi = P ni, where ni is the normal of the ith vertex in the rest pose. 
+ 
+
+4.2 Constitutive Model of SMPs
+We give a brief introduction to the constitutive model proposed by Boatti et al. [12]. This model is based on a phenomenological description of SMP behavior, considering the three material phases (i.e., glassy, mixture, and rubbery phases) in Figure 4. In the followings, we use the superscript r and g to denote quantities of SMP materials in rubbery and glassy states respectively. 
+
+Volume Fraction Evolution. A given local SMP sample at a given temperature θ is assumed to be a mixture of the soft rubbery state and the hard glassy state, i.e., 
+φr (θ)+φg (θ) = 1 with φr (θ) ; φg (θ) 2 [0; 1]
+ 
+ 
+in rubbery and glassy states respectively. In particular, φg (θ) is postulated as: 
+
+
+
+
+
+
+where = 0:02 K−1 is a constant controlling the sensitivity
+of the fraction relative to the temperature change.
+
+Phase-speciﬁc Deformation Gradients. The total deforma- tion gradient F is assumed to be consistent for the rubbery and glassy phases: 
+F = Ftr = Ftg (6)
+where Ftr and Ftg denote the total deformation gradient for the rubbery and glassy phases respectively. 
+During the glassy phase, the SMP material exhibits an elastoplastic behavior and the deformation Ftg is decom- posed as 
+Ftg = Fg · Ff (7)
+where Fg is the glassy deformation gradient and Ff is the frozen deformation gradient. And the glassy deformation gradient Fg can be further decomposed as 
+Fg = Feg · Fpg (8)
+where Feg and Fpg denote the elastic and plastic components of the glassy deformation gradient respectively. 
+During the rubbery phase, the SMP material exhibits a hyperelastic behavior and the total deformation gradient Ftr is decomposed as 
+Ftr = Fr · Fp (9)
+where Fr is the rubbery deformation gradient consistent with its elastic part Fer (i.e., Fr = Fer) and Fp is the permanent deformation gradient of the non-ideal shape recovery. Please refer to the supplementary material for analytical deﬁnitions of the plastic component of glassy deformation gradient Fpg, frozen deformation gradient Ff , and permanent deformation gradient Fp. 
+
+Constitutive Model. The Helmholtz speciﬁc free energy Ψ for SMPs is deﬁned as a function of the deformation gradients [12]: 
+Ψ = (1 − φg (θ)) · Ψr + φg (θ) · Ψg (10)
+ 
+IEEE TRANSACTIONS ON VISUALIZATION AND COMPUTER GRAPHICS, VOL. XX, NO. XX, 2019 5
+
+Since both Ψr and Ψg contain an elastic component only, we can compute them based on the elastic model in Section 4.1. 
+
+ 
+
+(11)
+(12)
+ 
+
+Simpliﬁed Constitutive Model. Using the Neo-Hookean model (see Section 4.1), our simpliﬁed model expresses the free energies Ψr and Ψg as follows: 
+ 
+
+where Ψer and Ψeg are the elastic potential energy for the rubbery phase and the glassy phase respectively. Ψpg is the plastic contributions in the glassy phase. Also, Ψ er and Ψ er 
+
+
+
+
+
+
+Ψpg = h kEpgk2
+
+where h is a positive parameter describing the material hard- ening and Epg is the Green-Lagrange tensor corresponding to the plastic component of glassy deformation gradient F pg. 
+
+
+4.3 Constitutive Model Simpliﬁcation
+
+We simplify the constitutive model to improve its efﬁciency by removing features irrelevant to our design goal based on three assumptions. 
+First, the thermal deformation is generally much subtle comparing to the shape deformation and was not observed in our experiments. Thus we have the following assumption: 
+
+
+ 
+r r
+
+ 
+
+Ψther = Ψref = 0 
+
+Second, when the stress does not exceed the limit yield stress, the plastic deformation will not happen at the glassy phase and can be neglected (Table 5 in [12]). Thus, we can 
+make the following assumption: 5.1 Notations
+
+of the object respectively. Denote vertices of the median shape
+Thus, according to Equation 13, we have: Xmed and the resulting temporary shape Xﬁnal as xmed 2
+R3nv and xﬁnal 2 R3nv , respectively. Denote deformation
+Ψpg = 0 (15) gradients of the median shape and ﬁnal shape as Fmed 2
+R9nt and Fﬁnal 2 R9nt , respectively.
+Third, in our experiments, we found that both shape- The distribution of two base materials (i.e., TPEs and
+ﬁxing and shape-recovery are ideal or nearly ideal. Hence, SMPs) is stored into the vector ρ 2 Rnt with ρj 2 R as
+we can make the following assumption: the selected material for the jth (1 ≤ j ≤ nt) tetrahedron
+
+
+Based on Assumption 3, computation of the rubbery deformation gradient Fr and the elastic component of glassy deformation gradient Feg can be simpliﬁed as follows: 
+
+ 
+Fr = F;
+ 
+
+   −1 
+
+See the supplementary material for a deviation.
+Combining Assumption 1 and 2, we obtain the following equalities for the free energies: 
+
+ 
+Ψr = Ψer
+ 
+
+and
+ 
+
+Ψg = Ψeg
+ 
+IEEE TRANSACTIONS ON VISUALIZATION AND COMPUTER GRAPHICS, VOL. XX, NO. XX, 2019 6
+
+ 
+refers to the vertex index. The vol- ume of jth tetrahedron in the per- manent shape Xperm is denoted by V jperm. The gravity force is denoted by fg and B is the set of indices of boundary vertices in Xperm. The set of indices of tetrahedrons adjacent to the ith vertex is denoted as T (i), and V (j) is the set of indices of the 
+jth tetrahedron’s vertices. The standard Euclidean norm is denoted by k · k and the standard inner product is denoted by h·; ·i. By deﬁnition of the median shape and the frozen deformation gradient Ff (see the supplementary material), 
+i
+
+
+
+5.2 Nonconvex Optimization Problem
+
+Objective Function. We introduce the median shape Xmed (see Fig. 3(d)) as an auxiliary variable and we formulate our problem as an optimization: 
+ 
+
+of external forces are fimed+fig of the boundary voxels in Xmed.
+Thus, imposing sparsity on fimed + fig is also effective. 
+ 
+Material Distribution Objective. The material distribution objective Eρ is deﬁned as a weighted linear combination of three objective terms: 
+
+Eρ = λmatEmat + λsmoothEsmooth + λSMPESMP (26)
+
+where λmat, λsmooth, and λSMP are the weights balancing the importance of each term. The meaning of each energy term is introduced below. 
+First, we enforce per-tetrahedron material ρj to converge toward either 0 or 1 to reach a meaningful physical solution. 
+
+Emat = ρj 1 − ρj (27)
+i=1
+Second, we incorporate a regularization term to enforce the material distribution smoothness because a small number of large material clusters is favored rather than a large number of small clusters in the fabrication.  
+
+ 
+arg min E = λpﬁnalEpﬁnal + λforceEforce + Eρ
+fxﬁnal; xmed; ρg
+s.t. fimed + fig = 0; 8i 2 B
+fﬁnal + fg = 0
+
+ 
+
+(21)
+
+
+(23) Finally, to reduce the material cost, we add a penalty term to minimize the usage of expensive SMP materials:  
+where fmed and fﬁnal are the internal forces of Xmed and
+Xﬁnal respectively, and λforce and λpﬁnal are the weights. ESMP = kρk (29) Equation (22) and (23) represent the equilibrium states of The above optimization problem is highly nonconvex 
+
+material. objective term (see Equation (25)) is nonsmooth. To the
+Final Shape Objective. The ﬁnal shape Xﬁnal must match best of our knowledge, a universal method and theory is the input temporary shape Xtemp as close as possible. This not available for such nonconvex nonsmooth optimization 
+ﬁtness objective is expressed by: problems. In optimization community, it is agreed that
+algorithms used to solve such problems should depend on the speciﬁc form of the objective function and constraints [30], which typically is a challenging task. In Section 6, we will explore the special structure in our problem and utilize it to develop an efﬁcient solver. 
+
+6 OUR OPTIMIZATION SOLVER
+To solve the optimization problem in Section 5.2, we divide the overall optimization process into three steps by exploiting structure of the problem and introducing auxiliary variables. By this, each step can be either optimized in parallel or admits a closed-form solution, and thus the overall optimization can be solved efﬁciently. 
+
+(25)	6.1 Overall Functional Design
+The overall functional involves three types of variables: the mesh coordinates x, the elastic force f and material distribution parameters ρ. However, f depends on x and ρ. We neglect ρ temporarily. Then the computation of the elastic force f can be described as: x ! F ! f, where F is the deformation gradient. Usually, the relationship between F and x is linear. The complexity of the overall functional lies in the fact that f and F are related according to the hyperelastic model, which is highly non-linear. Unfortunately, 
+ 
+IEEE TRANSACTIONS ON VISUALIZATION AND COMPUTER GRAPHICS, VOL. XX, NO. XX, 2019 7
+
+ 
+ 
+maps all the mesh coordinates to the deformation gradient. Note that the deﬁnition of these two force functions could be found in the supplementary material. The augmented Lagrangian function of problem in Equation (31) is stated as follows: 
+L (V) = Etotal + hFﬁnal − Dxﬁnal; βFfdFfi
+
+
+2
+
+2 
++ hfﬁnal − fﬁnal (Fmed; Fﬁnal; ρ); βffdffi 
+βff 2
+
++ hfmed − fmed (Fmed; ρ); βfmdfmi
+
+2
+where all the d with any subscript are the corresponding dual variables and all the β with any subscript are the corresponding penalty parameters; e.g., dFf (βFf) is the dual variable (penalty parameter) corresponding to the constraint Fﬁnal − Dxﬁnal = 0. During our experiments, we notice that the Augmented Lagrangian Method (ALM) is very slow compared with the ADMM [31]. Therefore, we use the ADMM to solve this optimization problem. Rather than using ordinary Newton method [3], we utilize speciality of the variables and divided them into several groups to speed up the ADMM as much as possible; see the optimization solving strategy in Section 6.3. 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ i2B  j2T (i)   
+and reformulate the two constraints (i.e., Equation (22) and (23)) on the internal forces in the median and ﬁnal shape as two new energy terms: 
+0 1 X X 
+
+0 1 X X 
+
+i	j2T (i)
+
+
+
+
+
+δ : R ! R [ f+1g and x ! (30)
+
+By this, we reformulate our optimization problem as: 
+:= λpﬁnalEpﬁnal + λforceEforce + Eρ + Einner + Efﬁnal 
+(31)
+
+fﬁnal = fﬁnal(Fmed; Fﬁnal; ρ); fmed = fmed(Fmed; ρ)
+ 
+
+6.3 Optimization Solving Strategy
+We divide the set of variables V into three distinct groups, and then in each step we optimize each group while ﬁxing 
+
+
+
+2)	The f-x-step: xmed; xﬁnal; f ; f l
+3)	The ρ-step: fρg
+To solve the overall optimization, we run the ρ-step and the f-x step alternatively, and then we execute the F-step. Finally, we update the dual variables. We repeat this process until convergence. In the following, we brieﬂy explain each individual step. Please refer to the supplementary material for more details. 
+The F-step. The deformation gradients in L (V) from
+different tetrahedrons do not affect other variables when they are ﬁxed. Then, the F-step is decomposed into nt small sub-problems. Each sub-problem can be carried out within one tetrahedron in parallel. Then we use the well-known L-BFGS method to solve these separated problems. Usually it will converge within 10 steps. 
+The f-x-step. In this step, every f; x can be split into small sub-problems within each vertex. Moreover, all the iterations in this step has a closed-form solution, which makes this step extremely fast. Please refer to the supplementary material for the derivation of the closed-form solution. 
+The ρ-step. The energy term involving ρ can be written as:
+
+
+j=1
+ 
+IEEE TRANSACTIONS ON VISUALIZATION AND COMPUTER GRAPHICS, VOL. XX, NO. XX, 2019 8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+Fig. 6: Undesired deformation from a median shape (in purple) to the resulting temporary shape decreases when more SMP materials (in cyan) are used. The given permanent shape (in orange) is also shown for calculating the undesired deformation measure Rr . 
+
+where fi (·) is a polynomial function of fourth-order. Then, the task is to optimize a multi-variable polynomial. We use ADMM instead of the Newton method which requires a large linear system to be solved at each iteration. The inner ADMM steps in the ρ-step can be decomposed into two substeps as well, one of which can be solved in parallel and another admits a closed-form solution. 
+
+
+7 EXPERIMENTAL RESULTS
+We implemented our algorithm in C++ on a desktop com- puter with an Intel Core i7-8700k 4.3GHZ CPU. We validate the undesired deformation caused by material-mixing and then demonstrate the effectiveness of our design approach with various simulation results, real-world fabrications, and evaluation experiments. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+resulting temporary shape Xﬁnal, i.e., Rr = , 
+ 
+hedral meshes. Ideally, Rr should be equal to 0 when α = 1, meaning that the undesired deformation will not happen for pure SMP materials. As shown in Fig. 6, Rr is monotonically decreasing when ρ increases, indicating that its limit could be 0 when α ! 1. Another observation is that Rr is larger when fewer SMP materials are used (as we preferred), which conﬁrms the need of predicting the undesired deformation in our material modeling and integrating it into our optimization. 
+Results. Fig. 7 shows three sets of virtual results gen-
+erated by our approach, where the material distribution and external forces are visualized. Comparing the material distribution among the results, we ﬁnd that TWIST BAR requires the highest SMP material ratio, indicating that twisting deformation might demand more SMP materials than the others (e.g., bending) to realize the self-actuated deformation behavior. The rightmost column visualizes the undesired deformation, which can obviously be perceived. 
+ 
+
+
+
+
+
+Fig. 7: Results generated by our approach: TWIST BAR 
+(top), FISH (middle), and HUMAN (bottom). From left to right: input permanent and temporary shapes, permanent shape with material distribution, median shape, resulting temporary shape where the median shape is colored in purple to show undesired deformation. 
+
+The resulting temporary shape looks like an intermediate frame between the permanent shape and the median shape 
+(e.g., see HUMAN). This can be illustrated as an interaction of internal forces between the SMP and TPE materials, i.e., SMPs keep the median shape while hyperelastic TPEs attempt for the permanent shape. 
+We evaluated our optimized results (i.e., material distri- bution and external forces) by simulation. In detail, we take the user-speciﬁed permanent shape Xperm with optimized material distribution ρ as inputs, and simulate the shape programming process under the optimized external forces ffextg. By this, we obtain a resulting temporary shape in our simulation denoted as X mp. We compare the simulated 
+
+
+
+
+
+
+
+
+
+
+
+Fabrication. We fabricated some of our results using dual- material additive manufacturing. Speciﬁcally, we employed a conventional FDM 3D printer equipped with dual extruder heads in conjunction with two material ﬁlaments made of SMP 2 and TPE. To execute the computed external forces accurately, we build an actuator rig that can ﬁx the object and apply controlled forces (both size and direction) on the object; see Fig. 8. We validate our material modeling and design algorithm by fabricating an EIFFEL TOWEL result and deforming it by using the actuator rig to apply the computed external force. In this experiment, we observe that the permanent, median, and resulting temporary shapes computed by our algorithm are closely identical with those of the fabricated counterpart; compare Fig. 8 (top) and (middle). 
+
+2.	Our experiments used SMP material (type: Ether MS5520) from SMP Technologies Inc; see http://www2.smptechno.com/en/smp/ 
+ 
+IEEE TRANSACTIONS ON VISUALIZATION AND COMPUTER GRAPHICS, VOL. XX, NO. XX, 2019 9
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Fig. 8: Validate a result generated by our algorithm (top) in a real-world thermomechanical experiment (middle), where the corresponding temperature (in orange) and applied external force size (in red) are visualized over time (bottom). From left to right: shape heating, deforming, ﬁxing and cooling, undesired deformation after unloading, and recovery. 
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Fig. 9: Our fabricated results: EIFFEL TOWER 2 (top), HUMAN (middle), and SMILEY FACE (bottom). From left to right: input permanent and temporary shapes, fabricated permanent shape, resulting temporary shape, and recovered shape. 
+
+
+Fig. 9 (top) shows another EIFFEL TOWER result, which is deformed into a bent shape by two external forces applied using the actuator rig. Fig. 9 also shows HUMAN and SMILEY FACE results, where the external force conﬁgurations are too complex to be applied using the actuator rig. Thus, we manually deform the objects following by the computed forces. Note that building a device that can apply arbitrary controlled forces is beyond the scope of this work. After reheating, all objects recovered to its original shape; see the supplementary video for the demo. 
+
+Evaluation. We performed two physical experiments to evaluate our optimization approach and to verify our as- sumption, respectively. To evaluate our optimization (mainly on the material distribution), we compare it with a baseline 
+ 
+
+Fig. 10: Given (a&b) the same input, we compare (c&d) our optimization approach with (e&f) a baseline approach that distributes the same amount of SMP materials randomly across the whole shape. (c&e) We obtain the same median shape by applying different external forces on the two results. 
+(d) The resulting temporary shape of our optimized result is close to (b) the target than (f) that of the baseline result. 
+
+approach that randomly distributes clusters of SMP materials over the whole object. By clustering the SMP tetrahedrons, the baseline approach avoids isolated SMP tetrahedrons that cannot be precisely fabricated due to the limited 3D printing resolution. We use the baseline approach to generate another EIFFEL TOWER, 3D print it, and compare it with our optimized result in Fig. 8. During the experiment, we applied different external forces to deform the two results such that they have the same median shape; see Fig. 10(c&e). Fig. 10(d&f) shows that the resulting temporary shape of our optimized result is closer to the target one than that of the baseline result; see also the supplementary video. This experiment veriﬁes the effectiveness of our modeling on the undesired deformation and optimization on the material distribution. 
+The second experiment is to verify Assumption 2. We fab- ricated a cylinder with pure SMP material and let the cylinder undergo multiple (i.e., 20 in our experiment) iterations of shape programming and recovery. After this process, we found that the cylinder could still return to its original shape; see the supplementary video. This simple experiment veriﬁes that the plastic deformation in SMP material is sufﬁciently small to be neglected. 
+ 
+IEEE TRANSACTIONS ON VISUALIZATION AND COMPUTER GRAPHICS, VOL. XX, NO. XX, 2019 10
+
+Models	#Fig	#tri	#vert	#tets	λforce	λpﬁnal	λmat	λsmooth	λSMP	α	#force	Runtime
+Fish	Fig. 7	25463	3309	11397	10	100	10	0.6	0.5	0.08	1	5h8min
+Human 1	Fig. 7	7926	1092	3515	10	100	10	0.6	0.5	0.18	3	4h37min
+Eiffel Tower 1	Fig. 8	5919	872	2564	40	100	15	0.8	0.8	0.29	1	1h5min
+Eiffel Tower 2	Fig. 9	5919	872	2564	40	96	0.4	0.027	0.026	0.59	2	1h21min
+Human 2	Fig. 9	7926	1092	3515	10	100	10	0.6	0.5	0.30	3	4h16min
+Smiley Face	Fig. 9	28324	3638	12736	10	60	10	1.8	5e-5	0.09	5	5h26min
+Grasper	Fig. 11	6180	845	6180	40	90	15	1	2.6	0.14	14	4h12min
+Key-lock	Fig 11	8951	1139	4045	40	100	10	1.5	3.1	0.16	2	2h8min
+Snake	Fig. 11	38800	3025	14400	40	800	15	2.4	1.0	0.40	5	5h36min
+
+
+TABLE 1: Statistics of our results. From left to right: model name, corresponding Figure ID, number of triangles (#tri), number of vertices (#vert), number of tetrahedrons elements (#tets), values for the optimization weights (λforce, λpﬁnal, λmat, λsmooth, λSMP), SMP material ratio (α), number of external forces (#force), and the overall running time. Note that the different orders of magnitude for λSMP is caused by resolutions and shapes of input tetrahedral meshes. 
+
+ 
+Parameters and Statistics. In our fabrication, the transition temperature of the SMP material we used is θT = 328K and the temperature offset ∆θ = 15K. The shear modulus and bulk modulus of the SMP material are µ = 1:86e9Pa and κ = 1:13e9Pa in the glassy phase, and µ = 1:18e7Pa and κ = 7:15e7Pa in the rubbery phase. The shear modulus and bulk modulus of the TPE material are µ = 1:00e8Pa and κ = 6:07e8Pa. All the material parameters are offered by the manufacturer. In Fig. 7, the shear modulus and bulk modulus of the SMP material in the glassy phase are set to µ = 1:00e8Pa and κ = 6:07e8Pa, while all the rest param- eters remain unchanged. Our optimization is not sensitive to the penalty parameters β, so we set βFf = βFm = 1e5 and βff = βfm = 0:1 for all the results. We enlarge the penalty parameters if the combined residual [31] does not decline for certain number of iterations. The optimization terminates if the combined residual is lower than 1e − 6. 
+We report statistics of our generated results in Table 1, in particular, weights in Equation 21 and 26. We adjusted the weights based on the observation that we expect the SMP material ratio α to be as low as possible to reduce the total fabrication cost, on the condition that the optimized design is fabricatable. Initially, we use a relatively small SMP penalty weight λSMP while adjusting all the other weights to generate results. We check whether each optimized result is acceptable based on two criteria: 1) the optimized result should have less than 0:1% tetrahedrons whose material distribution ρj is within [0:05; 0:95] as it is difﬁcult to decide whether SMP or TPE material should be assigned to these tetrahedrons; 
+2)	the optimized result should have less than 30% isolated SMP tetrahedrons among all SMP tetrahedrons as clustered rather than isolated SMP tetrahedrons can be more precisely fabricated due to the limited 3D printing resolution. Once we ﬁnd an acceptable result, we could further increase the SMP penalty weight λSMP by using the bisection method. 
+ 
+Applications. We showcase three applications of our designed deformable objects, for which the printed shapes are empowered with functionalities by the materials’ shape recovery effect rather than relying on special mechanisms. The ﬁrst application is a self-actuated grasper, inspired by [32]; see Fig. 11 (top). The deformed grasper is used to grab a ball-shaped object in the water. When heated, the grasper executes the grasping task by closing its ﬁngers. Another application is a smart key-lock; see Fig. 11 (middle). The key and lock are separated at the beginning. After being 
+ 
+
+deformed, the key can be inserted into the lock. To lock the system, we simply need to heat it. The last application is a self-deployable assembly with 17 deformable parts; see Fig. 11 (bottom). Each deformable part is programmed independently, which could be compactly packed for storage and transportation. After assembled and heated, the shape recovery effect of the parts will deform the overall shape to a snake. Please watch the supplementary video for the demo. 
+
+
+8 CONCLUSION
+
+In this paper, we propose an approach to design and fabricate self-actuated deformable solids with dual materials, thermo- responsive SMPs and elastic TPEs. When analyzing their shape programming behavior, we observe undesired shape deformation that needs to be considered and modeled for accurate predication of the resulting programmed shape. Our material modeling then expresses the shape programming process of thermo-responsive SMPs as two elastic models linked by a median shape, leading to a new simpliﬁed constitutive model that is feasible to be integrated into a com- putational framework. This new constitutive model provides the key insight to formulate our challenging design problem as an optimization over the SMP material distribution and the median shape. Our experiments show how this optimization allows creating self-actuated deformable solids of a wide variety of shapes and deformation behaviors, and how the shape recovery effect of these solids can be creatively used in a number of applications. 
+Limitations and Future Work. Our work has several limitations that open up interesting directions for future research. First, our method does not take into consideration of avoiding collisions, including object self-collisions and collisions be- tween the object and cables, in the shape programming process. Involving these collision constraints will result in an extensive collection of variables and more complex solvers in the optimization. 
+Second, when the computed external forces are too complex (i.e., not co-planar) to be executed with the device in Fig. 9(top), we realize the forces manually with hands 
+(Fig. 9(middle) and (bottom)), resulting in a loss of accuracy in the shape programming. To alleviate this issue, one possible solution is to add a co-planar constraint in our optimization such that the computed forces always can be executed by our device. However, if such co-planar forces do 
+ 
+IEEE TRANSACTIONS ON VISUALIZATION AND COMPUTER GRAPHICS, VOL. XX, NO. XX, 2019 11
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Fig. 11: Three example applications of our designed deformable solids: self-actuated grasper (top), smart key-lock system 
+(middle), and self-deployable assembly (bottom). 
+
+ 
+not exist, a more complex device needs to be developed to realize the forces. 
+Third, theoretical analysis of our optimization, including global and local convergence analysis, needs to be conducted to understand its performance and convergence guarantee. Although there are research works investigating the conver- gence analysis of nonsmooth nonconvex ADMM [33], [34], they are inapplicable to our problem because of the existence of non-linear constraints. As a future work, we are interested in assumptions on the objective function and constraints that can ensure the convergence of our proposed solver. In addition, a theoretical study on weighting parameters in the optimization could be helpful for guiding their setting. 
+Lastly, we would like to study the potential of our method for being used in practical applications, including self-actuated graspers that can grab objects with irregular shape [35] and reconﬁgurable assemblies that can change their form automatically by heating. 
+
+ACKNOWLEDGMENTS
+This work is supported by the National Natural Science Foundation of China (61672482, 62025207), the Zhejiang Lab (NO. 2019NB0AB03), and the SUTD Start-up Research Grant (SRG ISTD 2019 148). 
+
+REFERENCES
+
+[1] R. Deimel and O. Brock, “A novel type of compliant and under-
+actuated robotic hand for dexterous grasping,” The International Journal of Robotics Research, vol. 35, no. 1–3, pp. 161–185, 2016. 
+[2] J.-H. Hsiao, J.-Y. J. Chang, and C.-M. Cheng, “Soft medical
+robotics: Clinical and biomedical applications, challenges, and future directions,” Advanced Robotics, vol. 33, no. 21, pp. 1099–1111, 
+2019. 
+[3] M. Skouras, B. Thomaszewski, S. Coros, B. Bickel, and M. Gross,
+“Computational design of actuated deformable characters,” ACM Trans. on Graph. (SIGGRAPH), vol. 32, no. 4, pp. 82:1–82:10, 2013. 
+ 
+
+[4] X. Chen, C. Zheng, W. Xu, and K. Zhou, “An asymptotic numerical
+method for inverse elastic shape design,” ACM Trans. on Graph. 
+(SIGGRAPH), vol. 33, no. 4, pp. 95:1–95:11, 2014. 
+[5] R. Guseinov, E. Miguel, and B. Bickel, “CurveUps: Shaping objects
+from ﬂat plates with tension-actuated curvature,” ACM Trans. on Graph. (SIGGRAPH), vol. 36, no. 4, pp. 64:1–64:12, 2017. 
+[6] J. Pérez, M. A. Otaduy, and B. Thomaszewski, “Computational
+design and automated fabrication of kirchhoff-plateau surfaces,” ACM Trans. on Graph. (SIGGRAPH), vol. 36, no. 4, pp. 62:1–62:12, 
+2017. 
+[7] S. Tibbits, “4D printing: Multi-material shape change,” Architectural
+Design, vol. 84, no. 1, pp. 116–121, 2014.
+[8] Q. Ge, C. K. Dunn, H. J. Qi, and M. L. Dunn, “Active origami by
+4D printing,” Smart Materials and Structures, vol. 23, no. 9, 2014. Paper No. 094007. 
+[9] B. An, Y. Tao, J. Gu, T. Cheng, X. A. Chen, X. Zhang, W. Zhao,
+Y.	Do, S. Takahashi, H.-Y. Wu, T. Zhang, and L. Yao, “Thermorph: Democratizing 4D printing of self-folding materials and interfaces,” in the 2018 CHI Conference on Human Factors in Computing Systems, pp. 260:1–260:12, 2018. 
+[10] G. Wang, H. Yang, Z. Yan, N. G. Ulu, Y. Tao, J. Gu, L. B. Kara, and L. Yao, “4DMesh: 4d printing morphing non-developable mesh surfaces,” in the 31st Annual ACM Symposium on User Interface Software and Technology, pp. 623–635, 2018. 
+[11] J. Hu, Y. Zhu, H. Huang, and J. Lu, “Recent advances in shape- memory polymers: Structure, mechanism, functionality, modeling and applications,” Progress in Polymer Science, vol. 37, no. 12, 
+pp. 1720–1763, 2012. 
+[12] E. Boatti, G. Scalet, and F. Auricchio, “A three-dimensional ﬁnite- strain phenomenological model for shape-memory polymers: Formulation, numerical simulations, and comparison with experi- mental data,” International Journal of Plasticity, vol. 83, no. C, pp. 153– 
+177, 2016. 
+[13] J. Panetta, Q. Zhou, L. Malomo, N. Pietroni, P. Cignoni, and 
+D. Zorin, “Elastic textures for additive fabrication,” ACM Trans. on Graph. (SIGGRAPH), vol. 34, no. 4, pp. 135:1–135:12, 2015. 
+[14] C. Schumacher, B. Bickel, J. Rys, S. Marschner, C. Daraio, and 
+M. Gross, “Microstructures to control elasticity in 3d printing,” ACM Trans. on Graph. (SIGGRAPH), vol. 34, no. 4, pp. 136:1–136:13, 
+2015. 
+[15] J. Martıńez, J. Dumas, and S. Lefebvre, “Procedural voronoi foams for additive manufacturing,” ACM Trans. on Graph. (SIGGRAPH), vol. 35, no. 4, pp. 44:1–44:12, 2016. 
+[16] J. Martıńez, S. Hornus, H. Song, and S. Lefebvre, “Polyhedral voronoi diagrams for additive manufacturing,” ACM Trans. on Graph. (SIGGRAPH), vol. 37, no. 4, pp. 129:1–129:15, 2018. 
+ 
+IEEE TRANSACTIONS ON VISUALIZATION AND COMPUTER GRAPHICS, VOL. XX, NO. XX, 2019
+
+[17] J. Martıńez, H. Song, J. Dumas, and S. Lefebvre, “Orthotropic k- nearest foams for additive manufacturing,” ACM Trans. on Graph. 
+(SIGGRAPH), vol. 36, no. 4, pp. 121:1–121:12, 2018. 
+[18] B. Bickel, M. Bächer, M. A. Otaduy, H. R. Lee, H. Pﬁster, M. Gross, and W. Matusik, “Design and fabrication of materials with desired deformation behavior,” ACM Trans. on Graph. (SIGGRAPH), vol. 29, no. 4, pp. 63:1–63:10, 2010. 
+[19] J. Zehnder, E. Knoop, M. Bächer, and B. Thomaszewski, “MetaSil- icone: Design and fabrication of composite silicone with desired mechanical properties,” ACM Trans. on Graph. (SIGGRAPH Asia), vol. 36, no. 6, pp. 240:1–240:13, 2017. 
+[20] J. Pérez, B. Thomaszewski, S. Coros, B. Bickel, J. A. Canabal, 
+R. Sumner, and M. A. Otaduy, “Design and fabrication of ﬂexible rod meshes,” ACM Trans. on Graph. (SIGGRAPH), vol. 34, no. 4, pp. 138:1–138:12, 2015. 
+[21] X. Zhang, X. Le, Z. Wu, E. Whiting, and C. C. Wang, “Data-driven bending elasticity design by shell thickness,” Computer Graphics Forum, vol. 35, no. 5, pp. 157–166, 2016. 
+[22] L.-K. Ma, Y. Zhang, Y. Liu, K. Zhou, and X. Tong, “Computational design and fabrication of soft pneumatic objects with desired deformations,” ACM Trans. on Graph. (SIGGRAPH Asia), vol. 36, no. 6, pp. 239:1–239:12, 2017. 
+[23] L. Sun, W. M. Huang, Z. Ding, Y. Zhao, C. C. Wang, H. Purnawali, and C. Tang, “Stimulus-responsive shape memory materials: A review,” Materials & Design, vol. 33, pp. 577–640, 2012. 
+[24] J. M. Jani, M. Leary, A. Subic, and M. A. Gibson, “A review of shape memory alloy research, applications and opportunities,” Materials 
+& Design, vol. 56, pp. 1078–1113, 2014. 
+[25] A. Lendlein, ed., Shape-Memory Polymers. Springer-Verlag Berlin Heidelberg, 2010. 
+[26] F. Momeni, S. M. Hassani.N, X. Liu, and J. Ni, “A review of 4D printing,” Materials & Design, vol. 122, pp. 42–79, 2017. 
+[27] T. Chen and K. Shea, “An autonomous programmable actuator and shape reconﬁgurable structures using bistability and shape memory polymers,” 3D Printing and Additive Manufacturing, vol. 5, no. 2, pp. 91–101, 2018. 
+[28] E. Sifakis and J. Barbic, “Fem simulation of 3D deformable solids: A practitioner’s guide to theory, discretization and model reduction,” pp. 1–50, 2012. Article No. 20. 
+[29] Y. Hou, I. Song, H.-K. Min, and C. H. Park, “Complexity-reduced scheme for feature extraction with linear discriminant analysis,” IEEE transactions on neural networks and learning systems, vol. 23, no. 6, pp. 1003–1009, 2012. 
+[30] B. Jiang, T. Lin, S. Ma, and S. Zhang, “Structured nonconvex and nonsmooth optimization: Algorithms and iteration complexity analysis,” Computational Optimization and Applications, vol. 72, no. 1, pp. 115–157, 2019. 
+[31] S. Boyd, N. Parikh, E. Chu, B. Peleato, J. Eckstein, et al., “Distributed optimization and statistical learning via the alternating direction method of multipliers,” Foundations and Trends© in Machine learning, vol. 3, no. 1, pp. 1–122, 2011. 
+[32] Q. Ge, A. H. Sakhaei, H. Lee, C. K. Dunn, N. X. Fang, and M. L. Dunn, “Multimaterial 4D printing with tailorable shape memory polymers,” Scientiﬁc Reports, vol. 6, no. 31110, pp. 1–11, 2016. 
+[33] G. Li and T. K. Pong, “Global convergence of splitting methods for nonconvex composite optimization,” SIAM Journal on Optimization, vol. 25, no. 4, pp. 2434–2460, 2015. 
+[34] Y. Wang, W. Yin, and J. Zeng, “Global convergence of ADMM in nonconvex nonsmooth optimization,” Journal of Scientiﬁc Computing, vol. 78, no. 1, pp. 29–63, 2019. 
+[35] P. Song, Z. Fu, and L. Liu, “Grasp planning via hand-object geometric ﬁtting,” The Visual Computer, vol. 34, no. 2, pp. 257–270, 
+2018. 
+
+
+Yucheng Sun is a master student in the School of Mathematics, the University of Science and Technology of China (USTC), under the supervi- sion of Prof. Ligang Liu. He is currently a visiting student in Singapore University of Technology and Design, under the supervision of Prof. Peng Song. He received his B.S. degree in Mathemat- ics from the School for Gifted Young, USTC in 
+2018. His research interests are computational design and digital fabrication. 

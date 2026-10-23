@@ -1,0 +1,383 @@
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html style="background: white;">
+<head>
+<title>班级管理</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+
+
+<meta http-equiv="pragma" content="no-cache"/>
+<meta http-equiv="cache-control" content="no-cache"/>
+<meta http-equiv="expires" content="0"/>
+<meta http-equiv="keywords" content="精品课程"/>
+<meta http-equiv="description" content=精品课程/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="http://114.213.210.2:8080/DKTK/resources/js/jquery-1.4.3.js"></script>
+<script type="text/javascript" src="http://114.213.210.2:8080/DKTK/resources/js/jcarousellite_1.0.1.js"></script>
+<script type="text/javascript" src="http://114.213.210.2:8080/DKTK/resources/js/validate/jquery.validate.js"></script>
+<script type="text/javascript" src="http://114.213.210.2:8080/DKTK/resources/js/validate/jquery.metadata.js"></script>
+<script type="text/javascript" src="http://114.213.210.2:8080/DKTK/resources/js/validate/jquery.validate.methods.js"></script>
+<script type="text/javascript" src="http://114.213.210.2:8080/DKTK/resources/js/validate/jquery.validate.cn.js"></script>
+
+<script type="text/javascript" src="http://114.213.210.2:8080/DKTK/resources/js/jquery.form.js"></script>
+<script type="text/javascript" src="http://114.213.210.2:8080/DKTK/resources/js/component/ckeditor/ckeditor.js"></script>
+<script type="text/javascript" src="http://114.213.210.2:8080/DKTK/resources/js/component/ckeditor/adapters/jquery.js"></script>
+<script type="text/javascript" src="http://114.213.210.2:8080/DKTK/resources/js/component/My97DatePicker/WdatePicker.js"></script>
+<base href="http://114.213.210.2:8080/DKTK/"/>
+<script type="text/javascript" src="http://114.213.210.2:8080/DKTK/resources/js/common.js"></script>
+<link href="http://114.213.210.2:8080/DKTK/resources/css/validateStyle.css" rel="stylesheet" type="text/css"/>
+<link href="http://114.213.210.2:8080/DKTK/resources/css/css.css" rel="stylesheet" type="text/css">
+<link href="http://114.213.210.2:8080/DKTK/resources/css/club.css" rel="stylesheet" type="text/css"/>
+<script src="http://114.213.210.2:8080/DKTK/resources/js/artDialog/jquery.artDialog.source.js" type="text/javascript"></script>
+<script src="http://114.213.210.2:8080/DKTK/resources/js/artDialog/iframeTools.source.js" type="text/javascript"></script>
+<script type="text/javascript">
+	var validator;
+	var loadingBar = "<tr bgcolor=\"#FFFFFF\"><td colspan=11><div><img src=\"resources/images/submit-bar.gif\"></div></td></tr>";
+	var options={
+	    data:{},
+	    //数据返回格式
+	    dataType:"json",
+	    //是否同步
+	    async:false,
+	    //成功回调函数
+	    beforeSubmit:function(){
+	        $("#infoTable>tbody").html(loadingBar);
+	    },
+	    success:function(data){
+	        buildTable(data);
+	    }
+	};
+	
+	$(document).ready(function(){
+		$.ajax({
+            url:"manage/classInfo/getTeachers.shtml",
+            data:{},
+            type:"POST",
+            contentType:"application/x-www-form-urlencoded;charset=utf-8",
+            dataType:"json",
+            async:false,
+            error:function(x,e){
+                 alert("操作失败，请重试！");
+                 return;
+            },
+            success:function(data){
+            	var teacherstdHtml = "<option value=''>=========请选择=========</option>";
+            	for(var i=0;i<data.length;i++){
+            		teacherstdHtml += "<option value='"+data[i].teacherId+"'";
+            		if("com.dk.edu.jpkc.entity.ClassInfo@453c35"!=null&&data[i].teacherId=="1"){
+            			teacherstdHtml += " selected";
+            		}
+            		teacherstdHtml += ">"+data[i].teacherName+"</option>";
+                }
+                $("#teacherId").html(teacherstdHtml);
+                $("#questionTypeId").val("1");
+            }
+        });
+		
+		$("#queryForm").submit(function(){
+            $(this).ajaxSubmit(options);
+            return false;
+        });
+		
+		$("#addClassAddStudent").click(function(){
+//			art.dialog.open("http://114.213.210.2:8080/DKTK/manage/classInfo/classInfoModifyAddStudent.shtml", {
+//				title : "添加班级学生",
+//				lock : true, //锁屏
+//				background : "#333333", // 背景色
+//				width : "95%",
+//				height : "95%",
+//				close: function () {
+//				}
+//			}, true);
+	 		var url="http://114.213.210.2:8080/DKTK/manage/classInfo/classInfoModifyAddStudent.shtml";
+	    	window.showModalDialog(url,window,"dialogWidth:900px;dialogHeight:630px;*_dialogWidth:900px;*_dialogHeight:630px; margin:0px; padding:0px;resizable:yes;scroll:yes;center:yes;status:no;help:no;");
+	   	});
+		 $("#deleteClassAddStudent").click(function(){
+				if($("#infoTable>tbody").find("input:checked").size()==0){
+                 alert("请先选择学生！");
+                 return;
+             }
+				var ids="";
+				var selectAllIds = document.getElementById("selectAllId").value;
+				var selectAllId= new Array(); 
+				selectAllId = selectAllIds.split(",");
+				for (var a=0;a<selectAllId.length ;a++ ){   
+					var isWhere = 0;
+					$("#infoTable>tbody").find("input:checked").each(function(i){
+	                     var selectRow = $(this).parent().parent();
+	                     if(selectAllId[a] == selectRow.find("td").eq(1).text()){
+	                     	isWhere = 1;
+	                     }
+	                 });
+					if(isWhere == 0){
+						ids += selectAllId[a]+",";							
+					}
+			    } 
+				if(ids.length > 0){
+					ids = ids.substring(0,ids.length-1);
+				}
+				document.getElementById("selectAllId").value = ids;
+				sub();
+			});
+		sub();
+		toggleSelected();
+		validate();
+		
+		$.validator.addMethod("classNameCheck", function(value, element) {
+			var objId = $("#objId").val();
+			var objName = "className";
+			var objValue = $(element).val();
+			var result=0;
+			$.ajax({
+				url:"http://114.213.210.2:8080/DKTK/manage/classInfo/classInfoCheck.shtml",
+               	data:{
+               		objId:objId,objName:objName,objValue:objValue
+               	},
+               	type:"POST",
+              	contentType:"application/x-www-form-urlencoded;charset=utf-8",
+               	dataType:"json",
+               	async:false,
+               	error:function(e){
+               		
+               	},
+               	success:function(data){
+               		result=data.result;
+				}
+			});
+			if(result>0){
+       			return false;
+       		}else{
+       			return true;
+       		}
+	    }, "班级名称已存在！");
+		
+		$("#subButton").click(function(){
+			subButton();					
+		});
+	});
+	
+	function subButton(){
+   	 	document.getElementById("ids").value =  document.getElementById("selectAllId").value;
+   	 	$("#saveForm").submit();
+    }
+	function buildTable(data){
+        var tempHtml ="";
+        if(data.listInfo.length==0){
+            tempHtml ="<tr align=\"center\" bgcolor=\"#FFFFFF\"><td colspan=\"25\" style=\"color:red;\">查询无数据</td></tr>";
+        }
+        var index = 0;
+        for(var i=0;i<data.listInfo.length;i++){
+        
+        	tempHtml += "<tr bgcolor=\"#FFFFFF\">"+
+                "<td align=\"left\">"+"<input type=\"checkbox\" class=\"chbox\"/></td>"+
+                "<td style=\"display:none;\">"+data.listInfo[i].id+"</td>"+
+                "<td align=\"left\">"+ data.listInfo[i].userName + "</td>"+
+                "<td align=\"left\">" + data.listInfo[i].userTrueName + "</td>"+
+                "<td align=\"left\">" +data.listInfo[i].userSex+"</td>"+
+                "</tr>";
+        }
+        $("#infoTable>tbody").html(tempHtml);
+        setTableStyle();
+    }
+	
+	function validate(){
+		validator=$("#saveForm").validate({
+	        //此处是各种表单元素的规则，对应表单的name属性
+	        rules:{
+        		className:{
+	                required:true,
+	                classNameCheck:true,
+	                minlength: 3,
+	                maxlength:10
+	            },
+	            teacherId:{
+	            	required:true,
+	           	}, 
+	           	monitor:{
+	            	required:true,
+	           	}, 
+	           	ids:{
+	                required:true,
+	            },
+	            beginTimeStr:{
+	            	required:true,
+	            },
+	            endTimeStr:{
+	            	required:true,
+	            },
+	            
+	        },
+	        messages:{
+	        	className:{
+	        		required:"班级名称不能为空！",
+	        		classNameCheck:"班级名称已存在!",
+	        		minlength: "班级名称长度不能小于3位！",
+	        		maxlength:"班级名称不能大于10位！"
+	        	},
+                teacherId:{
+            	    required:"必须填"
+            	}, 
+            	monitor:{
+             	    required:"必须填"
+             	}, 
+             	ids:{
+	        		required:"请选择学生"
+	        	},
+	        },
+	        onkeyup:false,
+	        errorPlacement: function(error,element){
+	        	if(element.is(":radio"))
+	                error.appendTo(element.next().next("span"));
+	            else
+	                error.appendTo(element.nextAll("span").eq(0));
+	        },
+	        success: function(label){
+	            label.html("&nbsp;").addClass("checked");
+	        }
+	    });
+	}
+		
+	function subButton(){
+   	 	document.getElementById("ids").value =  document.getElementById("selectAllId").value;
+   	 	$("#saveForm").submit();
+	}
+	function setTableStyle(){
+    	$(".showTable>tbody>tr").hover(function(){
+        	$(this).removeClass("trColor");
+            $(this).addClass("hover");
+        }, function(){
+            $(this).removeClass("hover");
+            $(".showTable>tbody>tr:odd").addClass("trColor");
+        });
+        $(".showTable>tbody>tr:odd").addClass("trColor");
+    }
+    /**
+     * 实现全选和取消全选
+     */
+    function toggleSelected(){
+        $("#allSelect").click(function(){
+            if($(this).attr("checked")){
+                $("#infoTable>tbody").find(".chbox").each(function(){
+                    $(this).attr("checked", true);
+                });
+            }else{
+                $("#infoTable>tbody").find(".chbox").each(function(){
+                    $(this).attr("checked", false);
+                });
+            }
+        });
+    }
+    
+    function sub(){
+		$("#queryForm").submit();
+    }
+	
+</script>
+</head>
+<body>
+<div class="w_center clear_div2" style="background:#f9f9f9  repeat-y left top;" >
+<div class="w_right clear_div" id="bodyright" >
+<div class="w_rightArea">
+	<form id="saveForm" name="saveForm" action="http://114.213.210.2:8080/DKTK/manage/classInfo/classInfoSave.shtml" method="post">
+	<input type="hidden" id="objId" name="objId" value="60" />
+		<table class="fill_table th">
+			<tr>
+				<td class="r_text" style="width: 100px"><label for="className"><span style="color: red;">*&nbsp;</span>班级名称：</label></td>
+				<td>
+					<input type="text" class='Atext' id="className" name="className" value="合肥21计算机123" maxlength="20"><span class="note_gray"></span>
+				</td>
+				<td class="r_text" style="width: 100px"><label for="teacherId"><span style="color: red;">*&nbsp;</span>班主任：</label></td>
+				<td>
+					<select id="teacherId" name="teacherId" class="Atext">
+					</select>&nbsp;<span class="note_gray"></span>
+				</td>
+			</tr>
+			<tr>
+				<td class="r_text"><label for="r_9"><span style="color: red;">*&nbsp;</span>入学时间：</label></td>
+				<td>
+					<input type="text" class="Wdate" style="height: 24px;width: 200px;" id="beginTimeStr" name="beginTimeStr"  value="2021-09-01" readonly="readonly" onFocus="WdatePicker({isShowClear:true,maxDate:'#F{$dp.$D(\'endTimeStr\',{d:-1})}'})" />
+					<span class="note_gray"></span>
+				</td>
+				<td class="r_text"><label for="r_10"><span style="color: red;">*&nbsp;</span>毕业时间：</label></td>
+				<td>
+					<input type="text" class="Wdate" style="height: 24px;width: 200px;" id="endTimeStr" name="endTimeStr"  value="2025-07-01" readonly="readonly" onFocus="WdatePicker({isShowClear:true,minDate:'#F{$dp.$D(\'beginTimeStr\',{d:1})}'})" />
+					<span class="note_gray"></span>
+				</td>
+			</tr>
+			<tr>
+				<td class="r_text"><label for="remark">备注：</label></td>
+				<td colspan="3">
+					<textarea rows="8" cols="120" id="remark" name="remark" style="border: 1px solid #CCCCCC;"></textarea><span class="note_gray"></span>
+				</td>
+			</tr>
+		</table>
+	    <table class="r_table_queryArea">
+           	<tr>
+            	<td width="140px" align="right" style="font-size: 15px;font-weight: 900;">
+	        		已有学生列表：
+        		</td>
+	      		<td>
+	      			<input type="button" class="Ctext" id="addClassAddStudent" value="添加学生" style="width: 65px;" />
+	      			<input type="hidden" id="ids" name="ids" value="1001334,1001458,1002157,1002065,1002081,1002130,1002820,1002819,1002818,1002817,1002816,1002815,1002814,1002813,1002812,1002811,1002810,1002809,1002808,1002807,1002806,1002805,1002804,1002803,1002802,1002801,1002800,1002799,1002798,1002797,1002796,1002795,1002794,1002793,1002792,1002791,1002790,1002789,1002788,1002787,1002786,1002785,1002784,1002783,1002782,1002781,1002780,1002779,1002778,1002777,1002776,1002775,1002774,1002773,1002772,1002771,1002770,1002769,1002768,1002767,1002766,1002765,1002764,1002763,1002762,1002761,1002760,1002759,1002758,1002757,1002756,1002755,1002754,1002753,1002752,1002751,1002750,1002749,1002748,1002747,1002746,1002745,1002744,1002743,1002742,1002741,1002740,1002739,1002738,1002737,1002736,1002735,1002734,1002733,1002732,1002731,1002730,1002729,1002728,1002727,1002726,1002725,1002724,1002723,1002722,1002721,1002720,1002719,1002718,1002717,1002716,1002715,1002714,1002713,1002712,1002711,1002710,1002709,1002708,1002707,1002706,1002705,1002704,1002703,1002702,1002701,1002700,1002699,1002698,1002697,1002696,1002695,1002694,1002693,1002692,1002691,1002690,1002689,1002688,1002687,1002686,1002685,1002684,1002683,1002682,1002681,1002680,1002679,1002678,1002677,1002676,1002675,1002674,1002673,1002672,1002671,1002670,1002669,1002668,1002667,1002666,1002665"><span class="note_gray"></span>
+	      			&nbsp;&nbsp;&nbsp;&nbsp;
+	      			<input type="button" class="Ctext" id="deleteClassAddStudent" value="删除学生" style="width: 65px;" />
+	      		</td>	
+	    	</tr>
+        </table>
+		<table class="r_table_list" id="infoTable">
+			<thead>
+			<tr>
+				<th width="5%"><input type="checkbox" id="allSelect" /></th>
+	           	<th width="5%">用户名</th>
+				<th width="20%">真实姓名</th>
+				<th width="10%">用户性别</th>
+			</tr>
+	       	</thead>
+	       	<tbody></tbody>			
+		</table>
+		<div class="oper_area">
+		    <table class="r_table_queryArea" >
+		      <tr>
+		        <td align="center" colspan="2" width="800px">
+		        	<input type="button" class="subimt_btn th" id="subButton" value="提交">&nbsp;&nbsp;
+					<input type="button" class="subimt_btn th" onclick="window.location.href='http://114.213.210.2:8080/DKTK/manage/classInfo/listClassInfo.shtml';" value="返 回">
+	        	</td>
+		      </tr>
+		    </table>
+		</div>
+		<dl class="clear_div page"></dl>
+	</form>
+	<form action="http://114.213.210.2:8080/DKTK/manage/classInfo/selectAllId.shtml" method="post" id="queryForm">
+		<input type="hidden" id="selectAllId" name="selectAllId" value="1001334,1001458,1002157,1002065,1002081,1002130,1002820,1002819,1002818,1002817,1002816,1002815,1002814,1002813,1002812,1002811,1002810,1002809,1002808,1002807,1002806,1002805,1002804,1002803,1002802,1002801,1002800,1002799,1002798,1002797,1002796,1002795,1002794,1002793,1002792,1002791,1002790,1002789,1002788,1002787,1002786,1002785,1002784,1002783,1002782,1002781,1002780,1002779,1002778,1002777,1002776,1002775,1002774,1002773,1002772,1002771,1002770,1002769,1002768,1002767,1002766,1002765,1002764,1002763,1002762,1002761,1002760,1002759,1002758,1002757,1002756,1002755,1002754,1002753,1002752,1002751,1002750,1002749,1002748,1002747,1002746,1002745,1002744,1002743,1002742,1002741,1002740,1002739,1002738,1002737,1002736,1002735,1002734,1002733,1002732,1002731,1002730,1002729,1002728,1002727,1002726,1002725,1002724,1002723,1002722,1002721,1002720,1002719,1002718,1002717,1002716,1002715,1002714,1002713,1002712,1002711,1002710,1002709,1002708,1002707,1002706,1002705,1002704,1002703,1002702,1002701,1002700,1002699,1002698,1002697,1002696,1002695,1002694,1002693,1002692,1002691,1002690,1002689,1002688,1002687,1002686,1002685,1002684,1002683,1002682,1002681,1002680,1002679,1002678,1002677,1002676,1002675,1002674,1002673,1002672,1002671,1002670,1002669,1002668,1002667,1002666,1002665" />
+	</form>
+</div>
+</div>
+</div>
+<script type="text/javascript" src="http://114.213.210.2:8080/DKTK/resources/js/bodyheight.js"></script>
+<script type="text/javascript" src="http://114.213.210.2:8080/DKTK/resources/js/global.js"></script>
+
+<!--[if lt IE 10]>
+<script type="text/javascript" src="http://114.213.210.2:8080/DKTK/resources/js/pie.js"></script>
+<![endif]-->
+<script language="javascript">
+$(function() {
+    if (window.PIE) {
+        $('.rounded').each(function() {
+            PIE.attach(this);
+        });
+    }
+});
+</script>
+<!--[if IE 6]>
+<script type="text/javascript" src="http://114.213.210.2:8080/DKTK/resources/js/DD_belatedPNG.js"></script>
+<script>
+DD_belatedPNG.fix('.png_img img');
+</script>
+<![endif]-->
+</body>
+</html>

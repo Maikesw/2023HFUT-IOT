@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Thu Jul  3 00:38:54 2025
+# Process ID         : 22464
+# Current directory  : D:/shiyan/xiangmu/shiyan2/shiyan2.runs/synth_1
+# Command line       : vivado.exe -log mux4to1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mux4to1.tcl
+# Log file           : D:/shiyan/xiangmu/shiyan2/shiyan2.runs/synth_1/mux4to1.vds
+# Journal file       : D:/shiyan/xiangmu/shiyan2/shiyan2.runs/synth_1\vivado.jou
+# Running On         : LAPTOP-C1PMA0TC
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i7-13700HX
+# CPU Frequency      : 2304 MHz
+# CPU Physical cores : 16
+# CPU Logical cores  : 24
+# Host memory        : 14710 MB
+# Swap memory        : 24696 MB
+# Total Virtual      : 39407 MB
+# Available Virtual  : 17112 MB
+#-----------------------------------------------------------
+source mux4to1.tcl -notrace

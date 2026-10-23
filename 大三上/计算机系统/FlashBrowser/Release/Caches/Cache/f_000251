@@ -1,0 +1,1082 @@
+/*热点统计*/
+function tracking(e){
+	e = e ? e : window.event;
+	var s = e.srcElement ? e.srcElement : e.target;
+	var a = s.tagName;
+	var u = s.href ? s.href : s.src;
+	var t = s.innerText ? s.innerText : s.textContent;
+    if (a == "B"||a == "STRONG"){
+        a = "A";
+		u = s.parentNode.href;
+    }
+	if (a == "IMG"){
+		t = u;
+		u = s.parentNode.href;
+	}
+	if(a == "A" || a == "IMG"){
+		try{
+			new Image().src = "//tracenews.5054399.com/trace.js?addd="+a+"&uddd="+escape(u)+"&tddd="+t;
+		}catch(ex){}
+	}
+	return true;
+}
+
+var BaiduProductFunc = {
+	ad:function(slotId,width,mtop,mbottom){
+		mtop = mtop ? mtop : 0;
+		mbottom = mbottom ? mbottom : 0;
+		if(width.toString().indexOf('%')==-1 && width.toString().indexOf('px')==-1)
+			width = width+'px';
+		document.write('<iframe id="BaiduAdFrame_'+slotId+'" name="BaiduAdFrame_'+slotId+'" height="0" width="'+width+'" scrolling="no" allowtransparency="true" src="/baiduad/proxy.html?id='+slotId+'" frameborder="0" style="border:0px"></iframe>');
+		var iframe = document.getElementById("BaiduAdFrame_"+slotId);
+		if(iframe.attachEvent){
+			iframe.attachEvent("onload", function(){ setAutoInfo("ie");} );
+		} else {
+			iframe.onload = function(){ setAutoInfo("noie"); }
+		}
+		function setAutoInfo(type){
+			try{
+				var temp_id = [
+					"baidu_clb_slot_iframe_"+slotId,
+					"baidu_clb_slot_iframe_"+slotId+"_0",
+					"iframe"+slotId+"_0",
+				];
+				var child_ifram = null;
+				for(var i in temp_id){
+					var temp = iframe.contentWindow.document.getElementById(temp_id[i]);
+					if(!temp){
+						continue;
+					}else{
+						child_ifram = temp;
+						break;
+					}
+				}
+				if(!child_ifram){return ;}
+				var content = child_ifram.contentWindow.document.body.innerHTML;
+				if(content){
+					var bHeight = iframe.contentWindow.document.body.scrollHeight;
+					var dHeight = iframe.contentWindow.document.documentElement.scrollHeight;
+					var height = Math.max(bHeight, dHeight);
+					iframe.height = height;
+					if(type=='ie'){
+						if(window.opera){
+							iframe.setAttribute('style','border:0px;margin-top:'+mtop+'px;margin-bottom:'+mbottom+'px;');
+						} else {
+							iframe.style.marginTop = mtop;
+							iframe.style.marginBottom = mbottom;
+						}
+					}else{
+						iframe.setAttribute('style','border:0px;margin-top:'+mtop+'px;margin-bottom:'+mbottom+'px;');
+					}
+				}		 
+			} catch (ex){} 
+		}
+	},union:function(mtop,mbottom){
+		var unionid = "u2252621";
+		if(document.location.host=="v.4399pk.com"){
+			unionid = "u2364477";
+		}
+		var width = width || 960, height = height || 90, holder = holder || '#baiduadholder';
+		var style = ('width: ' + width + 'px;height:' + height + 'px;' + (mtop>0?'margin-top:'+mtop+'px;':'') + (mbottom>0?'margin-bottom:'+mbottom+'px;':'')) + (style || '');
+		document.write('<div id="cpro_' + unionid + '" style="'+style+'"></div>');
+		// (window["cproStyleApi"] = window["cproStyleApi"] || {})[unionid]={at:"3",rsi0:"960",rsi1:"90",pat:"6",tn:"baiduCustNativeAD",rss1:"#FFFFFF",conBW:"0",adp:"1",ptt:"0",titFF:"%E5%BE%AE%E8%BD%AF%E9%9B%85%E9%BB%91",titFS:"14",rss2:"#000000",titSU:"0",ptbg:"88",piw:"0",pih:"0",ptp:"1"};
+		(window.cproArray = window.cproArray || []).push({'id' : unionid});
+		var script = document.createElement("script");
+		script.src = '//cpro.baidustatic.com/cpro/ui/c.js';
+		document.getElementsByTagName("head")[0].appendChild(script);
+	},union200:function(mtop,mbottom){
+		document.write('<iframe height="280" id="BaiduUionFrame285" width="285" scrolling="no" allowtransparency="true" src="//news.4399.com/baiduunion/proxy200.html" frameborder="0" style="border:0px;"></iframe>');
+		window.setTimeout(function(){
+			if(!window.jQuery){
+				document.write('<script src="//newsimg.5054399.com/js/jquery-1.6.2.min.js" type="text/javascript"></script>');
+			}
+			window.jQuery(function(){
+				var temp1 = window.jQuery("#BaiduUionFrame285").parent();
+				if(temp1.siblings().size()==0){
+					var temp = window.jQuery("#BaiduUionFrame285").parent().css({"background":"#ffffff"}).parent().css({background:"#ffffff",border:"1px solid #ddd",overflow:"default",height:"auto",position:"relative","paddingTop":0,"zIndex":999});
+					var temp_top = temp.offset().top;
+					var default_css = temp.attr('style');
+					window.jQuery(window).scroll(function(){
+						var temp_left = temp.offset().left;
+						var top = window.jQuery(window).scrollTop();
+						if(top>temp_top){
+							if(!!window.ActiveXObject&&!window.XMLHttpRequest){
+							}else{
+								temp.css({"position":"fixed","zIndex":99,"top":"0px","left":temp_left});
+							}
+						}else{
+							temp.attr("style",default_css);
+						}
+					});
+				}
+			});
+		},2000);	
+		
+	},union_position:function(conf){
+		
+		var url = "//news.4399.com/baiduunion/proxy_position.html";
+		var param = [];
+		for(var i in conf){
+			param.push(i+"="+conf[i]);
+		}
+		url = url+'?'+param.join("&");
+		
+		if(typeof conf['width'] == 'undefined'){
+			conf['width'] = 960;
+		}
+		if(typeof conf['height'] == 'undefined'){
+			conf['height'] = 90;
+		}
+		
+		document.write('<iframe height="'+conf['height']+'" width="'+conf['width']+'" scrolling="no" allowtransparency="true" src="'+url+'" frameborder="0" style="border:0px;"></iframe>');
+	}
+}
+
+//slotId: 百度广告id
+//width: 宽度
+//mtop: 上边距,纯数字
+//mbottom: 下边距,纯数字
+function BaiduAdFunc(slotId,width,mtop,mbottom) {
+	var rand = Math.round(Math.random());
+	if(width == 960 && rand==1){
+		// BaiduProductFunc.union(mtop,mbottom);
+		BaiduProductFunc.ad(slotId,width,mtop,mbottom);
+	}else if(width == 265){
+		// BaiduProductFunc.union200(mtop,mbottom);
+		BaiduProductFunc.ad(slotId,width,mtop,mbottom);
+	}else{
+		BaiduProductFunc.ad(slotId,width,mtop,mbottom);
+	}
+}
+
+/*
+收藏功能，只限IE
+e：event
+t：收藏的标题，默认页面title
+url：收藏的链接，默认本页面链接
+*/
+function addfav(e,t,url){
+	t = t || document.title;
+	url = url || window.location.href;
+	if ( e && e.preventDefault )
+		e.preventDefault();
+	else    
+		window.event.returnValue = false;
+	
+	try{
+		window.external.AddFavorite(url,t);
+	}catch (e){
+		try{
+			window.sidebar.addPanel(t, url, "");
+		}catch (e){
+			alert("加入收藏失败，请使用Ctrl+D进行添加");
+		}
+	}
+}
+
+/*
+页面滚动到指定位置，没有动画效果
+div：滚动的位置，为jq的对象
+top：如果根据div取出来的位置有偏差，用此参数校正
+*/
+function go_to(div,top){
+	var top = parseInt(div.offset().top) - (top || 0);
+	window.scrollTo(0,top);
+	window.event && (window.event.returnValue = false);
+	return false;
+}
+
+/*
+页面滚动到指定位置，有动画效果
+div：滚动的位置，为jq的对象
+top：如果根据div取出来的位置有偏差，用此参数校正
+ms：滚动的毫秒数，默认1000ms
+*/
+function go_to2(div,top,ms){
+	ms = ms || 1000;
+	var o = div.offset();
+	var t = parseInt(o.top) - (top || 0);
+	$("html,body").animate({'scrollTop':t},ms);
+	window.event && (window.event.returnValue = false);
+	return false;
+}
+
+/*
+获取相应的jq对象，并缓存
+ojb：jq表达式
+*/
+function getObj(obj){
+	window.objCache = window.objCache || {};
+	if(typeof(objCache[obj])=='undefined'){
+		objCache[obj] = $(obj);
+	}
+	return objCache[obj];
+}
+
+/*
+创建1个script，注意这个是异步的
+attr：script的属性
+*/
+function createScript(attr){
+	var script = document.createElement("script");
+	attr = attr || {};
+	attr['type'] = 'text/javascript';
+	for(var k in attr){
+		script.setAttribute(k,attr[k]);
+	}
+	document.body.appendChild(script);
+}
+
+/*
+百度分享，这个是百度分享1.0的接口
+shareText：分享的文案
+shareImg：分享的图片
+shareUrl：分享的链接，默认为当前页面
+*/
+function bshare(shareText,shareImg,shareUrl){
+	shareUrl = shareUrl || window.location.href;
+	bds_config = {
+		'bdText':shareText,
+		'bdComment':shareText+' '+shareUrl,
+		'bdDesc':shareText,
+		'bdPic':shareImg
+	};
+	$('#bdshare').html('<span>分享到:</span><a class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a><a class="bds_tqq share_comm" title="分享到腾讯微博"></a><a class="bds_qzone share_comm" title="分享到QQ空间"></a><a class="bds_tqf share_comm" title="分享到腾讯朋友"></a><a class="bds_tsina share_comm" title="分享到新浪微博"></a>');
+	createScript({'id':'bdshare_js','data':'type=tools&amp;mini=1&amp;uid=480925'});
+	createScript({'id':'bdshell_js'});
+	createScript({'id':'bdshare_control'});
+	var t = new Date().getMonth() + new Date().getDate() + new Date().getHours();
+	$(function(){
+		document.getElementById("bdshare_control").src = "//newsimg.5054399.com/js/bdshare.js?t=" + t;
+	});
+}
+
+/*
+百度分享，这个是百度分享2.0的接口，可在页面自由定义分享的图标
+shareText：分享的文案
+shareImg：分享的图片
+shareUrl：分享的链接，默认为当前页面
+bdSize：分享按钮的尺寸，默认16，可选3个值，16、24、32
+*/
+function bshare2(shareText,shareImg,shareUrl,bdSize){
+	shareUrl = shareUrl || window.location.href;
+	bdSize = bdSize || 16;
+	window._bd_share_config={
+		'common':{
+			'bdUrl':shareUrl,
+			'bdPic':shareImg,
+			'bdText':shareText,
+			'bdDesc':shareText,
+			'bdComment':shareText
+		},
+		'share':[{'bdSize':bdSize}]
+	};
+	$(function(){
+		with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//newsimg.5054399.com/js/bdshare2.0.js?cdnversion='+~(-new Date()/36e5)];
+	});
+}
+
+/*
+文章页百度分享，这个是百度分享1.0的接口
+shareText：分享的文案
+shareImg：分享的图片
+shareUrl：分享的链接，默认为当前页面
+*/
+function bshareArc(shareText,shareImg,shareUrl){
+	shareImg = shareImg || '';
+	shareUrl = shareUrl || window.location.href;
+	bds_config = {
+		'bdText':shareText,
+		'bdComment':shareText+' '+shareUrl,
+		'bdDesc':shareText,
+		'bdPic':shareImg
+	};
+	$('#bdshare').html('<a class="bds_qzone"></a><a class="bds_tqf"></a><a class="bds_tsina"></a><a class="bds_tqq"></a><a class="bds_renren"></a><span class="bds_more">更多</span><a class="shareCount"></a>');
+	createScript({'id':'bdshare_js','data':'type=tools&amp;uid=480925'});
+	createScript({'id':'bdshell_js'});
+	createScript({'id':'bdshare_control'});
+	var t = new Date().getMonth() + new Date().getDate() + new Date().getHours();
+	$(function(){
+		document.getElementById("bdshare_control").src = "//newsimg.5054399.com/js/bdshare.js?t=" + t;
+	});
+	return true;
+}
+
+/*
+自动处理搜索框文本框默认显示效果（包括focus清空，blur显示默认文本），点击submit按钮未输入判断并弹窗提示
+form：搜索框form标签的jq对象
+dtxt：输入框默认显示的文本，默认值“请输入需要搜索的内容”
+blurColor：blur时文本框的字体颜色，默认值#858680
+focusColor：focus时文本框的字体颜色，默认值#000000
+*/
+function searchForm(form,dtxt,blurColor,focusColor){
+	dtxt = dtxt || '请输入需要搜索的内容';
+	blurColor = blurColor || '#858680';
+	focusColor = focusColor || '#000000';
+	var input = form.find('input:text').eq(0);
+	input.css('color',blurColor).val(dtxt);
+	input.focus(function(){
+		input.css('color',focusColor);
+		if(input.val()==dtxt) input.val('');
+	}).blur(function(){
+		if(input.val()==''){
+			input.css('color',blurColor);
+			input.val(dtxt);
+		}
+	});
+	form.submit(function(){
+		var word = $.trim(input.val());
+		if(word == '' || word == dtxt){
+			alert(dtxt);
+			input.focus();
+			return false;
+		}
+		return true;
+	});
+}
+
+/*
+文本框默认显示效果（包括focus清空，blur显示默认文本）
+input：文本框input标签的jq对象
+d：文本框默认显示的文本
+blurColor：blur时文本框的字体颜色，默认值#858680
+focusColor：focus时文本框的字体颜色，默认值#000000
+*/
+function inputHolder(input,d,blurColor,focusColor){
+	blurColor = blurColor || '#858680';
+	focusColor = focusColor || '#000000';
+	input.css('color',blurColor).val(d);
+	input.focus(function(){
+		input.css('color',focusColor);
+		if(input.val()==d) input.val('');
+	}).blur(function(){
+		if(input.val()==''){
+			input.css('color',blurColor);
+			input.val(d);
+		}
+	});
+}
+
+/*
+点击上一页、下一页的横向滚动效果，一般用于ul里面多个li的滚动，但也兼容div下多个ul的滚动
+id：滚动的标签id，注意不是jq对象
+flag：滚动的方向，left＝向左，right＝向右
+min：滚动最少需要的子元素数目，例如小于5个li时，点击没有效果，默认值5
+move：每次点击滚动，移动多少个子元素，默认值2
+time：每次滚动的时间，单位ms，默认值500
+*/
+function hscroll(id,flag,min,move,time){
+	min = min || 5;
+	move = move || 2;
+	time = time || 500;
+	var parent = $("#"+id+":not(:animated)");
+	var kids = parent.children();
+	if(kids.length<min) return false;
+	var kid = kids.eq(0);
+	var kidWidth = kid.width()+parseInt(kid.css("paddingLeft"))+parseInt(kid.css("paddingRight"))+parseInt(kid.css("marginLeft"))+parseInt(kid.css("marginRight"));
+	var margin = (kidWidth*move)+'px';
+	if(flag=="left"){
+		kids.filter(":gt("+(kids.length-move-1)+")").prependTo(parent);
+		parent.css({'marginLeft':'-'+margin});
+		parent.animate({'marginLeft':'0px'},time);		
+	}
+	else{
+		parent.animate({'marginLeft':'-'+margin},time,function(){
+			kids.filter(":lt("+move+")").appendTo(parent);
+			$(this).css({'marginLeft':"0px"});
+		});
+	}
+	$('#'+id).find('img[lz_src]').each(function(){
+		$(this).attr('src',$(this).attr('lz_src')).removeAttr('lz_src');
+	});
+	return false;
+}
+var tabpet = function(option){
+	var a = option.tab;/*点击的a标签列表*/
+	var ul = option.ul;/*显示的ul*/
+	var btnMore = option.btnMore;/*更多按钮*/
+	var firstShowNum = option.firstShowNum;/*第1次显示的数目*/
+	var moreShowNum = option.moreShowNum;/*点更多显示的数目*/
+	var searchForm = option.searchForm;/*带搜索的表单*/
+	var clearSearchKey = option.clearSearchKey;/*搜索不到内容的时候，输入框是否清空，默认不清空*/
+	var beforeClick = typeof(option.beforeClick)=='function'?option.beforeClick:function(){};/*点击之前可执行的函数*/
+	var afterClick = typeof(option.afterClick)=='function'?option.afterClick:function(){};/*点击完成后可回调的函数*/
+	var afterShow = typeof(option.afterShow)=='function'?option.afterShow:function(){};/*显示后可回调的函数*/
+	var setData = {filter:'or',tip:'该分类下没有内容，可以查找其他的分类试试哦'};/*可随时更改的变量*/
+
+	if(a instanceof jQuery){
+		a = [a];
+	}
+
+	/*复制1个新的UL*/
+	var ulid = ul.attr('id');
+	var ulid2 = ulid+'2';
+	var html = '<ul id="'+ulid2+'"';
+	if(ul.attr('class')){
+		html += ' class="'+ul.attr('class')+'"';
+	}
+	if(ul.attr('style')){
+		html += ' style="'+ul.attr('style')+'"';
+	}
+	html += '></ul>';
+	ul.after(html);
+	var ul2 = $('#'+ulid2);
+	ul2.show();
+
+	var lis = ul.find('li');
+
+	/*获取需要搜索的数据*/
+	var pets = [];
+	for(var i=0;i<lis.length;i++){
+		var rel = lis.eq(i).attr('rel') || '';
+		pets[i] = rel.split('*');
+	}
+
+	ul.hide();
+
+	/*除了当前点击的行，其它行不选中*/
+	function setDefault(w){
+		for(var i=0;i<a.length;i++){
+			if(i!=w){
+				a[i].filter('.on').removeClass('on');
+			}
+		}
+	}
+	/*点击任一全部，全部行的全部按钮选中*/
+	function setAll(w){
+		var all = true;
+		for(var i=0;i<searchValue.length;i++){
+			if(searchValue[i]!=''){
+				all = false;
+				break;
+			}
+		}
+		if(all){
+			for(var i=0;i<a.length;i++){
+				if(i!=w){
+					var rel = a[i].eq(0).attr('rel');
+					if(rel=='0' || rel==''){
+						a[i].eq(0).addClass('on');
+					}
+				}
+			}
+		}
+	}
+	/*获取全部的搜索条件*/
+	var searchValue = [];
+	function getSearchValue(){
+		searchValue = [];
+		for(var i=0;i<a.length;i++){
+			var value = '';
+			var tmp = a[i].filter('.on');
+			if(tmp.length>0){
+				value = tmp.attr('rel') || '';
+				if(value=='0') value='';
+			}
+			searchValue.push(value);
+		}
+	}
+	/*获取本次需要显示的宠物ID*/
+	var result = [],isShowMore=false;
+	function showPet(){
+		var pet;
+		result = [];
+		for(var i=0;i<pets.length;i++){
+			pet = pets[i];
+			var yes = true;
+			for(var j=0;j<searchValue.length;j++){
+				if(searchValue[j]!=''){
+					var tmp=searchValue[j].split('_'),tmp2=pet[j].split('_'),match=false;
+					for(var k=0;k<tmp.length;k++){
+						if($.inArray(tmp[k],tmp2)>-1){
+							match = true;
+							break;
+						}
+					}
+					if(!match){
+						yes = false;
+						break;
+					}
+				}
+			}
+			if(yes){
+				result.push(i);
+			}
+		}
+
+		if(result.length<1){
+			alert(setData.tip);
+			return false;
+		}
+
+		isShowMore = false;
+		ul2.empty();
+		showResult();
+	}
+	function search(skey){
+		var pet;
+		var resultNow = [];
+		for(var i=0;i<pets.length;i++){
+			pet = pets[i];
+			if(pet[pet.length-1].toLowerCase().indexOf(skey)>-1){
+				resultNow.push(i);
+			}
+		}
+
+		if(resultNow.length<1){
+			alert(noFound);
+			return false;
+		}
+
+		result = resultNow;
+		isShowMore = false;
+		ul2.empty();
+		showResult();
+
+		return true;
+	}
+	/*显示宠物，包括更多按钮*/
+	function showResult(){
+		var t = Math.min(result.length,isShowMore?moreShowNum:firstShowNum);
+		for(var i=0;i<t;i++){
+			ul2.append('<li>'+lis.eq(result.shift()).html().replace('lz_src','lzimg="1" lz_src')+'</li>');
+		}
+		isShowMore = true;
+
+		if(result.length<1){
+			btnMore.hide();
+		}
+		else{
+			btnMore.show();
+		}
+
+		lzimg_load();
+		afterShow();
+
+		return false;
+	}
+
+	showPet();
+	afterClick();
+
+	/*绑定点击事件*/
+	for(var i=0;i<a.length;i++){
+		a[i].click(i,function(e){
+			var i = e.data;
+
+			a[i].filter('.on').removeClass('on');
+			$(this).addClass('on');
+
+			beforeClick();
+
+			if(setData.filter=='or') setDefault(i);
+
+			if(searchInput instanceof jQuery){
+				searchInput.val('').blur();
+			}
+
+			getSearchValue();
+			if(setData.filter=='or') setAll(i);
+
+			showPet();
+
+			afterClick();
+
+			return false;
+		});
+
+		if(a[i].eq(0)[0].tagName.toUpperCase()=='A'){
+			a[i].attr('href','#');
+		}
+	}
+	var btnMore2 = btnMore.find('a').length>0?btnMore.find('a'):btnMore;
+	btnMore2.click(showResult).attr('href','#');
+
+	if(searchForm instanceof jQuery){
+		var searchInput = searchForm.find('input:text').eq(0);
+		var noFound = option.noFound;
+		var searchDefaultValue = option.searchDefaultValue;
+
+		searchInput.css('color','#858680').val(searchDefaultValue);
+		searchInput.focus(function(){
+			searchInput.css('color','#000');
+			if(searchInput.val()==searchDefaultValue) searchInput.val('');
+		}).blur(function(){
+			if(searchInput.val()==''){
+				searchInput.css('color','#858680');
+				searchInput.val(searchDefaultValue);
+			}
+		});
+		searchForm.submit(function(){
+			var skey = $.trim(searchInput.val().toLowerCase());
+			if(skey == '' || skey == searchDefaultValue){
+				alert(searchDefaultValue);
+				searchInput.focus();
+			}
+			else{
+				if(search(skey)){
+					setDefault(-1);
+					afterClick();
+				}
+				else if(clearSearchKey===true){
+					searchInput.val('');					
+				}
+			}
+			return false;
+		});
+	}
+
+	return {
+		/*设置一些可临时变更的变量*/
+		set:function(key,val){
+			if(typeof(key)=='object'){
+				for(var k in key){
+					setData[k] = key[k];
+				}
+			}
+			else{
+				setData[key] = val;
+			}
+		}
+	};
+};
+
+/*
+点赞+1的动画效果
+obj：定位+1的显示位置，为jq对象
+left：左偏移位置，可对横向的位置微调
+top：右偏移位置，可对纵向的位置微调
+*/
+function plusOne(obj,left,top){
+	if($('#plusone').length<1){
+		$(document.body).append('<span id="plusone" style="display:none;position:absolute;font-family: Arial;font-size: 16px;left: 0;line-height: 24px;color:#FF5B5B;top: 0;font-weight:bold;margin-top:20px;z-index:3;">+1</span>');
+	}
+
+	var span = $('#plusone:not(:animated)');
+	var o = obj.offset();
+	span.css({'left':o.left+left,'top':o.top-top+20}).show();
+	span.animate({'top':o.top-top-20},400,function(){
+		$(this).hide();
+	});
+}
+
+/*
+异步加载js文件，加载完成后可回调执行其它代码
+url：js链接地址
+callback：回调函数
+*/
+var loadScript = function(url, callback) {
+	var script = document.createElement("script");
+	script.type = "text/javascript";
+	script.src = url;
+	if (script.readyState) {
+		script.onreadystatechange = function() {
+			if (script.readyState == "loaded" || script.readyState == "complete") { 
+				script.onreadystatechange = null;
+				callback(); 
+			}
+		};
+	} else {
+		script.onload = function() { callback(); }; 
+	}
+	document.body.appendChild(script);
+};
+
+/*文章页初始化*/
+function arcInit(F_URL,shareImg){
+	if($('#sform').length>0) searchForm($('#sform'));
+
+	var plurl = F_URL.replace('_1.html','.js')+'&t='+~(-new Date()/9e5);
+	loadScript(plurl,function(){
+		var num = plcmt_num || 0;
+		$('#arc_plcmt').text(num);
+		$('#arc_plcy').text(num * 12 + parseInt(Math.random()*100 + 1));
+	});
+	$('#report').attr('href','http://huodong.4399.com/tiaocuo/?addr='+encodeURIComponent(window.location.href));
+	$(function(){
+		bshareArc('4399游戏资讯 “'+document.title+'” 这篇文章相当的给力,值得分享',shareImg || '');
+	});
+}
+
+/*推荐游戏切换*/
+var tj_index = 0;
+function change_tuijian(d){
+	var lis = $('#tuijian').find('li');
+	var tj_num = Math.ceil(lis.length/3);
+	tj_index += d;
+	tj_index = tj_index>=tj_num?0:(tj_index<0?tj_num-1:tj_index);
+	lis.each(function(i){
+		if(i>=tj_index*3 && i<(tj_index+1)*3){
+			$(this).css('display','').find("img[lz_src]").attr("src",function(){return $(this).attr("lz_src");});
+		}
+		else{
+			$(this).hide();
+		}
+	});
+
+	window.event && (window.event.returnValue = false);
+	return false;
+}
+
+/*
+html代码中的第1个数字+N，对于象<em>投票数：100</em>中的数字+N比较有用
+html：要+N的html代码
+add：+N的数值，默认为1
+*/
+function htmlNumPlus(html,add){
+	add = typeof(add)=='undefined'?1:parseInt(add);
+	var start = end = -1;
+	for(var j=0;j<html.length;j++){
+		var ord = html.substr(j,1).charCodeAt();
+		if(ord>=48 && ord<=57){
+			if(start<0){
+				start = j;
+			}
+			end = j;
+		}
+		else if(start>=0){
+			break;
+		}
+	}
+
+	if(end<0) return add;
+
+	return html.substr(0,start)+(parseInt(html.substr(start,end-start+1))+add)+html.substr(end+1);
+}
+/*投票、点赞*/
+function initVideoVote(a,text,zt,tip1,tip2,tip3,callback){
+	tip1 = tip1 || '投票成功，今天还剩{remain}次投票机会~';
+	tip2 = tip2 || '投票成功，今天投票次数已用完~';
+	tip3 = tip3 || '您已经参与投票了，明天再来吧~';
+
+	var ids = [];
+	a.each(function(){
+		ids.push($(this).attr('rel'));
+	});
+	
+	$.ajax({
+		type: 'POST',
+		url: '//huodong3.4399.com/comm/video_vote/get.php',
+		data: {'zt':zt,'vids':ids.join(','),'r':Math.random()},
+		dataType: 'jsonp',
+		jsonp: 'callback',
+		success: function(result){
+			if(!result) return;
+			if(result.status == 'ok'){
+				text.each(function(index){
+					var tmp = $(this);
+					tmp.html(htmlNumPlus(tmp.html(),result.data[index]));
+				});
+				if(typeof(callback)=='function') callback();
+			}
+		}
+	});
+
+	a.each(function(i){
+		if($(this)[0].tagName.toLowerCase()=='a'){
+			$(this).click(i,function(e){
+				var obj = $(this);
+				var i = e.data;
+				$.ajax({
+					type : 'GET',
+					url : '//huodong3.4399.com/comm/video_vote/add.php?zt='+zt+'&vid='+obj.attr('rel')+'&r='+Math.random()+'&callback?',
+					dataType : 'jsonp',
+					jsonp: 'callback',
+					success : function(result){
+						if(!result) return;
+						if(result.status == 'ok'){
+							var tmp = text.eq(i);
+							tmp.html(htmlNumPlus(tmp.html()));
+							if(result.remain>0){
+								alert(tip1.replace('{remain}',result.remain));
+							}
+							else{
+								alert(tip2.replace('{remain}',result.remain));
+							}
+						}
+						else{
+							alert(tip3);
+						}
+					}
+				});
+				window.event && (window.event.returnValue = false);
+				return false;
+			}).attr('href','#');
+		}
+	});
+}
+/*活动1鲜花点赞*/
+function initFlowerVote(a,text,zt,tip1,tip2,tip3,callback){
+	tip1 = tip1 || '投票成功，今天还剩{remain}次投票机会~';
+	tip2 = tip2 || '投票成功，今天投票次数已用完~';
+	tip3 = tip3 || '您已经参与投票了，明天再来吧~';
+
+	var ids = [];
+	a.each(function(){
+		ids.push($(this).attr('rel'));
+	});
+	
+	$.ajax({
+		type: 'POST',
+		url: '//hdimg.5054399.com/nhwc/flower/flower.php?ac=query&zt='+zt+'&ids='+ids.join('|'),
+		data: {'r':Math.random()},
+		dataType: 'jsonp',
+		jsonp: 'callback',
+		success: function(result){
+			if(!result) return;
+			if(result.res == '1'){
+				text.each(function(index){
+					var tmp = $(this);
+					tmp.html(htmlNumPlus(tmp.html(),result.data[index]));
+				});
+				if(typeof(callback)=='function') callback();
+			}
+		}
+	});
+
+	a.each(function(i){
+		if($(this)[0].tagName.toLowerCase()=='a'){
+			$(this).click(i,function(e){
+				var obj = $(this);
+				var i = e.data;
+				$.ajax({
+					type : 'GET',
+					url : '//hdimg.5054399.com/nhwc/flower/flower.php?ac=flower&tid='+obj.attr('rel')+'&zt='+zt+'&index=0&r='+Math.random()+'&callback?',
+					dataType : 'jsonp',
+					jsonp: 'callback',
+					success : function(result){
+						if(!result) return;
+						if(result.res == '1'){
+							var tmp = text.eq(i);
+							tmp.html(htmlNumPlus(tmp.html()));
+							if(result.leave>0){
+								alert(tip1.replace('{remain}',result.leave));
+							}
+							else{
+								alert(tip2.replace('{remain}',result.leave));
+							}
+						}
+						else{
+							alert(tip3);
+						}
+					}
+				});
+				window.event && (window.event.returnValue = false);
+				return false;
+			}).attr('href','#');
+		}
+	});
+}
+function tabUl(a,ul,e,on,callback){
+	on = typeof(on)=='undefined'?'on':on;
+	e = e || 'mouseover';
+	function tab(){
+		var i = a.index($(this));
+		if(on) {
+			a.filter('.'+on).removeClass(on);
+			$(this).addClass(on);
+		}
+		ul.eq(i).find('img[lz_src]').attr('src',function(){return $(this).attr('lz_src');}).removeAttr('lz_src');
+		ul.not(ul.eq(i)).hide();
+		ul.eq(i).css('display','block');
+		if(typeof(callback)=='function'){
+			callback(i);
+		}
+		return false;
+	}
+	if(e=='mouseover'){
+		a.mouseover(tab);
+	}
+	else{
+		a.click(tab);
+	}
+}
+function divFixedTop(div){
+	var divTop = parseInt(div.offset().top);
+
+	var scroll = function(){
+		var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+		if(scrollTop>=divTop){
+			div.css({'position':'fixed','top':'0px'});
+		}
+		else{
+			div.css({'position':'absolute','top':divTop+'px'});
+		}
+	};
+	if($.browser.msie && $.browser.version < 7){
+		div[0].style.setExpression('top','Math.max(documentElement.scrollTop,'+divTop+')');
+	}
+	else{
+		$(window).scroll(scroll);
+		scroll();
+	}
+}
+var zcookie = {
+	get:function(name){
+		var strCookies = document.cookie;
+		var cookieName = name + "=";
+		var valueBegin, valueEnd, value;
+		valueBegin = strCookies.indexOf(cookieName);
+		if (valueBegin == -1) return null;
+		valueEnd = strCookies.indexOf(";", valueBegin);
+		if (valueEnd == -1)valueEnd = strCookies.length;
+		value = strCookies.substring(valueBegin+cookieName.length,valueEnd);
+		return unescape(value);
+	},
+	set:function(name, value, expire, path, domain, secure){
+		/*不设置path及domain，默认当前域名当前目录*/
+		var str = name + "=" + escape(value);
+		if(expire){
+			var date=new Date();
+			date.setTime(date.getTime()+expire*1000);
+			str += ';expires='+date.toGMTString();
+		}
+		if(path){
+			str += ';path='+path;
+		}
+		if(domain){
+			str += ';domain='+domain;
+		}
+		if(secure){
+			str += ';secure';
+		}
+		document.cookie = str;
+	}
+};
+
+/*
+右侧栏根据左边内容显示的位置自动选中相应的右侧栏上的按钮
+items：左边的所有内容，为jq对象
+tab：相对应左边的右侧栏切换项
+on：选中时候的class，如果是多个用js顺序数组
+sync：是否实时同步位置（页面变化导致的左侧栏变化），默认为false
+例：scrollLocation($('.m3-2,.m5,.m6'),$('#rightBtn').find('a'),['on1','on2','on3']);
+*/
+function scrollLocation(items,tab,on,sync){
+	sync = typeof(sync)=='undefined'?false:sync;
+
+	var cnt = items.length;
+	if(typeof(on)=='string'){
+		var on2 = [];
+		for(var i=0;i<cnt;i++){
+			on2.push(on);
+		}
+		on = on2;
+	}
+
+	function getItemPosition(){
+		var p = [];
+		for(var i=0;i<cnt;i++){
+			var tmp = [];
+			tmp[0] = items.eq(i).offset().top;
+			tmp[1] = tmp[0]+items.eq(i).height();
+			p[i] = tmp;
+		}
+		return p;
+	}
+	var p = getItemPosition();
+	var screenHeight = $(window).height();
+
+	$(window).resize(function(){
+		screenHeight = $(window).height();
+		p = getItemPosition();
+	});
+	$(window).scroll(function(){
+		var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+		var min = scrollTop;
+		var max = scrollTop+screenHeight;
+
+		if(sync){
+			p = getItemPosition();
+		}
+
+		var q = [];
+		for(var i=0;i<p.length;i++){
+			var tmp = p[i];
+			if(p[i][0]<max && p[i][1]>=min){
+				tmp[2] = Math.min(max,p[i][1])-Math.max(min,p[i][0]);
+				if(tmp[2]>10){
+					tmp[3] = i;
+					q.push(tmp);
+				}
+			}
+		}
+
+		for(var i=0;i<tab.length;i++){
+			tab.eq(i).removeClass(on[i]);
+		}
+		if(q.length>0){
+			q.sort(function(a,b){
+				return b[2]-a[2];
+			});
+
+			var j = q[0][3];
+
+			tab.eq(j).addClass(on[j]);
+		}
+	});
+}
+/*
+输入框只能输入数字
+inputs：input输入框，jq对象
+isFloat：是否有小数点，默认为false
+callback：用户输入完数字后，可回调执行的函数
+例：onlyInputNumber($('input[name="fuwen"]'),true,function(){});
+*/
+function onlyInputNumber(inputs,isFloat,callback){
+	isFloat = isFloat || false;
+	inputs.bind('keyup blur',(function(){
+		var val = $(this).val();
+		if(isFloat){
+			if(/[^0-9\.]/.test(val)){
+				$(this).val(val.replace(/[^0-9\.]/g,''));
+			}
+		}
+		else{
+			if(/[^0-9]/.test(val)){
+				$(this).val(val.replace(/[^0-9]/g,''));
+			}
+		}
+		if(typeof(callback)=='function'){
+			callback();
+		}
+	}));
+}
+function tabImage(option){
+	var imgs = option.imgs;
+	var as = option.as;
+	var icos = option.icos;
+	var time = option.time || 3000;
+	var on = option.on || 'on';
+
+	var j = 0;
+	var si = window.setInterval(tab,time);
+	var total = imgs.length;
+	function tab(i){
+		if(typeof(i)=='undefined'){
+			i = j;
+			j = j>=total-1?0:(j+1);
+		}
+		icos.filter('.'+on).removeClass(on);
+		icos.eq(i).addClass(on);
+		imgs.hide().eq(i).show();
+		as.hide().eq(i).show();
+	}
+	icos.mouseover(function(){
+		j = icos.index($(this));
+		tab();
+		window.clearInterval(si);
+	}).mouseout(function(){
+		si = window.setInterval(tab,time);
+	});
+	imgs.mouseover(function(){
+		window.clearInterval(si);
+	}).mouseout(function(){
+		si = window.setInterval(tab,time);
+	});
+	as.mouseover(function(){
+		window.clearInterval(si);
+	}).mouseout(function(){
+		si = window.setInterval(tab,time);
+	});
+}

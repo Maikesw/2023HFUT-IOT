@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SOCKET测试</title>
+    <script src="https://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/sockjs-client/1.1.1/sockjs.min.js"></script>
+    <script src="https://cdn.bootcss.com/stomp.js/2.3.3/stomp.min.js"></script>
+    <!--    <script src="http://wechatfe.github.io/vconsole/lib/vconsole.min.js?v=3.3.0"></script>-->
+    <script>
+        // var vConsole = new VConsole();
+        var stompClient = null;
+
+        function connect() {
+            disconnect();
+            console.log("connect...\n\n\n");
+            var host = $("input[name='host']:checked").val();
+            console.log("<INFO> TO connect [" + host + "], wait...\n\n\n");
+            var sockJs = new SockJS(host);
+            stompClient = Stomp.over(sockJs);
+            stompClient.connect({}, function (frame) {
+                stompClient.subscribe('/topic/one/id', function (message) {
+                    console.log("接收到："+message);
+                });
+                stompClient.subscribe('/i1/key', function (message) {
+                    console.log("接收到："+message);
+                });
+                stompClient.subscribe('/topic/two', function (message) {
+                    console.log("接收到："+message);
+                });
+                stompClient.subscribe('/user/three', function (message) {
+                    console.log("接收到："+message);
+                });
+            });
+        }
+
+        function disconnect() {
+            if (stompClient != null) {
+                console.log("disconnect...\n\n\n>>>\n\n\n");
+                stompClient.disconnect();
+            }
+        }
+
+        function send1() {
+            stompClient.send("/socket/one/i1", {},
+                JSON.stringify({'id': '11122', 'key': '22211'}));
+        }
+
+        function send2() {
+            stompClient.send("/socket/two", {},
+                JSON.stringify({'id': '1', 'key': $("input[name='SO2']").val()}));
+        }
+
+        function send3() {
+            stompClient.send("/socket/three", {},
+                JSON.stringify({'id': '111', 'key': '222'}));
+        }
+
+    </script>
+</head>
+<hr>
+<h1 style="text-align: center; color: chartreuse;">PRESS F12 OPEN CONSOLE</h1>
+<div>
+    二氧化硫：<input name="SO2" value="0"/><br>
+<!--    <label><input name="host" type="radio" value="http://121.41.49.217:8094/sockJs" checked="checked"/>http://localhost-->
+<!--        :8094/sockJs</label></br>-->
+    <label><input name="host" type="radio" value="http://localhost:8094/sockJs" checked="checked"/>http://localhost
+        :8094/sockJs</label></br>
+</div>
+<hr/>
+<div>
+    <button id="connect" type="button" onclick="connect()">connect</button>
+    <button id="disconnect" type="button" onclick="disconnect()">stop</button>
+    <button type="button" onclick="location.reload();">reload</button>
+
+</div>
+<hr/>
+<div>
+<!--    <button type="button" onclick="send1()">send1</button>-->
+    <button type="button" onclick="send2()">send</button>
+</div>
+</body>
+</html>

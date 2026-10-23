@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Tue Apr 23 12:07:11 2024
+# Process ID: 24452
+# Current directory: D:/wanghy/vivado project/test/project_1/project_1.runs/impl_1
+# Command line: vivado.exe -log mux2to1.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source mux2to1.tcl -notrace
+# Log file: D:/wanghy/vivado project/test/project_1/project_1.runs/impl_1/mux2to1.vdi
+# Journal file: D:/wanghy/vivado project/test/project_1/project_1.runs/impl_1\vivado.jou
+# Running On: Crosak, OS: Windows, CPU Frequency: 2112 MHz, CPU Physical cores: 12, Host memory: 16890 MB
+#-----------------------------------------------------------
+source mux2to1.tcl -notrace

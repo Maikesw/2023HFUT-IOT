@@ -1,3 +1,156 @@
+# 本仓库通过 Git LFS 管理大文件（详见 README）
+# 仅将 >= 10MB 的文件纳入 LFS；小文件按普通方式提交。
+*
+大三上/eda/EDA5.MP4 filter=lfs diff=lfs merge=lfs -text
+大二下作业/机器学习/机器学习大作业-物联网23-1班2023212351-邓杰湧.zip filter=lfs diff=lfs merge=lfs -text
+大二下作业/机器学习/机器学习大作业-物联网23-1班2023212351-邓杰湧/panoramic-image-stitching-master.zip filter=lfs diff=lfs merge=lfs -text
+大三下及大四/数据库/数据库系统概论.pdf filter=lfs diff=lfs merge=lfs -text
+大三上/邓杰湧+肖磊+贾晋宇+陆艺+黄丽雯/resnet101.zip filter=lfs diff=lfs merge=lfs -text
+大三上/eda/手工布线方法.mp4 filter=lfs diff=lfs merge=lfs -text
+大三上/体系结构/邓杰湧+肖磊+贾晋宇+陆艺+黄丽雯.zip filter=lfs diff=lfs merge=lfs -text
+大三下及大四/软件工程/邓杰湧组.tar filter=lfs diff=lfs merge=lfs -text
+大三下及大四/软件工程/邓杰湧组/mystore.zip filter=lfs diff=lfs merge=lfs -text
+大二下作业/大物实验/新建文件夹/HFUT-Physical-Experiment/.git/objects/pack/pack-323a9b4e600eb3007382ad58e2dfca4c0c354f9b.pack filter=lfs diff=lfs merge=lfs -text
+大三上/eda/EDA1.mp4 filter=lfs diff=lfs merge=lfs -text
+"大二上作业/离散数学/实验9：Huffman Algorithm.zip" filter=lfs diff=lfs merge=lfs -text
+大二下作业/计组/实验相关的资料.rar filter=lfs diff=lfs merge=lfs -text
+大三上/eda/eda4.mp4 filter=lfs diff=lfs merge=lfs -text
+大一下作业/课设/课设GUI/.vs/课设/v17/ipch/AutoPCH/c057093d6b7b1b18/MANAGEMENT.ipch filter=lfs diff=lfs merge=lfs -text
+大一下作业/课设/课设GUI/.vs/课设/v17/ipch/AutoPCH/4236fe0d8d58848/MANAGEMENT.ipch filter=lfs diff=lfs merge=lfs -text
+大一下作业/课设/课设GUI/.vs/课设/v17/ipch/AutoPCH/80e5b6f278796614/MANAGEMENT.ipch filter=lfs diff=lfs merge=lfs -text
+大一下作业/课设/课设GUI/.vs/课设/v17/ipch/AutoPCH/4025dcfadd207a92/MAIN.ipch filter=lfs diff=lfs merge=lfs -text
+大一下作业/课设/课设GUI/.vs/课设/v17/ipch/AutoPCH/8b8d28a0a4b13d6e/MAIN.ipch filter=lfs diff=lfs merge=lfs -text
+大一下作业/课设/课设GUI/.vs/课设/v17/ipch/AutoPCH/a9e20ba25b5179ce/AVLTREE.ipch filter=lfs diff=lfs merge=lfs -text
+大一下作业/课设/课设GUI/.vs/课设/v17/ipch/AutoPCH/a8a8ac46b426281a/AVLTREE.ipch filter=lfs diff=lfs merge=lfs -text
+大三上/eda/EDA3.mp4 filter=lfs diff=lfs merge=lfs -text
+"大三上/计算机网络/计算机网络教程 第2版 (高传善，曹袖，毛迪林等编著) (Z-Library)(1).pdf" filter=lfs diff=lfs merge=lfs -text
+大一下作业/课设/课设GUI/.vs/课设/v17/ipch/AutoPCH/fcc0267ab8b4ea13/WINDOW.ipch filter=lfs diff=lfs merge=lfs -text
+大一下作业/课设/课设GUI/.vs/课设/v17/ipch/AutoPCH/e09b4985693a3e17/WINDOW.ipch filter=lfs diff=lfs merge=lfs -text
+大三上/计算机系统/FlashBrowser/Release/Assets/CefSharp/libcef.dll filter=lfs diff=lfs merge=lfs -text
+大二上作业/汇编语言/tools/汇编语言_第2版.pdf filter=lfs diff=lfs merge=lfs -text
+大二下作业/计组/实验相关的资料/CPU课程设计相关的书籍/自己动手写CPU.pdf filter=lfs diff=lfs merge=lfs -text
+大三上/计算机系统/FlashBrowser.zip filter=lfs diff=lfs merge=lfs -text
+大一上作业/假期作业/2023212351-邓杰湧.7z filter=lfs diff=lfs merge=lfs -text
+大二上作业/机器人技术/robocup/uva_base_v13.2/src/.vs/src/v17/ipch/AutoPCH/e9ecf1463f7b95e9/WORLDMODEL.ipch filter=lfs diff=lfs merge=lfs -text
+大一上作业/高等数学朋辈辅导答案合集.pdf filter=lfs diff=lfs merge=lfs -text
+大二上作业/机器人技术/robocup/uva_base_v13.2/src/.vs/src/v17/ipch/AutoPCH/cff5740323c5b7d5/MAIN.ipch filter=lfs diff=lfs merge=lfs -text
+大二上作业/机器人技术/robocup/uva_base_v13.2/src/.vs/src/v17/ipch/AutoPCH/603fb832921fe2a5/PLAYER.ipch filter=lfs diff=lfs merge=lfs -text
+大二上作业/机器人技术/robocup/uva_base_v13.2/src/.vs/src/v17/ipch/AutoPCH/c8261efeb1c941bb/PLAYERTEAMS.ipch filter=lfs diff=lfs merge=lfs -text
+大二上作业/机器人技术/robocup/uva_base_v13.2/src/.vs/src/v17/ipch/AutoPCH/16019684108e2535/BASICPLAYER.ipch filter=lfs diff=lfs merge=lfs -text
+大一下作业/课设/课设GUI/.vs/课设/v17/ipch/AutoPCH/f76bec5c2dde005d/LINEEDIT.ipch filter=lfs diff=lfs merge=lfs -text
+大一下作业/课设/课设GUI/.vs/课设/v17/ipch/AutoPCH/49c811419edbd7d7/PUSHBUTTON.ipch filter=lfs diff=lfs merge=lfs -text
+大一下作业/课设/课设GUI/.vs/课设/v17/ipch/AutoPCH/6a04d90f072dab69/LINEEDIT.ipch filter=lfs diff=lfs merge=lfs -text
+大一下作业/课设/课设GUI/.vs/课设/v17/ipch/AutoPCH/4ffa83fd623bd139/BASICWIDGET.ipch filter=lfs diff=lfs merge=lfs -text
+大一下作业/课设/课设GUI/.vs/课设/v17/ipch/AutoPCH/5d2c2201468cea13/PUSHBUTTON.ipch filter=lfs diff=lfs merge=lfs -text
+大二上作业/机器人技术/robocup/uva_base_v13.2/src/.vs/src/v17/ipch/AutoPCH/574166370cea12c3/WORLDMODEL.ipch filter=lfs diff=lfs merge=lfs -text
+"大二下作业/大物实验/新建文件夹/HFUT-Physical-Experiment/大学物理实验 张霆.pdf" filter=lfs diff=lfs merge=lfs -text
+大二上作业/机器人技术/robocup/uva_base_v13.2/src/.vs/src/v17/ipch/AutoPCH/eb525b40fb56aac2/BASICCOACH.ipch filter=lfs diff=lfs merge=lfs -text
+大二上作业/机器人技术/robocup/uva_base_v13.2/src/.vs/src/v17/ipch/AutoPCH/c493df0577adb8cb/MAIN.ipch filter=lfs diff=lfs merge=lfs -text
+大二上作业/机器人技术/robocup/uva_base_v13.2/src/.vs/src/v17/ipch/AutoPCH/b6c607cc9e9e9b5b/BASICPLAYER.ipch filter=lfs diff=lfs merge=lfs -text
+大二上作业/机器人技术/robocup/uva_base_v13.2/src/.vs/src/v17/ipch/AutoPCH/b89352d8501e6a41/PLAYERTEAMS.ipch filter=lfs diff=lfs merge=lfs -text
+大二上作业/机器人技术/robocup/uva_base_v13.2/src/.vs/src/v17/ipch/AutoPCH/a61ddefcda9af98a/WORLDMODELUPDATE.ipch filter=lfs diff=lfs merge=lfs -text
+大二上作业/机器人技术/robocup/uva_base_v13.2/src/.vs/src/v17/ipch/AutoPCH/aa5c1135462544b3/PLAYER.ipch filter=lfs diff=lfs merge=lfs -text
+大二下作业/大物实验/新建文件夹/HFUT-Physical-Experiment/大学物理实验试卷集萃.rar filter=lfs diff=lfs merge=lfs -text
+大二上作业/RFID/2023212351-邓杰湧.tar filter=lfs diff=lfs merge=lfs -text
+大二上作业/RFID/2023212351-邓杰湧.zip filter=lfs diff=lfs merge=lfs -text
+大三上/邓杰湧+肖磊+贾晋宇+陆艺+黄丽雯/基于ResNetefficientNet百种花卉识别.pptx filter=lfs diff=lfs merge=lfs -text
+大二上作业/RFID/2023212351-邓杰湧.7z filter=lfs diff=lfs merge=lfs -text
+大二上作业/RFID/2023212351-邓杰湧/2023212351-邓杰湧实验报告.docx filter=lfs diff=lfs merge=lfs -text
+大三上/计算机系统/FlashBrowser/Release/Caches/Cache/data_3 filter=lfs diff=lfs merge=lfs -text
+大二上作业/马原/萝卜快跑改1.pptx filter=lfs diff=lfs merge=lfs -text
+大三上/面试/知识星球/代码随想录最强八股文（第五版）/代码随想录知识星球精华（最强八股文）第五版（Java篇）.pdf filter=lfs diff=lfs merge=lfs -text
+大二下作业/软件项目实训/redis/RedisClient/jre/lib/rt.jar filter=lfs diff=lfs merge=lfs -text
+"大三上/计算机网络/4小时学完计算机网络/第七章网络安全及期末总结 VX：LZK51621/{1}--网络安全及期末总结/[7.1.1]--网络安全及期末总结 VX：LZK51621.mp4.baiduyun.p.downloading" filter=lfs diff=lfs merge=lfs -text
+大二下作业/编译原理/课设/.vs/ArithmeticDAG/v17/ipch/AutoPCH/1eac28634114dd85/DAG.ipch filter=lfs diff=lfs merge=lfs -text
+"大二下作业/通信原理/9 ZigBee与LTE协议（4H）.ppt" filter=lfs diff=lfs merge=lfs -text
+大二下作业/编译原理/课设/.vs/ArithmeticDAG/v17/ipch/AutoPCH/df9bb225b9e167ec/DAG.ipch filter=lfs diff=lfs merge=lfs -text
+大三上/计算机网络/课件/cn.zip filter=lfs diff=lfs merge=lfs -text
+大二下作业/编译原理/课设/.vs/ArithmeticDAG/v17/ipch/AutoPCH/52f24193e477a2f6/PARSER.ipch filter=lfs diff=lfs merge=lfs -text
+大二下作业/编译原理/课设/.vs/ArithmeticDAG/v17/ipch/AutoPCH/271eb76fa5c220b4/MAIN.ipch filter=lfs diff=lfs merge=lfs -text
+大三上/系统综合设计/2023212351-邓杰湧-物联网工程23-1班-系统硬件设计.zip filter=lfs diff=lfs merge=lfs -text
+大二下作业/编译原理/课设/.vs/ArithmeticDAG/v17/ipch/AutoPCH/33c89d0c89950d45/PARSER.ipch filter=lfs diff=lfs merge=lfs -text
+大二下作业/编译原理/课设/.vs/ArithmeticDAG/v17/ipch/AutoPCH/584cb49e3d7a22ab/MAIN.ipch filter=lfs diff=lfs merge=lfs -text
+大三下及大四/软件工程/邓杰湧组-rust测试.rar filter=lfs diff=lfs merge=lfs -text
+大三下及大四/软件工程/邓杰湧组-rust测试.zip filter=lfs diff=lfs merge=lfs -text
+"大三下及大四/软件工程/邓杰湧组-rust测试/rust-training-homework-final _add.zip" filter=lfs diff=lfs merge=lfs -text
+"大三下及大四/软件工程/邓杰湧组-rust测试111/邓杰湧组-rust测试/rust-training-homework-final _add.zip" filter=lfs diff=lfs merge=lfs -text
+大二下作业/机器学习/机器学习大作业-物联网23-1班2023212351-邓杰湧/讲解演示视频.mp4 filter=lfs diff=lfs merge=lfs -text
+大一下作业/课设/课设GUI/.vs/课设/v17/Browse.VC.db filter=lfs diff=lfs merge=lfs -text
+大二下作业/软件项目实训/前后端源码/前后端源码.7z filter=lfs diff=lfs merge=lfs -text
+大二上作业/机器人技术/robocup/uva_base_v13.2/src/.vs/src/v17/Browse.VC.db filter=lfs diff=lfs merge=lfs -text
+大二上作业/马原/萝卜快跑3.pptx filter=lfs diff=lfs merge=lfs -text
+大三上/面试/知识星球/代码随想录最强八股文（第五版）/代码随想录知识星球精华（最强八股文）第五版（计算机基础篇）.pdf filter=lfs diff=lfs merge=lfs -text
+大三上/自然语言处理/实验和大作业相关材料.zip filter=lfs diff=lfs merge=lfs -text
+大一上作业/.vs/作业/v17/ipch/AutoPCH/78669d5474dbc21/MAIN.ipch filter=lfs diff=lfs merge=lfs -text
+大一上作业/.vs/作业/v17/ipch/AutoPCH/1529fd1524455f37/MAIN.ipch filter=lfs diff=lfs merge=lfs -text
+大二下作业/计组/实验相关的资料/CPU课程设计相关的书籍/（中文版）数字设计和计算机体系结构.pdf filter=lfs diff=lfs merge=lfs -text
+大二下作业/计组/实验相关的资料/CPU课程设计相关的书籍/（英文版）数字设计和计算机体系结构（含目录）.pdf filter=lfs diff=lfs merge=lfs -text
+大二上作业/机器人技术/robocup/uva_base_v13.2/src/.vs/src/v17/ipch/AutoPCH/c18f765dd4e5bf78/SOCCERTYPES.ipch filter=lfs diff=lfs merge=lfs -text
+"大二上作业/离散数学/实验1-1：Logic Console/.vs/luojiyuns/v17/ipch/AutoPCH/e2735440ebd88ad4/LUOJIYUNS.ipch" filter=lfs diff=lfs merge=lfs -text
+大二上作业/机器人技术/robocup/uva_base_v13.2/src/.vs/src/v17/ipch/AutoPCH/715d781a43976c18/SERVERSETTINGS.ipch filter=lfs diff=lfs merge=lfs -text
+"大一下作业/大物期中复习/第三章 刚体转动3.pdf" filter=lfs diff=lfs merge=lfs -text
+大三下及大四/软件工程/邓杰湧组/介绍视频.mp4 filter=lfs diff=lfs merge=lfs -text
+大三上/计算机网络/课件/计算机网络（中科大-郑老师）.pdf filter=lfs diff=lfs merge=lfs -text
+大二下作业/大物实验/新建文件夹/HFUT-Physical-Experiment/大物实验试卷v1.1.pdf filter=lfs diff=lfs merge=lfs -text
+大三上/面试/知识星球/代码随想录最强八股文（第五版）/代码随想录知识星球精华（最强八股文）第五版（算法篇）.pdf filter=lfs diff=lfs merge=lfs -text
+大二上作业/RFID/课件/Analog-Circuit-compilation-yang.pdf filter=lfs diff=lfs merge=lfs -text
+大二下作业/编译原理/课设/.vs/ArithmeticDAG/v17/ipch/AutoPCH/bbfd57257782b2af/LEXER.ipch filter=lfs diff=lfs merge=lfs -text
+大二下作业/大物实验/新建文件夹/HFUT-Physical-Experiment/大学物理实验v1.5.pdf filter=lfs diff=lfs merge=lfs -text
+大二下作业/编译原理/课设/.vs/ArithmeticDAG/v17/ipch/AutoPCH/e4cb4030cac7e9ba/LEXER.ipch filter=lfs diff=lfs merge=lfs -text
+大二上作业/机器人技术/123/kk.txt filter=lfs diff=lfs merge=lfs -text
+大二上作业/机器人技术/robocup/uva_base_v13.2/kk.txt filter=lfs diff=lfs merge=lfs -text
+大二下作业/嵌入式/课设/嵌入式系统课程设计报告-2023212351-邓杰湧.doc filter=lfs diff=lfs merge=lfs -text
+大二下作业/科研训练/2024-SIGAsia-mpcMech.pdf filter=lfs diff=lfs merge=lfs -text
+大二下作业/计组/实验相关的资料/Verilog学习/Verilog数字系统设计教程夏宇闻.pdf filter=lfs diff=lfs merge=lfs -text
+"大三上/跨专业/跨境电商与数字贸易  第三章  跨境电商业务实践的流程.pdf" filter=lfs diff=lfs merge=lfs -text
+"大三上/跨专业/跨境电商与数字贸易  第四章  法律法规.pdf" filter=lfs diff=lfs merge=lfs -text
+"大一上作业/研讨课作业/授课讲座PPT/第5讲 智能物联网与工业互联网-卫星.pdf" filter=lfs diff=lfs merge=lfs -text
+大二上作业/数字逻辑/数电实验报告/2023212351-邓杰湧.docx filter=lfs diff=lfs merge=lfs -text
+大二下作业/科研训练/2021-SIGGRAPH-ConeJoint.pdf filter=lfs diff=lfs merge=lfs -text
+大二下作业/科研训练/2022-TVCG-4DPrintedShape.pdf filter=lfs diff=lfs merge=lfs -text
+大二下作业/计组/实验相关的资料/实验.zip filter=lfs diff=lfs merge=lfs -text
+大二上作业/机器人技术/robocup_2d_team.zip filter=lfs diff=lfs merge=lfs -text
+大二下作业/软件项目实训/前后端源码/back/src/main/resources/simsun.ttc filter=lfs diff=lfs merge=lfs -text
+大二下作业/软件项目实训/前后端源码/back/target/classes/simsun.ttc filter=lfs diff=lfs merge=lfs -text
+大三上/面试/知识星球/代码随想录最强八股文（第五版）/代码随想录知识星球精华（最强八股文）第五版（面经篇）.pdf filter=lfs diff=lfs merge=lfs -text
+大一上作业/假期作业/2023212351-邓杰湧/7.jpg filter=lfs diff=lfs merge=lfs -text
+大一上作业/假期作业/2023212351-邓杰湧/1.jpg filter=lfs diff=lfs merge=lfs -text
+大一上作业/假期作业/2023212351-邓杰湧/5.jpg filter=lfs diff=lfs merge=lfs -text
+"大一上作业/研讨课作业/授课讲座PPT/第2讲 物联网概述-魏振春.pdf" filter=lfs diff=lfs merge=lfs -text
+大三上/系统综合设计/基于MIPS的五级流水线设计.pptx filter=lfs diff=lfs merge=lfs -text
+"大二下作业/计组/复习/图片 尹衍哲.pdf" filter=lfs diff=lfs merge=lfs -text
+大一上作业/假期作业/2023212351-邓杰湧/2.jpg filter=lfs diff=lfs merge=lfs -text
+大二下作业/科研训练/2022-SIGGRAPH-High-LevelPuzzle.pdf filter=lfs diff=lfs merge=lfs -text
+大三上/计算机系统/FlashBrowser/Release/Assets/Plugins/pepflashplayer.dll filter=lfs diff=lfs merge=lfs -text
+大三上/自然语言处理/实验1/ci_word2vec.model filter=lfs diff=lfs merge=lfs -text
+大二下作业/软件项目实训/NewTywz/NewTywz/bin/Ext.Net.dll filter=lfs diff=lfs merge=lfs -text
+"大三上/eda/库文件/库文件/NSC Amplifier/NSC Amplifier.SchLib" filter=lfs diff=lfs merge=lfs -text
+大二下作业/软件项目实训/redis/RedisClient/jre/bin/client/classes.jsa filter=lfs diff=lfs merge=lfs -text
+大三上/eda/EDA2.mp4 filter=lfs diff=lfs merge=lfs -text
+大一下作业/电路电子技术/模电/3三极管.ppt filter=lfs diff=lfs merge=lfs -text
+大二下作业/公选课作业/unit1.7z filter=lfs diff=lfs merge=lfs -text
+大二下作业/计组/实验相关的资料/实验/2021214710-杨程锦-计科1班-计算机组成原理/2021214710-杨程锦-计科1班-计算机组成原理实验报告.docx filter=lfs diff=lfs merge=lfs -text
+大二下作业/嵌入式/嵌入式系统原理实验报告-2023212351-邓杰湧.doc filter=lfs diff=lfs merge=lfs -text
+大三上/计算机系统/实验报告/2023212351-邓杰湧(实验八).docx filter=lfs diff=lfs merge=lfs -text
+大二下作业/编译原理/课设/.git/objects/bd/96cb1255a63fa6a6af35f33fcd3592d478f0c4 filter=lfs diff=lfs merge=lfs -text
+大二下作业/编译原理/课设/.vs/课设/v17/Browse.VC.db filter=lfs diff=lfs merge=lfs -text
+大三上/自然语言处理/实验1/news_word2vec.model filter=lfs diff=lfs merge=lfs -text
+大二下作业/编译原理/课设/.git/objects/6a/ec3b1355418d96ea6953614fcabfc35f4787db filter=lfs diff=lfs merge=lfs -text
+大一上作业/假期作业/2023212351-邓杰湧/6.jpg filter=lfs diff=lfs merge=lfs -text
+大三上/计算机系统/实验报告/2023212351-邓杰湧(实验二).docx filter=lfs diff=lfs merge=lfs -text
+大二下作业/编译原理/课设/.vs/ArithmeticDAG/v17/Browse.VC.db filter=lfs diff=lfs merge=lfs -text
+大三上/自然语言处理/实验1/ci_bigram_dict.txt filter=lfs diff=lfs merge=lfs -text
+"大一上作业/研讨课作业/授课讲座PPT/第4讲 大数据与人工智能发展及其应用-李培培.pdf" filter=lfs diff=lfs merge=lfs -text
+大三上/自然语言处理/实验1/1998-01-2003版-带音.txt filter=lfs diff=lfs merge=lfs -text
+大二下作业/编译原理/课设/.git/objects/d7/454f10d4d70d290ba20c3fd3d18c7306cd6549 filter=lfs diff=lfs merge=lfs -text
+大二下作业/编译原理/课设/.git/objects/ee/514de1dbad46b9853de1638e2e9fca297acff8 filter=lfs diff=lfs merge=lfs -text
+"大二下作业/通信原理/1 导论（不少于4H）.ppt" filter=lfs diff=lfs merge=lfs -text
+大二下作业/编译原理/课设/.git/objects/e1/c53be4265de32518197b1aabbf75fc0194a0e2 filter=lfs diff=lfs merge=lfs -text
+大二下作业/编译原理/课设/.git/objects/5c/3ce60c7af5511cec916606d721760c3a2e459d filter=lfs diff=lfs merge=lfs -text
+"大二上作业/离散数学/实验1-1：Logic Console/.vs/luojiyuns/v17/Browse.VC.db" filter=lfs diff=lfs merge=lfs -text
+大一上作业/.vs/作业/v17/Browse.VC.db filter=lfs diff=lfs merge=lfs -text
+大一上作业/假期作业/2023212351-邓杰湧/3.jpg filter=lfs diff=lfs merge=lfs -text
+大三上/计算机系统/FlashBrowser/Release/Assets/CefSharp/icudtl.dat filter=lfs diff=lfs merge=lfs -text
 大三上/eda/* filter=lfs diff=lfs merge=lfs -text
 大二下作业/机器学习/* filter=lfs diff=lfs merge=lfs -text
 大三下及大四/数据库/* filter=lfs diff=lfs merge=lfs -text

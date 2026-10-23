@@ -1,0 +1,22 @@
+.custom-tree-node,
+.simple-tree-node {
+  flex: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-content: flex-start;
+  font-size: 14px;
+}
+
+.custom-tree-node {
+  border-bottom: 1px solid #EBEEF5;
+}
+
+.el-tree .el-button {
+  height: 24px;
+}
+
+.el-table td:hover {
+  cursor: pointer;
+}

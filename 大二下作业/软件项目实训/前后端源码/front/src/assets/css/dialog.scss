@@ -1,0 +1,24 @@
+// 弹窗样式的设定
+
+.el-dialog__wrapper {
+  overflow: hidden !important;
+  display: flex;
+  align-items: center;
+}
+
+.el-dialog {
+  border-radius: 6px !important;
+  min-width: 400px;
+}
+
+.el-dialog__body {
+  padding: 20px 30px !important;
+  border-top: 1px solid rgba(242, 242, 242, 1);
+  border-bottom: 1px solid rgba(242, 242, 242, 1);
+  overflow: auto;
+  max-height: 60vh;
+}
+
+.el-dialog__title {
+  font-size: 14px !important;
+}

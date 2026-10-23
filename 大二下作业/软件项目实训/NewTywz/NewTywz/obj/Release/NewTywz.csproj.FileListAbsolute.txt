@@ -1,0 +1,10 @@
+D:\SL\自做网站\舒城县中小企业服务中心\NewTywz\NewTywz\bin\NewTywz.dll
+D:\SL\自做网站\舒城县中小企业服务中心\NewTywz\NewTywz\bin\NewTywz.pdb
+D:\SL\自做网站\舒城县中小企业服务中心\NewTywz\NewTywz\obj\Release\ResolveAssemblyReference.cache
+D:\SL\自做网站\舒城县中小企业服务中心\NewTywz\NewTywz\obj\Release\NewTywz.dll
+D:\SL\自做网站\舒城县中小企业服务中心\NewTywz\NewTywz\obj\Release\NewTywz.pdb
+D:\横向课题\网站类项目\舒城县中小企业服务中心\NewTywz\NewTywz\bin\NewTywz.dll
+D:\横向课题\网站类项目\舒城县中小企业服务中心\NewTywz\NewTywz\bin\NewTywz.pdb
+D:\横向课题\网站类项目\舒城县中小企业服务中心\NewTywz\NewTywz\obj\Release\ResolveAssemblyReference.cache
+D:\横向课题\网站类项目\舒城县中小企业服务中心\NewTywz\NewTywz\obj\Release\NewTywz.dll
+D:\横向课题\网站类项目\舒城县中小企业服务中心\NewTywz\NewTywz\obj\Release\NewTywz.pdb

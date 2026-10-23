@@ -1,0 +1,45 @@
+// sideBar
+$menuText:#bfcbd9;
+$menuActiveText:#409EFF;
+$subMenuActiveText:#f4f4f5; //https://github.com/ElemeFE/element/issues/12951
+
+$menuBg:#f4f4f4;
+
+$sideBarWidth: 210px;
+
+$tooltipDelay:1500;
+
+// 登录页面及忘记密码等页面的主题色，此页面主题色不随用户设置的主题色的更改而更改
+$--fixed-color: var(--fixed-color, #009140);
+$--color-primary: var(--color-primary, #009140);
+
+//title bar
+$headlineColor: #fff;
+$titleBarHeight: 52px;
+$tabBarHeight: 48px;
+$navBarHeight: 34px;
+
+// 主要内容 padding 边距
+$paddingTop: 16px;
+$paddingRight: 16px;
+$paddingBottom: 16px;
+$paddingLeft: 16px;
+
+// the :export directive is the magic sauce for webpack
+// https://www.bluematador.com/blog/how-to-share-variables-between-js-and-sass
+:export {
+  menuText: $menuText;
+  menuActiveText: $menuActiveText;
+  subMenuActiveText: $subMenuActiveText;
+  menuBg: $menuBg;
+  sideBarWidth: $sideBarWidth;
+  titleBarHeight: $titleBarHeight;
+  tabBarHeight: $tabBarHeight;
+  headlineColor: $headlineColor;
+  navBarHeight: $navBarHeight;
+  paddingTop: $paddingTop;
+  paddingRight: $paddingRight;
+  paddingBottom: $paddingBottom;
+  paddingLeft: $paddingLeft;
+  fixedColor: $--fixed-color;
+}

@@ -1,0 +1,6 @@
+${AnsiColor.BLUE}
+Base: 学习框架
+${AnsiColor.YELLOW}注意事项：
+1.
+/
+${AnsiColor.WHITE}

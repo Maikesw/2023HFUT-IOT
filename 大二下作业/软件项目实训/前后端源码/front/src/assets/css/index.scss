@@ -1,0 +1,100 @@
+@import "./variables.scss";
+@import "./element-variables.scss";
+@import "./button.scss";
+@import './data-tree.scss';
+@import "./dialog.scss";
+@import "./message.scss";
+@import "./mixin.scss";
+@import "./table.scss";
+@import "./transition.scss";
+@import "./side-bar.scss";
+
+
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-size: 14px;
+  color: #333;
+  font-family: 'Arial Normal', 'Arial', sans-serif;
+}
+
+html {
+  height: 100%;
+  box-sizing: content-box;
+
+}
+
+#app {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+// 阻止多选框发生抖动
+.el-checkbox ::after {
+  transition: none !important;
+}
+// 表单左对齐
+.el-form-item__label {
+  text-align: left !important;
+}
+
+.el-form-item__label:before {
+  margin-left: -9px;
+}
+
+// 输入框，选择框的宽度
+.el-cascader,
+.el-select,
+.el-date-editor {
+  width: 100% !important;
+}
+
+// 自定义 card 样式
+.el-card__header {
+  padding: 12px 20px !important;
+}
+
+.card {
+  border: 1px solid #ebeef5;
+  box-sizing: border-box;
+  border-radius: 4px;
+  overflow: hidden;
+
+  .card__header {
+    padding: 12px 14px;
+    border-bottom: 1px solid #ebeef5;
+  }
+}
+
+// 弹窗全屏图标样式
+.fullscreen {
+  cursor: pointer;
+  float: right;
+  margin-right: 24px;
+  font-size: 12px !important;
+  margin-top: 2px;
+}

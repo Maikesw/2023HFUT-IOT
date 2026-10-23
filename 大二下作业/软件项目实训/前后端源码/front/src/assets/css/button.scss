@@ -1,0 +1,26 @@
+ /**按钮相关的样式设置*/
+ .el-button.is-disabled,
+ .el-button.is-disabled:hover,
+ .el-button.is-disabled:focus {
+   opacity: 0.6;
+ }
+
+ .el-button--info {
+   background-color: #1890FF !important;
+   border-color: #1890FF !important;
+ }
+
+ // 对应提示的颜色-标准色
+ .el-button--danger {
+   background-color: #F5585F !important;
+   border-color: #F5585F !important;
+ }
+
+ .el-button--warning {
+   background-color: #FFB400 !important;
+   border-color: #FFB400 !important;
+ }
+
+ .el-button--mini {
+   padding: 8px 16px;
+ }

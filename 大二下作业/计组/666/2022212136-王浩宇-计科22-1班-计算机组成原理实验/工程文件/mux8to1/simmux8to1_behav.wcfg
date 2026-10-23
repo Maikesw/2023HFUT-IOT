@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="simmux8to1_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="simmux8to1" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="422,260 ps"></ZoomStartTime>
+      <ZoomEndTime time="422,266 ps"></ZoomEndTime>
+      <Cursor1Time time="422,263 ps"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="258"></NameColumnWidth>
+      <ValueColumnWidth column_width="318"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="10" />
+   <wvobject fp_name="/simmux8to1/data_in0" type="array">
+      <obj_property name="ElementShortName">data_in0[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in0[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simmux8to1/data_in1" type="array">
+      <obj_property name="ElementShortName">data_in1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in1[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simmux8to1/data_in2" type="array">
+      <obj_property name="ElementShortName">data_in2[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in2[7:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/simmux8to1/data_in4" type="array">
+      <obj_property name="ElementShortName">data_in4[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in4[7:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/simmux8to1/data_in3" type="array">
+      <obj_property name="ElementShortName">data_in3[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in3[7:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/simmux8to1/data_in5" type="array">
+      <obj_property name="ElementShortName">data_in5[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in5[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simmux8to1/data_in6" type="array">
+      <obj_property name="ElementShortName">data_in6[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in6[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simmux8to1/data_in7" type="array">
+      <obj_property name="ElementShortName">data_in7[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in7[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simmux8to1/sel" type="array">
+      <obj_property name="ElementShortName">sel[2:0]</obj_property>
+      <obj_property name="ObjectShortName">sel[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simmux8to1/data_out" type="array">
+      <obj_property name="ElementShortName">data_out[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[7:0]</obj_property>
+   </wvobject>
+</wave_config>
