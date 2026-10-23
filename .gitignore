@@ -20,5 +20,10 @@ venv/
 Thumbs.db
 desktop.ini
 
-# ---- 大文件（见 README「大文件清单」）----
-# 超过 10MB 的文件通过 LFS 上传，其路径由下方 include 引入
+# ---- 系统与压缩包 ----
+.DS_Store
+*.rar
+*.7z
+
+# ---- 大文件 ----
+# 超过 10MB 的文件已通过 Git LFS 管理，逐条登记在 .gitattributes 中
